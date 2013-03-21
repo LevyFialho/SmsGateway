@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2816de45-3466-4bc6-a930-bb5179e1176c"
+  name="Seedwork"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="642ff846-e07a-4ce0-9aa9-a84c35e695e5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Application.Seedwork"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d1a56056-1d31-4e5b-bc49-e069d505e58b"
+        name="TProjection">
+        <referencesInternal>
+          <reference
+            Id="5c213b20-945b-4803-9490-24215994768d"
+            handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.Seedwork%2Fbin%2FDebug%2FSmsGateway.Application.Seedwork.dll&quot; Namespace%3DSmsGateway.Application.Seedwork Type%3DProjectionsExtensionMethods Member%3D(Name%3DProjectedAsCollection GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DIEnumerable GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)]))]) ParameterIdentifier%3D0"
+            tag="ViewCode" />
+        </referencesInternal>
+      </undefinedType>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

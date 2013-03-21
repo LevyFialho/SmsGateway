@@ -1,0 +1,25 @@
+﻿@model SmsGateway.Presentation.WebClient.Models.RecuperarSenhaModel
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+
+<fieldset>
+    <legend>@Messages.RecuperarSenha</legend>
+
+    <div class="display-label">@Messages.website_Email</div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Email)
+    </div>
+    <div class="display-label">@Html.DisplayFor(model => model.Mensagem)</div>
+     
+</fieldset>
+    <input type="submit" value="@Messages.website_Submit" />
+    @Html.ActionLink(@Messages.website_Back,"Cliente", "Login")
+            @ViewBag.ErrorMsg
+}
+

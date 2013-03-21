@@ -1,0 +1,1063 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ae54db57-549e-46cb-b09d-1cedf0fa42d2"
+  name="Services" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="0ba216ed-bec8-46a6-b9b0-040e3b9d3ad3"
+        name="ISmsService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="22f6d49b-8333-4250-b906-398d86bb8491"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e71eaf35-1fe2-4618-a613-4acc8b3d6a68"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b10a4a1d-bf49-4fe4-bacf-d509173acbad">
+                <propertyInstance
+                  Id="889b3bf3-8b6f-4410-bf4b-126f6de168cb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22932422-09bb-4edc-86ec-d41d9da69050">
+                <propertyInstance
+                  Id="30404f7c-459b-4901-8ea2-f48987a1bffb"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7c1a53c4-b699-4a1f-823d-b26c7aa12f6f">
+                <propertyInstance
+                  Id="765f7a82-734b-4e61-97ed-4837710c7615"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="81ef4bf8-458c-4137-b057-e4fea5a168ba">
+                <propertyInstance
+                  Id="d4e6bc81-18fb-4b6e-a763-13e2ae93dceb"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="e9ffb78b-4253-4c00-bf84-1f3842a005e4"
+            name="EnviarMensagem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="504d8045-6f03-41f8-a3c2-bec19b22e88c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="172f23ec-1519-4ca6-a76a-f9f79d0ec90b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f783ff89-2edf-44f7-a0e3-3f724d05c7d6">
+                    <propertyInstance
+                      Id="57e8a96f-1bb1-44c1-947d-fd338b015d51"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ecb9c461-43e1-4c70-8605-c6d325f6a400">
+                    <propertyInstance
+                      Id="72eacd19-1c93-44fd-80f2-b3bb4f6569da"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca300dc7-f9f8-44e1-b253-87edde2a7c4f">
+                    <propertyInstance
+                      Id="1a6d5852-3d94-4bba-bf13-d7746d8501c9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="309189d4-574c-4ce6-a8b2-343b652f8b5c">
+                    <propertyInstance
+                      Id="e84240c8-58cd-4118-bb4f-8e633cd307e8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d20365eb-fb8c-43e1-90cc-9a46e6d98784">
+                    <propertyInstance
+                      Id="d6ab8b4b-11a8-4e45-9457-0945066fd1f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fe7884c-b146-47a1-81e8-26d6868831b1">
+                    <propertyInstance
+                      Id="baf1cd48-5a7d-435d-a828-202d1854be60"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f62b4210-e7bb-48f3-aa83-4a85c476bffe"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a27c0cd-55ab-4d72-8b3c-c2957f0b8682"
+                  name="contratoDoCliente"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0911d1e5-d938-4111-a66a-c1f577a7698e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DcontratoDoCliente"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+                      LastKnownName="Model::SmsModule::Aggregates::Contrato"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3498eb56-b944-4d95-82b2-e7b03eeef413"
+                  name="contratosDasOperadoras"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e6f3827d-a55c-4806-ba50-2b7dc2254e04"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DcontratosDasOperadoras"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="089102f0-7657-475c-ad9b-825aa8b6ca18"
+                      LastKnownName="List&lt;Contrato‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d92f9bac-f49d-4a35-855c-73b515df87a1"
+                  name="statusList"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4ca8dbf5-ff34-47cc-b991-90821622f146"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DstatusList"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="690ce8bd-af8c-471a-8b2e-538bc3fe7adb"
+                      LastKnownName="List&lt;Status‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a8430ba-e94f-4fbf-8b7e-a43011551037"
+                  name="mensagem"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="60e3e225-be93-4d4b-9e27-af7c5c297134"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DISmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3Dmensagem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c6ef0dda-084b-4068-838e-77642d2bf140"
+        name="SmsService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="fa414546-8921-4a4c-873b-91c6e24152ba"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="75d041b6-ea63-4b0c-b918-1b6995558e8a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4efdd13-db2a-4ee8-8aa2-bf7ae745597d">
+                <propertyInstance
+                  Id="df362750-18cd-4f50-a0a3-dea267476c18"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63e3c466-2aec-4d1f-b5ac-e1ca9c28ba8c">
+                <propertyInstance
+                  Id="3a95da16-d82b-49ff-9acf-0470d12aa3f6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60a1f8a7-4c3b-4625-a0c9-0fa73a9e1158">
+                <propertyInstance
+                  Id="bbcf9efb-3033-40ff-8071-b39482ce5def"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8e5aaace-30c5-4dd9-8e4a-37f3913108b2">
+                <propertyInstance
+                  Id="e7d3b9c0-7042-429c-b04c-90ce433a39d1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2dd65205-2f8f-4a61-ab79-01ebd44bed73">
+                <propertyInstance
+                  Id="38a38339-a206-4a8a-aef2-95bab38b30bd"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4e0377bd-85b8-4e3e-9215-8dcd25b42ef5">
+            <interfaceMoniker
+              Id="0ba216ed-bec8-46a6-b9b0-040e3b9d3ad3"
+              LastKnownName="ISmsService"
+              LastKnownLocation="Package_1211.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1d85f0ec-b144-4ead-b738-5e8ff0e58273"
+            name="_contratoSelecionado"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cf13d4b0-3e36-4d99-ba77-5926b0ec9f3c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D_contratoSelecionado"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="86986353-078c-4957-a0ca-aae65e97bc41"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73353594-0fea-4be1-9d46-fd0d44988717">
+                    <propertyInstance
+                      Id="03bb399e-ca28-47cb-b5a6-8beeee412d20"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e7269c4-723e-4cd8-a111-ad481f51110a">
+                    <propertyInstance
+                      Id="a5e466c4-5369-433e-879f-49039a5cc3d4"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac07e0b9-f21e-4691-8c57-21315888ed4b">
+                    <propertyInstance
+                      Id="39ca5ce9-3066-4407-831c-59c294e5b389"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c08d751-8824-4c4b-9a1a-18aa5efcad66">
+                    <propertyInstance
+                      Id="56518025-991f-4273-9c69-54dc258292c7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a3d2c9e4-f4d8-4520-942b-0b90463ef9ce">
+                    <propertyInstance
+                      Id="88924e18-baed-44a6-a076-ce17ba92ef2f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+                LastKnownName="Model::SmsModule::Aggregates::Contrato"
+                LastKnownLocation="Model.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9ae6068e-5459-4dbe-9727-531e507cdedd"
+            name="_contratosDisponiveisParaEnvio"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="8af3a36c-d783-4ec8-b6c3-794552c9f33b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D_contratosDisponiveisParaEnvio"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c986998b-df59-4c52-a8cb-9a3c8bf83dbd"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61536a68-2a8f-476c-80d2-f1ec3c32edd9">
+                    <propertyInstance
+                      Id="0cac8e57-a5af-40c2-9c1f-fb4fb548eb6d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="047c30f9-1c60-490f-a081-d4b3524f6ac7">
+                    <propertyInstance
+                      Id="8cbbb7b4-9075-41b5-8978-334a31293424"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="070d5618-5e10-429d-bb81-e073c254a5e5">
+                    <propertyInstance
+                      Id="10cf7e1c-05ef-4e88-b14f-7261e8ad8bcb"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56ebe1d9-5303-4976-8cae-de6b7a07ea08">
+                    <propertyInstance
+                      Id="9a3d39dc-1f5c-4e8f-8fb6-bd210d676b17"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54e03848-3cd0-45cd-bb2b-493b12b36e1b">
+                    <propertyInstance
+                      Id="41b8e6d1-e524-45c2-82b2-259ff4677c12"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="089102f0-7657-475c-ad9b-825aa8b6ca18"
+                LastKnownName="List&lt;Contrato‎&gt;"
+                LastKnownLocation="Package1_2225.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="589b7a02-2b74-4de9-b03f-f15054942f7d"
+            name="_statusList"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="92c060f0-930c-40d0-ab00-041d157ecfa3"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D_statusList"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="aaf66c69-c212-4e3a-add5-f926b118a8de"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7ccdbb9-2810-4a80-b448-33199b1d221f">
+                    <propertyInstance
+                      Id="557a4a68-2995-471b-97d2-f024ca4f3d0a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc425944-3a43-4d66-b024-fdd9df6c6678">
+                    <propertyInstance
+                      Id="d99d61b8-d055-4b0c-be77-f3e7a76ac065"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a796f0c1-7731-4a02-96ab-a3091f27fb09">
+                    <propertyInstance
+                      Id="a6f7bdb3-dede-48c1-8d49-4a25d352b04c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e4f4247-8d18-447d-9bab-d45245881fe6">
+                    <propertyInstance
+                      Id="8c8c27ce-5422-436f-81db-94563707171a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e4bff9e-3861-4f69-8766-ae872876be0e">
+                    <propertyInstance
+                      Id="f35621c5-5b3c-4d1e-80bb-adcd56c4da0d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="690ce8bd-af8c-471a-8b2e-538bc3fe7adb"
+                LastKnownName="List&lt;Status‎&gt;"
+                LastKnownLocation="Package1_2225.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2aaf420b-40e6-43cb-9e1c-2277e48bb17e"
+            name="ChecarEnvio"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a77cf2c2-3fbe-40d7-b5c5-a2fbf03c06e1"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DChecarEnvio OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6180c00-3090-4313-b6a9-c217593addfd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="53ca36a7-ed49-4f18-9633-a767ed3b4e9e">
+                    <propertyInstance
+                      Id="d4dea197-4cbe-4f49-91a4-c88c222c70a1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="102980ac-a55f-4e63-a1cd-81946bc623ce">
+                    <propertyInstance
+                      Id="1cc1cdd0-093b-4c74-badf-93bef91fe837"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81d04a87-7334-444d-b256-6494969a5dfe">
+                    <propertyInstance
+                      Id="83ef3357-b415-47aa-b88e-2be3e30be0bd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca234cc9-d63c-4e85-9ea9-9bc02dce1a26">
+                    <propertyInstance
+                      Id="d252077e-92db-44b3-b034-0f36068c8750"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="120c35b8-61bf-4c46-ba56-66f8bc5f577e">
+                    <propertyInstance
+                      Id="581d31c5-92a0-425e-a988-e9f29abc8d04"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfa33509-edd1-4c6a-a646-f08209b10113">
+                    <propertyInstance
+                      Id="9a38c2ae-5cda-452f-983b-1234aca7abdd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a15cf13b-22de-437d-9efd-7795c6fddabd"
+                  name="contratoDoCliente"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="3cecaa02-bf18-441e-8085-c5c9374ce8c6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DChecarEnvio OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DcontratoDoCliente"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+                      LastKnownName="Model::SmsModule::Aggregates::Contrato"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="77c82678-54d0-4225-8e7e-b6fe15a3b4d6"
+                  name="mensagem"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="0a018c30-87e2-4b97-89cc-01b55300991d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DChecarEnvio OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dmensagem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df3d6951-4fe0-4d22-bcd0-a0535818c0a4"
+                  name="codigoStatus"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="39635e05-3551-492f-be89-0d2b1ee5ab09"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DChecarEnvio OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DcodigoStatus"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1a4e9fa7-f42f-473f-a968-ae8cc2724bad"
+            name="DebitarCreditos"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="73d7d6bf-7f25-45a4-a46f-dcc5e11bfada"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DDebitarCreditos OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="073fcbb9-5436-462f-8cde-226a7f93ac6c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="668baa59-ffed-4958-a6c8-a05123a1e099">
+                    <propertyInstance
+                      Id="5ac51c1a-b05d-48bb-a153-af546b9e5a2d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c63a612b-e44e-4128-85b9-1350fabc9c70">
+                    <propertyInstance
+                      Id="49f05e45-f31d-4148-90a3-ccc5a0a87112"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d711d8a4-7f0b-49dc-a268-3023c230641b">
+                    <propertyInstance
+                      Id="08c6bc99-a193-4b8f-9353-a4cb4bc17e98"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="872177cd-cb37-4354-872f-1d0a2048c6cd">
+                    <propertyInstance
+                      Id="c1eda2c5-aae9-40b4-bf7f-13d700e7750e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d57757c3-2688-42e9-a468-54305071163b">
+                    <propertyInstance
+                      Id="bf4d3790-64fd-4d21-837a-84a0858ce66d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc3db2eb-aadf-4c39-addc-c45ad21f1c3c">
+                    <propertyInstance
+                      Id="aadff298-40d5-4974-978b-c180fad79fcd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="891d39d1-dce7-4c35-9ab4-f3fd6517d6d7"
+                  name="contratoDoCliente"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="0dcd0aaf-94bd-4a27-8991-53b0a9a04d16"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DDebitarCreditos OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DcontratoDoCliente"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+                      LastKnownName="Model::SmsModule::Aggregates::Contrato"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb5165d4-b126-409b-b551-2bb2f6b53434"
+                  name="mensagem"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="5f98c089-c4a6-424f-abac-501d45285409"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DDebitarCreditos OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dmensagem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa8abdd5-6c58-4484-8de4-883e584fd977"
+                  name="codigoStatus"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b475ad01-272a-4136-981d-a3174408969b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DDebitarCreditos OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DcodigoStatus"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="63ae9155-97c7-4f10-a747-acdddb685c6e"
+            name="EnviarMensagem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c2d398a6-c8f7-41ef-833a-3edc8f6bd387"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="34aae370-cb92-49b4-8555-f96ffe744c39"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3799bb34-8f62-492b-b7d9-f191547b9387">
+                    <propertyInstance
+                      Id="d2272434-ac10-4b73-b634-23bed11306c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2277ccca-ffb8-4553-9245-d88d63dfb731">
+                    <propertyInstance
+                      Id="a96116be-36e9-4fc3-af35-33968702c8d8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f70bebaa-4a7c-43a7-9b78-ee2087d214a4">
+                    <propertyInstance
+                      Id="606de45c-3b81-4183-b504-a92dfab73cc3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29c5c4bb-7742-49ab-ad67-c55a30ef79f7">
+                    <propertyInstance
+                      Id="22cb1940-9173-4de7-a87a-3da7bbe032b8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45f775fb-7ed9-4742-b18a-268d827ac9e4">
+                    <propertyInstance
+                      Id="a4897c83-b443-493b-9bd6-dae932fd107c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aeb6dc98-9502-4f8a-94d5-167250895ead">
+                    <propertyInstance
+                      Id="39505283-b4b0-4307-b400-d7f6db990122"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1e8a37e6-d7c2-4683-bb3f-e8864ae72454"
+                  direction="Return">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e6620b50-0f02-4bfa-bd67-5299fdf1e9e6"
+                  name="contratoDoCliente"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ae449b06-777f-4250-adda-98e64b888064"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DcontratoDoCliente"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+                      LastKnownName="Model::SmsModule::Aggregates::Contrato"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c55dcdce-6846-46d9-898a-6e5280c39010"
+                  name="contratosDasOperadoras"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4ef8750d-d046-47be-9f12-c1e9754b487b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DcontratosDasOperadoras"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="089102f0-7657-475c-ad9b-825aa8b6ca18"
+                      LastKnownName="List&lt;Contrato‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="62c1b744-c0fc-49a8-8a44-cfdb1c5cce20"
+                  name="statusList"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="369fb956-1e13-47ee-8eda-8d11a770a086"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3DstatusList"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="690ce8bd-af8c-471a-8b2e-538bc3fe7adb"
+                      LastKnownName="List&lt;Status‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cbb545fb-4788-4372-bf64-536a8f36849c"
+                  name="mensagem"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3e4c6935-aa5c-422b-858d-8f99d508b336"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DEnviarMensagem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg Type%3DContrato)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem)]) ParameterIdentifier%3Dmensagem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="cda140ae-904d-4e73-a13f-eaf62705efbc"
+            name="SelecionarMelhorContrato"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="89c59bc2-bc91-413f-a0e4-207d3015fafe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DSelecionarMelhorContrato OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8b9263a5-c42b-46ad-ba90-b3d6c397bbcd"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f086ab1-f457-47ee-9675-42977ad8a218">
+                    <propertyInstance
+                      Id="16884b38-40ec-4b0b-b70e-84bfdd0521b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a1a65f5-af16-4f60-a200-9e3495903e0a">
+                    <propertyInstance
+                      Id="6a5dd517-5e20-42e6-bf34-803714f4e3e4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5c4a1ae-ce28-4a38-9413-8cab4f661d8a">
+                    <propertyInstance
+                      Id="3f18ecf7-76de-462a-9fc6-5b685b69576c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ffe503a-38bf-4520-ab0a-378380d886d2">
+                    <propertyInstance
+                      Id="788ba062-4aa9-4162-9a0c-ef82d1079107"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8359beec-f32d-4c9d-8888-508676cc5a67">
+                    <propertyInstance
+                      Id="5c757d4a-2967-42d4-a9c1-02d2656a13b7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77341c4c-f4b7-497e-9f2f-3a8a274b13db">
+                    <propertyInstance
+                      Id="6d66c9f9-5c35-437c-93d8-4eceded17fe3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b109bd4-aeec-4bb3-9c84-5c676bf7a4f1"
+                  name="mensagem"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="a256179f-30d3-4cc5-aa9e-14af22b1d69b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DSelecionarMelhorContrato OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dmensagem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+                      LastKnownName="Model::SmsModule::Aggregates::Mensagem"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="91a7bc11-6ced-4a8b-9d2f-036a472eba29"
+                  name="usarOutraOperadoraApi"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c7fc7c73-e37e-41b3-a8c7-bffe2d51048f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D(Name%3DSelecionarMelhorContrato OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg Type%3DMensagem ParamKind%3DRef)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DusarOutraOperadoraApi"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="223336fb-dea8-404d-b088-d5c3bbf7796e"
+            name="SmsService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="be3e1529-19b6-4f31-bf77-56f70ec5368b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Services Type%3DSmsService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cea401aa-cdcb-42a2-aadd-1de03db62b52"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="94b06819-0bab-48d8-bc99-6633ac068ca1">
+                    <propertyInstance
+                      Id="2bf6b687-3e60-47ca-b535-1549e235def6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35b20b5d-4710-4839-8577-2306fb4eb62c">
+                    <propertyInstance
+                      Id="61a1ca49-7191-406d-81bd-e55eec919e6b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="761ba424-4320-46d7-8f9c-40dbfd4e95c2">
+                    <propertyInstance
+                      Id="9e43424d-36fc-4e7d-835a-30ddc4a5fa5e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2e63c4f-e25d-41b2-b764-7113db801301">
+                    <propertyInstance
+                      Id="6b835a5e-a804-4b75-86dc-c44df1f11096"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c481409-f99b-41b5-903f-b3e37bd88d36">
+                    <propertyInstance
+                      Id="f6493f73-701c-4f8a-b71c-c5e271e58b82"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a2563f2-d527-4f1a-8938-6b39d3f9dae8">
+                    <propertyInstance
+                      Id="8788199b-ecdd-4271-82e2-89394e596824"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

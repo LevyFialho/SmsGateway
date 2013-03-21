@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2a050895-557b-4832-a48f-483390811976"
+  name="SmsGateway"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6259e66e-2c49-405e-b653-8308bcdfed4f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="439e701b-5fad-478a-806b-37f0cdc8e68d"
+        LastKnownName="Domain"
+        LastKnownLocation="Package1_2224.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8f348619-227b-4bc6-be0d-6ac51b96faeb"
+        LastKnownName="Infrastructure"
+        LastKnownLocation="Package_2304.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0af06882-9ba8-402a-b020-2b6ed8ed64b0"
+        LastKnownName="Application"
+        LastKnownLocation="Package_2347.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="22c1e674-5c93-446b-92ad-71f57ccd28fd"
+        LastKnownName="DistributedServices"
+        LastKnownLocation="Package_2348.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

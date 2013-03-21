@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5829f57f-3052-494a-94d8-86bbe3322010"
+  name="Aggregates" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="55ac7421-b65c-474b-acb4-c7ad63c3d4de"
+        LastKnownName="AdministradorAgg"
+        LastKnownLocation="Package_1213.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="15c301a6-1f24-43a1-b3a9-e33e3072cfa5"
+        LastKnownName="ClienteAgg"
+        LastKnownLocation="Package1_1213.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="10b94eb5-b958-44f4-937e-baad6852a802"
+        LastKnownName="ContratoAgg"
+        LastKnownLocation="Package2_1213.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="16f682f9-bb44-443a-ba8c-93a78df1f9ba"
+        LastKnownName="MensagemAgg"
+        LastKnownLocation="Package_1214.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b50cb874-3849-459d-ba34-949879d21048"
+        LastKnownName="OperadoraAgg"
+        LastKnownLocation="Package1_1214.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

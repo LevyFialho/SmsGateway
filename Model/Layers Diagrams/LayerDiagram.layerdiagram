@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="cecff62b-5078-40a5-8ec8-c77ef3f0c94c" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="5a7a1597-8168-4229-a82c-f865729dc25d" name="DistributedServices">
+      <childLayers>
+        <layer Id="bcb34f28-0444-440d-92ba-3c6d62315d91" name="DistributedServices.Restful">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="93a2baf6-c3f7-44c7-9588-0abfd85bb8a2" direction="Forward">
+              <layerMoniker Id="c5815b2c-db25-4fc7-aa0a-845e78c8ec11" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="7b8ac4aa-1ee6-4421-b7f9-5efe9f1b091f" direction="Forward">
+              <layerMoniker Id="3f6df236-f374-4aa9-bd08-17ba9ea04f72" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="4f9ad3be-c2e2-40c2-a745-ea61538b88cc" direction="Forward">
+              <layerMoniker Id="ce9b29c0-c4dd-4b04-a8ee-8708837a9d98" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="560941c8-7721-4a25-a676-fd8264c24a89" direction="Forward">
+              <layerMoniker Id="287dc599-8e55-43a1-98e4-dcd817a01c9b" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="c216a483-aa08-47e9-b092-0e342fd0b67a" direction="Forward">
+              <layerMoniker Id="5e8bafd3-3fb9-4ed5-b88f-774c71506c2d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="08317c10-3712-43b9-8a15-585fb9834977" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="56ccdc4e-af56-41ce-83af-85c1c42768bc" direction="Forward">
+              <layerMoniker Id="974bf3cd-c6bf-40e5-8c7f-de57fbc1f80f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="dabe6b04-7cfb-4d09-8baf-52602a54eb35" name="1.2.3 - Restful">
+              <ArtifactNode Label="1.2.3 - Restful" Category="SolutionFolder" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/1 - Layers/1.2 - Distributed Services/1.2.3 - Restful&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.DistributedServices.Restful.CoreContext)" Label="SmsGateway.DistributedServices.Restful.CoreContext.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="287dc599-8e55-43a1-98e4-dcd817a01c9b" name="DistributedServices.Seedwork">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="6cb5b2e9-8a0d-4e70-a769-81c6eb405d22" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="b9ab0990-4a2f-4da3-815d-503f66b8707f" name="1.2.1 - Seedwork">
+              <ArtifactNode Label="1.2.1 - Seedwork" Category="SolutionFolder" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/1 - Layers/1.2 - Distributed Services/1.2.1 - Seedwork&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.DistributedServices.Seedwork)" Label="SmsGateway.DistributedServices.Seedwork.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="5ad5b465-7213-4fa0-b9a2-da8ddc579e1c" name="Presentation">
+      <childLayers>
+        <layer Id="726285d2-82e3-4ef1-98dc-5d2a0bf0a2f7" name="Presentation.Seedwork">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="0e7f2ac9-0f80-452b-ac5c-b8b198c4963b" direction="Forward">
+              <layerMoniker Id="c5815b2c-db25-4fc7-aa0a-845e78c8ec11" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="bac5da0b-ad0e-458c-a37e-25b13d1f2ea8" direction="Forward">
+              <layerMoniker Id="bcb34f28-0444-440d-92ba-3c6d62315d91" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="cc766314-e161-4cb6-b146-dbb5e25a79d6" name="1.1.1 - Seedwork">
+              <ArtifactNode Label="1.1.1 - Seedwork" Category="SolutionFolder" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/1 - Layers/1.1 - Presentation and Client APIs/1.1.1 - Seedwork&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Presentation.Seedwork)" Label="SmsGateway.Presentation.Seedwork.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="dfe2a7da-2243-459d-b058-4770f2aab873" name="Presentation.WebClient">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="3815f8b6-f48a-4ed6-ba2f-ff11131a6956" direction="Forward">
+              <layerMoniker Id="c5815b2c-db25-4fc7-aa0a-845e78c8ec11" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="60ca9377-a8b4-4918-bf60-e3e7578a11ee" direction="Forward">
+              <layerMoniker Id="726285d2-82e3-4ef1-98dc-5d2a0bf0a2f7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="03b82a91-0657-4eb1-aa10-fe74770820c6" name="1.1.3 - Web Client">
+              <ArtifactNode Label="1.1.3 - Web Client" Category="SolutionFolder" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/1 - Layers/1.1 - Presentation and Client APIs/1.1.3 - Web Client&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Presentation.WebClient)" Label="SmsGateway.Presentation.WebClient.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="371d2583-5d1b-46bb-b8f4-c81dd48afc41" name="Application">
+      <childLayers>
+        <layer Id="000e2748-48d9-4c47-b9d8-f0a4fdbe2626" name="Application.Seedwork">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="62821178-910a-4807-a099-4ddbeade14a0" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="4a452832-8531-4081-b445-0e3b6bf457dd" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="773a5ba7-e757-40c9-aa79-a1906f9f03de" name="Application.Seedwork">
+              <ArtifactNode Label="Application.Seedwork" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Application.Seedwork/Application.Seedwork.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Application.Seedwork)" Label="SmsGateway.Application.Seedwork.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="c5815b2c-db25-4fc7-aa0a-845e78c8ec11" name="Application.CoreContext.DTO">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="5f4f69c2-c99f-445b-9c5e-d6c2d1ee9462" direction="Forward">
+              <layerMoniker Id="5e8bafd3-3fb9-4ed5-b88f-774c71506c2d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="839995f1-d205-4427-a2c9-913f459d559f" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="5c0aac44-44da-491d-bd40-4eca2e301ff0" name="Application.CoreContext.DTO">
+              <ArtifactNode Label="Application.CoreContext.DTO" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Application.CoreContext.DTO/Application.CoreContext.DTO.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=Smsgateway.Application.CoreContext.DTO)" Label="Smsgateway.Application.CoreContext.DTO.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="3f6df236-f374-4aa9-bd08-17ba9ea04f72" name="Application.CoreContext">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="863f02cc-a4f8-45c6-804f-8846f6841fa4" direction="Forward">
+              <layerMoniker Id="c5815b2c-db25-4fc7-aa0a-845e78c8ec11" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="af56412d-a6d7-42f9-a73e-986768a77456" direction="Forward">
+              <layerMoniker Id="5e8bafd3-3fb9-4ed5-b88f-774c71506c2d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="055fd675-e221-439a-a97c-ae07ffde82db" direction="Forward">
+              <layerMoniker Id="000e2748-48d9-4c47-b9d8-f0a4fdbe2626" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="aafa091c-628b-494d-8c55-956595d6b0c4" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="439cf1e5-ba3f-454e-8ea1-17856fd5e6d4" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="59a6c53e-651c-4e7c-a29f-cbebd4d4bc77" name="Application.CoreContext">
+              <ArtifactNode Label="Application.CoreContext" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Application.CoreContext/Application.CoreContext.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Application.CoreContext)" Label="SmsGateway.Application.CoreContext.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="cf83f5f1-87ed-4221-8e0d-77e6ec0f2edf" name="Domain">
+      <childLayers>
+        <layer Id="5e8bafd3-3fb9-4ed5-b88f-774c71506c2d" name="Domain.CoreContext">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="1d289c5a-bd0f-41e1-aced-1e33dafc9a3a" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="6bb89a30-7c0e-4bb4-85a8-5d11d3e4c20b" name="Domain.CoreContext">
+              <ArtifactNode Label="Domain.CoreContext" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Domain.CoreContext/Domain.CoreContext.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Domain.CoreContext)" Label="SmsGateway.Domain.CoreContext.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="7541c715-3a0f-4d00-a018-9176622eae7f" name="Domain.Seedwork">
+          <references>
+            <reference Id="710af9f2-c73c-4273-900e-9ac009bc3a1a" name="Domain.Seedwork">
+              <ArtifactNode Label="Domain.Seedwork" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Domain.Seedwork/Domain.Seedwork.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Domain.Seedwork)" Label="SmsGateway.Domain.Seedwork.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="d3438b87-0be9-4735-b789-e9fb34f94662" name="Infrastructure">
+      <childLayers>
+        <layer Id="ce9b29c0-c4dd-4b04-a8ee-8708837a9d98" name="Infrastructure.Data.CoreContext">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="30dcf3ad-aec8-410a-b852-b43463251c73" direction="Forward">
+              <layerMoniker Id="129bbaf7-4aa3-46b6-bae2-baaf1ef240e5" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="3e18466a-bbf6-4a8c-a8a7-e10f5163fc38" direction="Forward">
+              <layerMoniker Id="5e8bafd3-3fb9-4ed5-b88f-774c71506c2d" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="c34dd341-2848-4900-afab-5c4eecdaf104" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="edc91c1f-293a-40c1-9632-9daabcd77b5d" name="Infrastructure.Data.CoreContext">
+              <ArtifactNode Label="Infrastructure.Data.CoreContext" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Infrastructure.Data.CoreContext/Infrastructure.Data.CoreContext.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Infrastructure.Data.CoreContext)" Label="SmsGateway.Infrastructure.Data.CoreContext.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="129bbaf7-4aa3-46b6-bae2-baaf1ef240e5" name="Infrastructure.Seedwork">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="f72467ff-4233-4aeb-8f77-d19ffab8b7bc" direction="Forward">
+              <layerMoniker Id="7541c715-3a0f-4d00-a018-9176622eae7f" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="f1bd3727-de80-43cc-977e-b77ecfb7cafd" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="a3b54f24-3279-4051-abe8-4d743808538d" name="1.5.1.1 - Seedwork">
+              <ArtifactNode Label="1.5.1.1 - Seedwork" Category="SolutionFolder" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/1 - Layers/1.5 - Infrastructure/1.5.1 - Data/1.5.1.1 - Seedwork&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Infrastructure.Data.Seedwork)" Label="SmsGateway.Infrastructure.Data.Seedwork.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="974bf3cd-c6bf-40e5-8c7f-de57fbc1f80f" name="Infrastructure.Crosscutting.NetFramework">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="812f10c0-f898-4af3-b9a2-c7afaa0ab44d" direction="Forward">
+              <layerMoniker Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <references>
+            <reference Id="cab45e5a-42d7-43ba-b667-8f69b2f7bd56" name="Infrastructure.Crosscutting.NetFramework">
+              <ArtifactNode Label="Infrastructure.Crosscutting.NetFramework" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Infrastructure.Crosscutting.NetFramework/Infrastructure.Crosscutting.NetFramework.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Infrastructure.Crosscutting.NetFramework)" Label="SmsGateway.Infrastructure.Crosscutting.NetFramework.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+        <layer Id="acbf2dde-2ec4-428e-8730-dc81aa6ccf3f" name="Infrastructure.Crosscutting">
+          <references>
+            <reference Id="51acb371-d757-4c60-8fc7-a70f7e737990" name="Infrastructure.Crosscutting">
+              <ArtifactNode Label="Infrastructure.Crosscutting" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2012/Projects/SmsGateway/Infrastructure.Crosscutting/Infrastructure.Crosscutting.csproj&quot;)" />
+              <ExpandedNode Id="(Assembly=SmsGateway.Infrastructure.Crosscutting)" Label="SmsGateway.Infrastructure.Crosscutting.dll" Category="CodeSchema_Assembly">
+                <Category Ref="FileSystem.Category.FileOfType.dll" />
+                <LinkCategory Ref="Produces" />
+                <LinkCategory Ref="Represents" />
+              </ExpandedNode>
+            </reference>
+          </references>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>

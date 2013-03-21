@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 11.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2012-11-17T12:03:42" Importance="High" Text="Reverse Engineering Started." />
+  <Error Timestamp="2012-11-17T12:03:43" Importance="High" Text="Classifier is already bound to another template classifier Reverse engineer process was stopped." />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '43ad57f5-8a82-4251-8cc4-1a0b6e0c8d02' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '81834d2a-8eea-4a8f-aa34-55cc9e101778' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'dff4c1b8-1ac5-4d43-a0fd-6d8c437316f4' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Domain' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Domain::Seedwork' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Domain::Seedwork::Specification' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Domain::Seedwork::Specification::ISpecification' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Domain::Seedwork::Specification::ISpecification&lt;TEntity‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::IQueryableUnitOfWork' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Add' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Add::item' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::AllMatching' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::AllMatching::specification' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Get' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Get::id' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::GetAll' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Modify' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Modify::item' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Remove' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Remove::item' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Repository' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::Repository::unitOfWork' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::TrackItem' -  (Operation)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::SmsGateway::Infrastructure::Data::Seedwork::Repository::TrackItem::item' -  (Parameter)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System::Collections' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System::Collections::Generic::IEnumerable' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System::Collections::Generic::IEnumerable&lt;TEntity‎&gt;' -  (Interface)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Model::System::Guid' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="High" Text="(0) type(s) fully reverse engineered." />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="High" Text="(7) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2012-11-17T12:03:44" Importance="High" Text="The reverse engineering operation completed with (1) error(s), and (0) warning(s)." />
+</Log>

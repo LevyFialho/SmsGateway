@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="94d68832-27c3-44b6-a793-cb54fff83f36"
+  name="Seedwork" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="a3aa12a2-e0bf-4e33-9988-f9b119926655"
+        name="ApplicationErrorHandlerAttribute"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="212cf60b-2407-4297-94bd-10be60d3e565"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1c9ee7f9-9f71-4cb4-9d04-219c28a7821e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f717193b-145f-495e-972d-62ad9c37aa3b">
+                <propertyInstance
+                  Id="168b906c-a49d-47c8-a43a-d018fff94ee0"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ba19e9af-916c-4c70-b53e-9a59417e4cea">
+                <propertyInstance
+                  Id="a8c2175d-ff03-4602-a474-7a8beceb6b1e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a644c6ad-0d18-451b-ab93-b213b90cef5f">
+                <propertyInstance
+                  Id="7ba4b2af-70ff-4d38-ae7c-1d85051439f7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e405c017-b9f9-4cd9-9a62-8aa7f0adbe07">
+                <propertyInstance
+                  Id="8e4b52bb-6bc0-46af-adaa-c72ad9f4c95e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="97450046-1ada-4f48-a0ad-db5cb913b2ce">
+                <propertyInstance
+                  Id="c2ceb4df-a051-4cdc-86b1-ca9ca500aa70"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="31d3e0d6-1d35-4fdd-85db-24c94cff84fe">
+            <interfaceMoniker
+              Id="ac42be6c-1200-4f54-a838-760f72dac4b3"
+              LastKnownName="IServiceBehavior"
+              LastKnownLocation="Package4_2348.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="429e9b60-ce8e-4503-9bf0-2bcf52c6284a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0b1b3eb9-8967-4e38-a488-ae349fb8d155"
+              LastKnownName="Attribute"
+              LastKnownLocation="Package3_2224.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bafcc94e-d9b1-4047-90f6-8ae3df7baba1"
+            name="AddBindingParameters"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a00e5800-e675-4139-bda0-0ab2edf9b17c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DAddBindingParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.ObjectModel Type%3D(Name%3DCollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceEndpoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DBindingParameterCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb4f3911-60ad-45c4-b3e0-d3b791ee53aa"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fba355c-983e-453a-ae34-35023802936a">
+                    <propertyInstance
+                      Id="e1ec42fd-7efa-4625-8989-b930f9d90a64"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="81fafe73-b853-4850-b656-5262351d9db5">
+                    <propertyInstance
+                      Id="e444f84e-2894-4587-8910-b2ebc1eae77e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0bc9facf-5200-48f9-b0a4-97a0a3ad791b">
+                    <propertyInstance
+                      Id="9efc8bed-b64b-438a-b0f6-a29d098dc421"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3994198-9652-4d95-86db-64327311439b">
+                    <propertyInstance
+                      Id="60b3dead-4e6d-4504-84cb-9d16e2077f60"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="128081dd-51c0-4450-b770-49dfadacdd96">
+                    <propertyInstance
+                      Id="bdbd73cd-d81c-438d-bb2c-ea86fe5f955f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0900818-90b3-4859-9dbc-e5c6903ab092">
+                    <propertyInstance
+                      Id="e48ff7bb-cb1b-4948-a19b-6bd1584ee367"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3799b160-4988-4375-ae46-44fc2f73bd34"
+                  name="serviceDescription"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b3defd8-e8d1-4833-8136-77cfff484d8b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DAddBindingParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.ObjectModel Type%3D(Name%3DCollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceEndpoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DBindingParameterCollection)]) ParameterIdentifier%3DserviceDescription"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="de708754-a0a4-47bb-acd3-e8ec10c7cb98"
+                      LastKnownName="ServiceDescription"
+                      LastKnownLocation="Package4_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04550555-8849-41a8-a8e5-692152fc95e0"
+                  name="serviceHostBase"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e0bda0c5-1b67-49c4-8dcb-6355da6d2f22"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DAddBindingParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.ObjectModel Type%3D(Name%3DCollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceEndpoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DBindingParameterCollection)]) ParameterIdentifier%3DserviceHostBase"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9887745f-24da-4972-9ec0-46db412b177c"
+                      LastKnownName="ServiceHostBase"
+                      LastKnownLocation="Package3_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="48f8ac53-031c-4be4-bfe5-5a2cd6a1eb5e"
+                  name="endpoints"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5efe7522-036d-45b5-a692-118240d0170f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DAddBindingParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.ObjectModel Type%3D(Name%3DCollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceEndpoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DBindingParameterCollection)]) ParameterIdentifier%3Dendpoints"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="37ee9a08-c85f-4206-bb69-e0860f2a580e"
+                      LastKnownName="Collection&lt;ServiceEndpoint‎&gt;"
+                      LastKnownLocation="Package5_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f40e0f28-c1ba-4dcf-b10e-9bde39dbf17d"
+                  name="bindingParameters"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="baa584b0-7489-453a-9512-1321c48930ca"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DAddBindingParameters OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.ObjectModel Type%3D(Name%3DCollection GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceEndpoint)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DBindingParameterCollection)]) ParameterIdentifier%3DbindingParameters"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f727cf89-c059-40fb-b16b-ac1af5d81306"
+                      LastKnownName="BindingParameterCollection"
+                      LastKnownLocation="Package6_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6a481977-83be-4e6b-8a7a-ed2c6b2a958b"
+            name="ApplyDispatchBehavior"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b91624cd-54f4-4092-837e-31484ca91b92"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DApplyDispatchBehavior OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c85c4eab-262a-46dd-8c8a-bbdedac825e3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a43ce482-c5c3-4f20-b653-8dd280d16406">
+                    <propertyInstance
+                      Id="68af8589-c9c9-4a27-bfd8-b95fceaaa822"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4154c7af-c720-4393-8883-eb1d124b1b3f">
+                    <propertyInstance
+                      Id="f008c024-3c7d-463f-b15a-602f16d7df55"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9495b3aa-dbbe-426d-888f-5433072d9665">
+                    <propertyInstance
+                      Id="e3a5d192-c7eb-4748-b015-d1c428431910"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0716e67f-1be5-4349-a261-5f4442f379dd">
+                    <propertyInstance
+                      Id="55589cc6-6d61-4176-b01c-5ab28bdf5548"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6c3e8b4f-ea40-4475-9869-ceb8cc9bb0d1">
+                    <propertyInstance
+                      Id="4d7d2910-ee8d-4bb8-b09f-2c605fc3ac1b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ec1a8f3-6be7-4d9b-af0a-564cec635f90">
+                    <propertyInstance
+                      Id="0c5b188e-96e8-4f97-96eb-7263732e02e1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1506a357-357b-460d-8bf3-77f1446d65a4"
+                  name="serviceDescription"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="52d98639-1c04-4d63-b155-880713bb637e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DApplyDispatchBehavior OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)]) ParameterIdentifier%3DserviceDescription"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="de708754-a0a4-47bb-acd3-e8ec10c7cb98"
+                      LastKnownName="ServiceDescription"
+                      LastKnownLocation="Package4_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ae1e18a0-b574-4020-a516-cfe962658d0c"
+                  name="serviceHostBase"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9518ba81-5d10-4d54-94c0-37ef389eb614"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DApplyDispatchBehavior OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)]) ParameterIdentifier%3DserviceHostBase"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9887745f-24da-4972-9ec0-46db412b177c"
+                      LastKnownName="ServiceHostBase"
+                      LastKnownLocation="Package3_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8a546067-8d4c-46ad-b0b2-4b551845f201"
+            name="Validate"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="06d821fb-4230-45f1-aebd-2cf6486e04ab"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DValidate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0f5b61fa-c9a5-4f98-8e55-71cd526205f0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="485e0fb5-7f76-4364-87f0-8dc53ccab2ba">
+                    <propertyInstance
+                      Id="10375bba-6bab-4a76-b81e-d6ec49802ab4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b83dc0cb-9fff-4c02-8f3e-db21b34bc0d0">
+                    <propertyInstance
+                      Id="56869d31-2ed4-464e-8b16-6f72d4bcbbc3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="766921b1-7d92-4887-ba4a-05d8295a4f46">
+                    <propertyInstance
+                      Id="d6538cdd-dbdd-45fd-931b-b89baa4712c1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d04a43df-357a-40de-8493-5a7869da2af4">
+                    <propertyInstance
+                      Id="deca5d1e-4df9-47d4-a802-1a3536cd1fc4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="766a66a1-23f1-4bf2-9d14-fcc0800f96b0">
+                    <propertyInstance
+                      Id="51429772-39e4-4571-8511-2e7697960cbe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77ae579e-cd5d-417a-bfae-96ccb03c1a56">
+                    <propertyInstance
+                      Id="3ceb2a82-161c-417b-854e-e8016afc4c3f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6fa89989-a7ca-4ee0-9ba7-786b1d8f65f4"
+                  name="serviceDescription"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="883908e5-3864-40fe-a540-7b7d6b178c50"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DValidate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)]) ParameterIdentifier%3DserviceDescription"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="de708754-a0a4-47bb-acd3-e8ec10c7cb98"
+                      LastKnownName="ServiceDescription"
+                      LastKnownLocation="Package4_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ea659c25-82fb-4618-9e7b-9dcc0a952b27"
+                  name="serviceHostBase"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="adbd5c6f-af89-4e1a-80ff-14d929a91bae"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D(Name%3DValidate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Description Type%3DServiceDescription)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel Type%3DServiceHostBase)]) ParameterIdentifier%3DserviceHostBase"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9887745f-24da-4972-9ec0-46db412b177c"
+                      LastKnownName="ServiceHostBase"
+                      LastKnownLocation="Package3_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4d66d436-d73c-4e32-b468-ab73fe3b84d8"
+            name="ApplicationErrorHandlerAttribute"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4cd5ea93-7082-47be-8165-ddf10544d927"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandlerAttribute Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8dfbeff8-dae8-42c9-8a26-038ee45d875a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="476eb229-1c04-46c6-8313-f279c9e30181">
+                    <propertyInstance
+                      Id="5ab98b8e-b873-46ed-bd9f-3ba3fb02b5b2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3432252c-3a91-4b6b-9553-8ee1d646d7d7">
+                    <propertyInstance
+                      Id="71f7b131-a345-4b7a-bdfb-2aec8f4c3bde"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6cb53211-d8e2-47b2-822d-0c226876f86b">
+                    <propertyInstance
+                      Id="ba22f78c-cf00-4778-a41f-40bf158bf319"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e1705bc-6549-4108-b828-4c78e40275bf">
+                    <propertyInstance
+                      Id="b3a1807d-3d7e-4f9b-9c30-b92bd81ccddf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bee49b6-5106-436a-a699-af32a60d835e">
+                    <propertyInstance
+                      Id="2caaf4cb-d440-4f9d-a043-2e09dbf6dcf3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b32ce1e1-b8c4-4979-89a2-91d455955489">
+                    <propertyInstance
+                      Id="a5ca665d-a539-49e3-bb8d-43ae2be77613"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c88f9d58-b2f5-4a90-b9d1-58a7f88ef75d"
+        name="ApplicationErrorHandler"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5cb346ef-5ced-458e-baf5-b0353f3c98c2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="fda4d947-bdd8-4414-9a05-c2c6b2a0aa9e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bf935752-39b6-4204-9e12-4762a81436b2">
+                <propertyInstance
+                  Id="2e88acf0-23b0-4a97-b70f-13aa9f02f3ec"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="88d528a0-5948-4a91-b240-905ed0bed37e">
+                <propertyInstance
+                  Id="3fdb7607-aed1-452b-a622-75d2fdc0937f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="951eb87e-28b7-40a8-bc91-3b32869ddd39">
+                <propertyInstance
+                  Id="0ee62c2e-ad31-45a5-8b08-1d8a44b3c621"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f805c2b-3c03-4267-9784-251bfff0377d">
+                <propertyInstance
+                  Id="a1b6ab45-0b35-484d-ae04-561eaa0eff60"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e028f2cd-e64d-468a-baa5-56b2a5b2d6f2">
+                <propertyInstance
+                  Id="b65809a2-97ed-47c5-acb6-90044a1fd9b0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="fd2250dc-dd16-42f2-80d9-67404b113c5a">
+            <interfaceMoniker
+              Id="2e32df24-d770-45e7-9806-5a89a7604fe3"
+              LastKnownName="IErrorHandler"
+              LastKnownLocation="Package7_2348.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ee25c6cc-6521-478f-ad52-b3f8965f349e"
+            name="HandleError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="88781f55-ee15-442c-ad88-ec8977492bb9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DHandleError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="42c2a760-52cf-4f06-a028-e3be4400ccd1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb320a0d-8e9f-4d8b-8f4d-b4a9c5515df5">
+                    <propertyInstance
+                      Id="9ae8e371-c994-4c3e-9730-585785d68a08"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b18f5258-0082-4959-bc5b-428d4fadc0bd">
+                    <propertyInstance
+                      Id="8d10a02e-f9fd-46b0-9364-3d2fee322d97"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="336c56ed-4e42-4d50-8838-6e694ab27828">
+                    <propertyInstance
+                      Id="916f2072-dfb1-4f0a-afda-2564b74ad63f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c70b109-5a8b-4f2d-91c7-b49fed23e1d4">
+                    <propertyInstance
+                      Id="0893a9dd-fdc9-42ff-9dac-36c8636427d0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2bdc03e-d16a-49f5-a714-a2c227de2545">
+                    <propertyInstance
+                      Id="b6a284e7-40f3-4285-8db6-e1ed81619f9c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="466537f6-38b0-4c17-b44b-856255f6c094">
+                    <propertyInstance
+                      Id="cf3134eb-f1d0-4315-8c02-ff994aafa09d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="740e327e-b08e-4047-b47a-cb242eacc2f5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="253d9468-46ac-4386-b7e7-c803bc81e710"
+                  name="error"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9416d414-77d3-4b54-b084-7c530419a48c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DHandleError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)]) ParameterIdentifier%3Derror"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ecc44f46-5299-4d54-8c8a-316ce424241b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c52fd172-70a3-4fd1-98ea-a59844e4c3d9"
+            name="ProvideFault"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bb0ddb8f-3b1d-4761-ae2d-2e96d5175982"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DProvideFault OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessageVersion)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessage ParamKind%3DRef)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6f36ea4-3f4e-4226-a3df-584758b5447e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24e12d5e-152b-4faf-a19d-1f259df13a45">
+                    <propertyInstance
+                      Id="6fae7f58-43cd-47e9-a702-8a5052f6cc8a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c4f8dc6-239c-42a0-9ea6-af9df075a0a3">
+                    <propertyInstance
+                      Id="17e8454b-3640-4661-9a39-2dfd9524687b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fbe3a07-1d9c-48f1-9c4a-a5b5810c9f3b">
+                    <propertyInstance
+                      Id="acd30d4f-9579-4229-8ff2-71fc03c97c9c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="547f0d8c-211f-4fff-a6b2-c6aa298bfab2">
+                    <propertyInstance
+                      Id="0de58fdc-decb-47bf-9c15-2fbe972648b5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d596873c-9992-4a10-8328-cbe7c5fc573d">
+                    <propertyInstance
+                      Id="df5e1889-eff6-4f5a-abd0-5b75476312e6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35317661-9c73-4a62-b4f3-ee0d13223bab">
+                    <propertyInstance
+                      Id="3c4dd0fd-d354-48e3-a9bb-87e669f94cd9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="aaa2788c-1b3b-4d6e-9903-6617b309ccbb"
+                  name="error"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3f3fddd2-0b2e-46e5-8b89-e02dd51270f0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DProvideFault OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessageVersion)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessage ParamKind%3DRef)]) ParameterIdentifier%3Derror"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ecc44f46-5299-4d54-8c8a-316ce424241b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1617299d-e2c6-4cda-8d2b-8ffb47921f91"
+                  name="version"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c01f1b06-161d-49be-b975-8151516f94e0"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DProvideFault OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessageVersion)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessage ParamKind%3DRef)]) ParameterIdentifier%3Dversion"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="91f2b014-add7-48b5-8b62-6fe7f13e081b"
+                      LastKnownName="MessageVersion"
+                      LastKnownLocation="Package6_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="24d6a429-938a-4515-9368-856039cd0d12"
+                  name="fault"
+                  direction="InOut">
+                  <referencesInternal>
+                    <reference
+                      Id="4075ee8d-88ac-493e-a716-ce682197ea79"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D(Name%3DProvideFault OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessageVersion)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.ServiceModel.dll&quot; Namespace%3DSystem.ServiceModel.Channels Type%3DMessage ParamKind%3DRef)]) ParameterIdentifier%3Dfault"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="67dae15c-6a65-439c-a72a-54f5bcaa9d46"
+                      LastKnownName="Message"
+                      LastKnownLocation="Package6_2348.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fe9a3162-45b2-4f30-bf3c-d475c7dc1138"
+            name="ApplicationErrorHandler"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1318b9b5-06a6-4968-9f1f-16d86ac19f78"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationErrorHandler Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="99fd9b21-82df-4080-ac5e-128ebfe9a455"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48abc324-a3c2-401d-b1a9-d836d345b014">
+                    <propertyInstance
+                      Id="3d7c91a8-0ddf-483e-8fa5-1e40a0817b6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5de4a88-7401-42ee-abdf-24f38b826884">
+                    <propertyInstance
+                      Id="ff6c39fa-30be-4b51-9b29-c1899e372b74"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9023b2d-af69-4ca3-8d00-2c113bd1da41">
+                    <propertyInstance
+                      Id="ca95528d-e63b-4391-9ce7-f610fcbdfe93"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d70d42fd-794e-41d3-8bbf-0e406e4c4ef3">
+                    <propertyInstance
+                      Id="c7143763-23b6-4ef5-8ee5-4c810a620abd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56ba8ba3-8fde-477a-8c3c-f215029893bc">
+                    <propertyInstance
+                      Id="7e31ebb7-bde2-475b-bd13-dad7d0dab2c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74d1f744-f565-4f02-8b18-f52e7b69781f">
+                    <propertyInstance
+                      Id="29df130e-fd74-4278-916f-7bed2c3e4eb7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1871e7be-71f2-4ec0-9a56-4a47c2fe6518"
+        name="ApplicationServiceError"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="48db53b8-1405-458e-8789-444fb63e347f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationServiceError"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e1658253-6f8b-44da-b5ec-c8d809bcad7b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="060ab822-b249-4042-ac38-71bf01ec4ca5">
+                <propertyInstance
+                  Id="090f8cb0-d2d0-40b8-b805-9dd8cb061b52"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3ad4d98-4c1f-46c8-b6dc-6f29d9e914e5">
+                <propertyInstance
+                  Id="782f18c0-0747-4c89-8a09-518640bfee2e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fc08cb73-d2b0-449a-8898-b1867cd62845">
+                <propertyInstance
+                  Id="f6aec3d0-feee-4864-b847-3bcd6c61b562"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d3804b2-c88d-43b6-99d1-6621395488b2">
+                <propertyInstance
+                  Id="b9bc3b11-44ba-4182-9317-43fb5c040609"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="404d787e-7510-47c4-be49-a672897d2fb0">
+                <propertyInstance
+                  Id="2094d452-c11f-4f45-9f7f-f0fddaf1a1f8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b9459531-f912-4ead-8ee0-e55205aed38f"
+            name="ErrorMessage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="097b9c20-903f-4400-a4d0-38de9efc92f6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationServiceError Member%3DErrorMessage"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d230dbb5-6106-4c79-b10a-85ea815dab8c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44c8b59b-e1d9-4da3-b904-c2ebcf2ca3b0">
+                    <propertyInstance
+                      Id="6bf16c55-86e8-431f-b36a-6e50b794ff29"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="787cc543-1ab9-4a86-8ad1-1626eca60857">
+                    <propertyInstance
+                      Id="4ca60a43-db76-4488-a7a2-b7dc35c97b47"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="063c1a66-962b-4b1f-ac8c-b6f018e3e8c8">
+                    <propertyInstance
+                      Id="a98feabf-19bb-402c-bc61-e3424fa1251b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29cb8084-3ee9-48d6-9392-8ae2d943f12e">
+                    <propertyInstance
+                      Id="012197e0-5512-459c-8ec0-91cd96377a43"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17bf36bb-f973-4e4b-841b-462f94464b77">
+                    <propertyInstance
+                      Id="305dce89-1c59-4615-a398-91db34d41648"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a16bb0da-12fc-4903-a35c-cddfab163288">
+                    <propertyInstance
+                      Id="f8006271-7877-4978-8ca6-00e9bfa2aa6f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="717ff7a7-b168-4304-8f92-e78862819b2a">
+                    <propertyInstance
+                      Id="58545f97-7fa3-428e-a31b-7a0e1d560516"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Model.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0672eb44-f138-4efb-9316-822560b50e20"
+            name="ApplicationServiceError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7e11a28f-8c38-4772-8a94-195973e2cc89"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.Seedwork%2Fbin%2FDebug%2FSmsGateway.DistributedServices.Seedwork.dll&quot; Namespace%3DSmsGateway.DistributedServices.Seedwork.ErrorHandlers Type%3DApplicationServiceError Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="23baabaa-e391-4275-b509-1c7be01b5450"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6881a06f-ecd0-4251-80f1-799166ebb503">
+                    <propertyInstance
+                      Id="594583bd-8926-407f-b218-231c71097ef7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d617831e-d4c0-44fa-92be-9963368a14c8">
+                    <propertyInstance
+                      Id="a776876a-21f3-42db-bb26-28416a10939d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90036916-12ab-4faa-9cd9-b9e2832da08f">
+                    <propertyInstance
+                      Id="c324c578-2e8b-4d13-b405-7a38d2f676be"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d5ebb120-3839-4386-88a2-163f37b430d5">
+                    <propertyInstance
+                      Id="0a474f66-c71b-4989-bbcd-d26704cf50a6"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3b1bae2-8ada-4024-b77e-4cb19ededb64">
+                    <propertyInstance
+                      Id="b86ed655-60bd-41a7-b9ff-0a6bc87fcdb8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ee8b7b8-e6b1-4361-88e9-0ba9bd2e0c94">
+                    <propertyInstance
+                      Id="61e9a159-dbb7-4acc-96ea-c3e97c5778d1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

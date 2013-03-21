@@ -1,0 +1,35 @@
+﻿SmsGateway.Infrastructure.Crosscutting.Adapter  (DTO Adapters)
+-----------------------
+Adaptam um DTO para uma entidade e vice-versa.
+
+A definição do mapeamento de um tipo para o outro é um elemento independente no projeto:
+
+
+Através deste framework conseguimos construir adapters que não possuem dependencia direta de frameworks de mapeamento 
+Cada módulo do domínio pode ter seu próprio assembly de mapeamento, independente do mapeamento de outros módulos.
+Podemos assim utilizar diferentes ferramentas para cada módulo, no nosso caso usamos o AutoMapper.
+ 
+Extendendo TypeMapConfigurationBase esta classe e implementando os métodos BeforeMap, Map e Aftermap somos capazes de definir o mapeamento para cada um
+dos pares de tipos. (dtos x entitys)
+
+A classe RegisterTypeMap permite definir os mapeamentos de um determinado módulo.
+Cada instância  desta classe vai ser injetada automaticamente em TypeAdapter, como uma coleção de serviços.
+
+
+-------------------------
+
+SmsGateway.Infrastructure.Crosscutting.Logging 
+-------------------------
+
+Com a interface ILogger conseguimos contruir uma ferramenta de Log que pode implementada com diversos frameworks.
+Por exemplo: NET Diagnostics API, EntLib, Log4Net,NLog etc.
+No nosso caso, implementamos a ferramenta System.Diagnostics.TraceSource 
+
+
+------------------------- 
+
+SmsGateway.Infrastructure.Crosscutting.Validator
+-------------------------
+
+Com este framework, podemos aplicar ferramentas diferentes para validar nossas entidades, no nosso caso vamos usar
+ System.ComponentModel.DataAnnotations.

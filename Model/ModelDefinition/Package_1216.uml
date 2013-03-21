@@ -1,0 +1,3251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b6a82eb3-b2ac-4229-be7e-4ca838311201"
+  name="Seedwork1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="98a3aaf9-b7fb-4669-9139-4a969a3c478c"
+        name="Entity"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cf2baee0-f5a4-40bd-a233-5edaee6b4fe0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0c5764be-283e-4d25-9d70-fd913f35eadd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="27e1d35d-7fe0-4787-bffb-9511ddbb3d4f">
+                <propertyInstance
+                  Id="feb8e2c3-c1be-4c2b-952e-b75361fcb45e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f41d7fe7-14b8-409c-998e-23f6a67e469c">
+                <propertyInstance
+                  Id="cbd3e97c-dab6-4d12-9ef2-43b20861b3e8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f65aa3af-b4be-4a90-94b7-16a89e1aa1f4">
+                <propertyInstance
+                  Id="7394e7be-7130-43ba-8b01-7b5dbc822297"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4fa4379d-4eeb-4187-ad3c-cf65897c49e5">
+                <propertyInstance
+                  Id="8227883f-63e0-4138-ab48-8192515bd68a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5955d261-a77b-42b2-b5cc-789d6054ecb0">
+                <propertyInstance
+                  Id="efd461a5-883a-4184-95da-c2ad756e1594"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="435abecc-460c-45f2-ba62-c4465e8cabb4"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3f6dd47b-6373-4ec5-82a9-6e87fbf9a8b4"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fc16b0c2-6dec-47b1-aef9-f02413a5421d"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9649d848-b27b-4fae-8262-68a56fd66bf8">
+                    <propertyInstance
+                      Id="657a7792-490c-4617-af03-e09021c7c49f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4162987-4d24-477e-8051-3d12923127cf">
+                    <propertyInstance
+                      Id="b048c870-1a95-4030-a67d-45a8ef16b6ed"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="014c0f03-d3fc-48b3-a2b5-a6fcd8b1638b">
+                    <propertyInstance
+                      Id="ede66704-d787-433c-97e2-998048dcfecc"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fa420cd-1c0f-47f2-8fe9-7c1e3bf661cf">
+                    <propertyInstance
+                      Id="086b7477-2f50-4702-b12c-15a2fe557dd7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="611653dd-4a57-4e45-8ea5-c5a9ead03de9">
+                    <propertyInstance
+                      Id="13d823a6-8621-414a-a0f9-9204958433ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc0f4ecd-1903-40d7-aa7c-483c9a427e1a">
+                    <propertyInstance
+                      Id="81b53dc5-afb0-43dc-8555-62118948576b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff0556bc-4674-436a-a289-5d6610b8a61a">
+                    <propertyInstance
+                      Id="2ecca93b-6ad6-4503-876b-a0ae6913f078"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="62cb8d90-e47c-41d3-bd96-e8318abeccb4"
+                LastKnownName="Guid"
+                LastKnownLocation="Package3_2224.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2d5af877-f8e8-4f72-ae8a-3f4315b70219"
+            name="_requestedHashCode"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="215025ef-90df-48ad-a09f-f1dedc4926ec"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D_requestedHashCode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eb33bd42-ef6c-4386-9d45-e7075002266e"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a2b3d342-4bc0-4d54-9635-7eae3f5d5f9d">
+                    <propertyInstance
+                      Id="09b8fd08-c220-4655-9928-bd53dfa1f8d5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="751131d4-f4d3-47c8-a584-829e2caccdde">
+                    <propertyInstance
+                      Id="1a8dbda4-3d6d-46b4-98cb-570b3ec09aae"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b60a6eb-d52b-4d05-a60a-48c30b233e10">
+                    <propertyInstance
+                      Id="21b25834-82fe-4dd1-bb47-e2804ff02dfd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a4f31ea-51c9-4a08-a99b-50c7d0de263b">
+                    <propertyInstance
+                      Id="d53b0cb9-9bfe-40d0-917d-33b78bf4152d"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="095f8e52-732a-4fcd-b9bc-8e4e911f9533">
+                    <propertyInstance
+                      Id="a37d2af4-e54e-4d0d-ab8b-dea8a198f51f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="37449a06-024d-4b39-ab82-1e3af233b502"
+                LastKnownName="Nullable&lt;Int32‎&gt;"
+                LastKnownLocation="Package3_2224.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ae788208-3d8c-451d-b14a-0dd462bb9e98"
+            name="_Id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6f6575a2-bdc0-4dd7-947f-832bc9148db4"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D_Id"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09e63b61-a79c-4718-af2e-ca2646d9f0e7"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b3b7c5ac-cf62-49b8-8c2e-08c3512a9680">
+                    <propertyInstance
+                      Id="5dc6ac71-c4d6-40e1-b4b7-ffc7017383c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d5c58da-1c7d-42d5-9c3f-f591d29662c1">
+                    <propertyInstance
+                      Id="3dbad80c-20f4-408f-87c9-f516a97077da"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0578131d-cd1f-4a66-9363-1907c113531c">
+                    <propertyInstance
+                      Id="5815c85a-5fc5-4dc3-9218-cd0269bc671e"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac3dd972-d518-4c71-ad73-f131df8da944">
+                    <propertyInstance
+                      Id="46cf587e-b709-4197-8e91-569b985e81b2"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4203c7ab-1c3e-48a3-924b-ab6e336172cb">
+                    <propertyInstance
+                      Id="bb55b639-c1ed-48cd-b01a-a96b893cf9cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="62cb8d90-e47c-41d3-bd96-e8318abeccb4"
+                LastKnownName="Guid"
+                LastKnownLocation="Package3_2224.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a0fdf2f7-9725-4684-8515-903e246ea143"
+            name="IsTransient"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="db6875ea-675a-445f-979e-bc939d89d432"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3DIsTransient"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="273b2b16-bd5d-4fca-a4a5-730edad720b6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9c45178-1672-46bb-8803-fbadc2274614">
+                    <propertyInstance
+                      Id="f3e9ece4-790e-4ddb-985d-1658e59e8f9b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2c398d7-dc34-4d67-9c3a-cdc440dc157b">
+                    <propertyInstance
+                      Id="3aab4282-4e11-44e7-a563-361ef050fa50"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de50c465-b1d3-49c8-9ce3-66cdbcc8f329">
+                    <propertyInstance
+                      Id="6efd9ac4-e7ee-441f-9e04-7520ef295ec2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="458b4739-ddc6-4fea-897d-ba9b6a5c4b89">
+                    <propertyInstance
+                      Id="fcdf191d-3143-4dbc-883b-3f59477e12fa"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b96fc0d-5f6c-4cea-98d6-d3c358a96fbe">
+                    <propertyInstance
+                      Id="bded3ff9-73f5-4c5e-87b6-352d9c5c77ce"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52f9beb6-2dd6-4703-ad61-73d575d1bc57">
+                    <propertyInstance
+                      Id="160e01c0-7bb0-400d-97b7-21ee523d40d2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a5f3cbb4-ae77-4c61-9164-943fe14b53b4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9df4f9c1-fc03-4939-b7de-f79d5a71d19d"
+            name="GenerateNewIdentity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6b85a91f-4f4a-4b14-8488-53f08010042b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3DGenerateNewIdentity"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5d664c3b-3f01-4b82-a200-89201b377529"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c5ffe90-d989-4db2-857e-1bedaddbd743">
+                    <propertyInstance
+                      Id="17caf6ae-de8b-48a8-bf17-24b2d90673ca"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66991198-7821-4239-b448-a5ae3a4a92bf">
+                    <propertyInstance
+                      Id="9d9e7887-c893-43ff-abf6-13a165146cea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80ee0493-a6f5-49d4-a052-7bd79fcd9984">
+                    <propertyInstance
+                      Id="ff5b5f23-031f-4f1e-9f65-0c55196570d1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fe2501c-ba27-4307-90f0-aff510847367">
+                    <propertyInstance
+                      Id="6492d5da-190b-4b0e-af6d-edd13f7ede81"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a03cbb7-90b1-4acb-8b4d-97b64e1779c8">
+                    <propertyInstance
+                      Id="934d0fe0-09e3-454e-a8b4-cf783610ec44"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9ac1ca6-7719-44ed-9e48-edb1b2498279">
+                    <propertyInstance
+                      Id="30f51728-9f6b-4156-a038-ecbb2fdd3ef1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="e23eacbd-4b85-4378-9526-85c33a7f03d5"
+            name="ChangeCurrentIdentity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="56d6accd-708f-4e53-b717-d0dc14372b98"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3DChangeCurrentIdentity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="86170690-019e-4cbf-87ba-3ae9f7a554e0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26779e0b-ab02-4aa3-a925-2a20bdb6747c">
+                    <propertyInstance
+                      Id="3056c539-eab6-468f-8443-6e9b5771eadd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f337d9cf-f531-4f76-bc2d-274e3aa383ad">
+                    <propertyInstance
+                      Id="47b355fe-43ae-477f-a782-9a647f97834b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="041f414e-dc9d-4145-9a3e-1b8fcad796c0">
+                    <propertyInstance
+                      Id="e55fc2ee-0ffc-433f-9e98-30348994425e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2f053da-cc3d-4136-b9b8-12c488650457">
+                    <propertyInstance
+                      Id="1a5c2453-790c-466b-ae85-bbc62a0ad5d4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0c7bd234-c8d2-40b9-b158-fbe6f1e72a34">
+                    <propertyInstance
+                      Id="962306e7-3bda-4644-ad70-cc57a72cf13c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d45f1c1-8194-4390-94b6-cc59b66b5261">
+                    <propertyInstance
+                      Id="c20b74f4-3faa-48de-880a-f650309c9c2a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="744f734c-ee0d-4e1e-b330-54b680c1c5fc"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ebcb4784-48e7-4681-ba0f-d2a8fe168315"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3DChangeCurrentIdentity OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="62cb8d90-e47c-41d3-bd96-e8318abeccb4"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="90f4e746-5ab1-4963-b88f-dc5da4f26832"
+            name="Equals"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="36834fd6-62df-44c8-b484-21b1330f6c19"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3300902f-932b-4ddf-b605-8215f816ea37"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d1d5d21e-b62b-40ee-8f58-bda8d343aadb">
+                    <propertyInstance
+                      Id="dfd72892-dd67-4312-9a57-0f9882ca8cc8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="988d45e1-010d-4648-ae1b-b7628f0ff33e">
+                    <propertyInstance
+                      Id="51a6dfca-c478-402a-9008-6a1840de649c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4f795d7-3bd0-4a98-bb2f-dc9beab211ed">
+                    <propertyInstance
+                      Id="57f968e7-52df-46bf-8b88-7c095b8011fa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="719c1454-9d04-4432-8d85-b7e7509c47a2">
+                    <propertyInstance
+                      Id="17b7b761-c272-4102-9247-67fa91567870"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d4697f1-20b4-4dee-a0a9-9fda8b5b2781">
+                    <propertyInstance
+                      Id="85ff4810-2ca9-48ac-9295-b63e3fadc15f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2006bfbb-a200-4769-9aea-4cd521f2dc8b">
+                    <propertyInstance
+                      Id="d3fb380e-fc52-4a8c-a9fa-4e2c8cdec2fb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="665422a2-aabd-4d3a-8e95-dd6c328ecfee"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="07a16588-39b8-41d7-bb39-58be8cacf4b4"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6c3a2c32-2095-4c5e-af38-b07e2849037d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2b7b45e6-488e-4a8c-8064-cb4e3f5b1739"
+            name="GetHashCode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ecde8fcf-e6d9-4b26-a62f-d6a949343e6c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3DGetHashCode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6120d4a0-9b9b-4b27-aa6d-0d4d1454a438"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b32c5528-defe-4e4e-869e-6a7b3acfb2fb">
+                    <propertyInstance
+                      Id="6c38a42a-059e-47f4-a457-f6a09b6553ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abd5eea2-da1d-4d38-8993-0d440f24183a">
+                    <propertyInstance
+                      Id="963e711f-b21f-4bdf-8de8-99d3bf27e527"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03b42e64-7013-4775-8097-985284afe008">
+                    <propertyInstance
+                      Id="a0043a11-b149-4d07-a0de-bcf51599d6b8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e883943-5ec6-4835-ba20-6e10fece3a9e">
+                    <propertyInstance
+                      Id="88cbb608-8cdb-46fe-af4a-0ba48e6421d1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="86625875-45a2-4657-8b77-7e624262a953">
+                    <propertyInstance
+                      Id="f4525d46-64c5-437c-91c0-f248b9fc3586"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1bc4335b-2105-4bc7-8e47-ab6b4684f18f">
+                    <propertyInstance
+                      Id="6cbe617d-992b-4cde-ba14-2bf16ad32e80"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b2cacea1-c2af-4cc5-9f60-75919c3fced9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9541bf2e-eafe-4060-b144-5ac75d2abaec"
+            name="operator =="
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c98c9437-16df-4023-a360-7bd31cfdf3d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7ff33c69-c97e-45cd-b4a9-45d16c77c695"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e041246c-5225-4825-aaaf-3e46b793e330">
+                    <propertyInstance
+                      Id="386a4899-4ea1-4cdb-9513-532c2fcd1844"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8c23506-7649-4137-9b22-1486aa608901">
+                    <propertyInstance
+                      Id="320a4c0d-b9b5-4380-9ecf-72f48e778969"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6297f14-d438-428d-ae23-17fc6bbf033c">
+                    <propertyInstance
+                      Id="2aca5804-2edb-426a-ba73-23e0e67761c6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3472cdd-69df-43af-90f0-cb0b192dc2a0">
+                    <propertyInstance
+                      Id="cf99f481-c4c8-4634-9233-9a0edd30dc87"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d899ae1-5f43-4244-a912-72714d0915c1">
+                    <propertyInstance
+                      Id="46980af7-eb67-4d05-b6ae-a6971fd741c0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fed88277-d3db-46a6-b780-b2a7e96e091c">
+                    <propertyInstance
+                      Id="d4b56c47-83bf-4fdf-b4a8-5bc57658f277"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e5ef9d2a-73cb-4adf-a7e4-6b61d5bc6ec8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4bcc2aa1-025a-4bd4-80fd-7d4e9ad1c03d"
+                  name="left"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9bdb3594-4cb6-4fbc-8ed3-72cc3bd3ece6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)]) ParameterIdentifier%3Dleft"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="984d5a56-63a3-4c0b-a5f2-ea14b83ac2f5"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_2358.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="abcb88d1-aff7-45f9-8b84-22a7879f7a33"
+                  name="right"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bba4e55c-e154-463c-87e0-b7d3a8b84255"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)]) ParameterIdentifier%3Dright"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="984d5a56-63a3-4c0b-a5f2-ea14b83ac2f5"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_2358.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ad6d67bc-6ec3-4bdb-8a17-382f8f926458"
+            name="op_Inequality"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d6cd423f-e4a7-4e12-81aa-f0c5e692886c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0cfaaa12-574b-4531-be1e-3664cc3b0494"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae29b201-65af-4987-81f2-f0e3374873f2">
+                    <propertyInstance
+                      Id="71d2ba95-85d4-4b1f-babb-3bf071828fd5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f219f0f9-da23-4c84-a03d-9b030ed16196">
+                    <propertyInstance
+                      Id="34fedcd0-28de-4fae-9bf5-069cca8fe7c8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="556d6830-33fa-485e-8632-dd52e7b3ac0a">
+                    <propertyInstance
+                      Id="00c8cf63-6657-4c57-9884-39ae56a718ec"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a265ec1-fab3-4cc4-bc09-015283c18bac">
+                    <propertyInstance
+                      Id="bcfd588b-de54-4af2-ab98-d6f48c1da86e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ca0001e-e716-4d45-8bf5-25fd7b1a96cc">
+                    <propertyInstance
+                      Id="0af72adb-3308-4678-ac40-da02f6be6df5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d5dbaf9-849a-4f69-8be0-1fbbeb8e9b8b">
+                    <propertyInstance
+                      Id="c9fed731-24eb-4d58-acaa-811a5f2c2c2e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f0338c8c-3394-40fc-a2f8-8da018904c2d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1fd10699-ee93-45c0-b2e2-546702eb2da9"
+                  name="left"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bae6eebc-6ca9-4060-b9ea-d14d9d094cfb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)]) ParameterIdentifier%3Dleft"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="984d5a56-63a3-4c0b-a5f2-ea14b83ac2f5"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_2358.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dcf4d0a7-97ed-4c4e-ac3d-247b215fd743"
+                  name="right"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="b4ac25a0-7aa8-46fa-809b-55e1e2c65fa9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity)]) ParameterIdentifier%3Dright"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="984d5a56-63a3-4c0b-a5f2-ea14b83ac2f5"
+                      LastKnownName="Entity"
+                      LastKnownLocation="Package_2358.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="46eeaf0b-c27e-4efb-a0eb-74ccc395a452"
+            name="Entity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2cd2b3e6-5674-4a7a-924e-6f1f9cbb622f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DEntity Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="946597a8-4388-4e61-ad08-6fc6843266f5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22992991-fcb0-4473-833e-194c8e5b4f78">
+                    <propertyInstance
+                      Id="2915a0c3-e821-4d09-9bdb-2befdc24da09"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="240b70bf-cc0b-4907-8b95-bda3a6f115a7">
+                    <propertyInstance
+                      Id="fbe9d2a0-6338-4516-b02f-aef5c65a09dc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b892bd7c-6546-4d87-bf6d-ab9c4285c8a1">
+                    <propertyInstance
+                      Id="862a4269-4b55-4d98-8b46-04603928de93"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a948ea9f-6905-474d-9bc9-539f4360155a">
+                    <propertyInstance
+                      Id="cdb3a739-a3fd-4025-b4c7-6bafc28a8729"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8dd67b8e-3afe-486f-8dba-e66324c41c62">
+                    <propertyInstance
+                      Id="3a454e4e-1d9e-46e3-9a50-022a654b560e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7b774ce-ff15-4c87-a8f7-edaaaaec7183">
+                    <propertyInstance
+                      Id="84f8ea48-4e5d-462e-b3a4-e39a812d392d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b429ac01-4ffa-4b72-8c6c-0d259b1edba4"
+        name="ValueObject"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0a89f70a-f880-4750-a3a3-a55f1e775bd9"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="84a0e9ed-ba80-4d77-873c-8ce1c9f3ae2d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3bf4a83e-3256-4ed5-a05e-77b791294106">
+                <propertyInstance
+                  Id="7e0e4214-421f-47d3-a067-84a4cd845aa7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7672204d-edcf-44b9-a698-af6ade7a0502">
+                <propertyInstance
+                  Id="5098553c-0e93-4cb9-b706-ff46df23730a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc03657e-01af-48f9-836b-0bb7345586d5">
+                <propertyInstance
+                  Id="be75a01a-93d8-40e3-8e84-5c382649c3bf"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e2a6b5de-fe53-4717-925d-f88fb6b06250">
+                <propertyInstance
+                  Id="3dc56afe-d954-44cd-9c3d-bbbd49738477"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b4d9ee6d-9fae-43c7-80e2-b560c99468da">
+                <propertyInstance
+                  Id="3c438229-2ebd-446b-b845-6b3fc4797445"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="1a1201b3-bec5-4573-b560-009fceb8e6f6"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="5d5c9c37-5575-4929-a126-102ffabe1115">
+                <referencesInternal>
+                  <reference
+                    Id="f833ea8a-9b33-4972-8c0a-ebc6c153db36"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="b85d510f-ca2d-45df-baf8-d491ba97c0b7"
+                    name="TValueObject"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="aef94a50-c10f-46d6-8c07-aa8cf07e5b1f"
+            name="Equals"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="61ee2e2c-dca8-4b8d-b75e-0c1635c42eaa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="602b1166-1b5c-4e42-b5d6-af1af20b1592"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1d92d0c-ca9e-414c-a2c5-3ada5503f588">
+                    <propertyInstance
+                      Id="ba4a668d-57f3-457d-b5df-c4f03aa6656e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6037ee1c-7b57-4c5c-b3ae-992736cf63b8">
+                    <propertyInstance
+                      Id="7b5cd9c9-f60b-470c-94a7-27691c676fd5"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70bd3b34-761e-4227-bf75-fa6361a00dec">
+                    <propertyInstance
+                      Id="8bac7ab6-de5f-4b83-8de5-de0447b5a742"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac569000-7cd4-4d70-91f1-ae99840ae8ca">
+                    <propertyInstance
+                      Id="23a370dc-733d-4215-80a2-baa484353159"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f318e69-9302-4d7f-9a64-72adcfec72e2">
+                    <propertyInstance
+                      Id="a1b16453-58ed-4ba3-89a6-d114dfbd9838"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e4fa6bb-081b-4fa4-ac84-d4ac8c4b7f7d">
+                    <propertyInstance
+                      Id="050e593d-a31b-42b3-becc-1b6cb6fe1fe1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c05be45b-832e-4b79-91eb-42bc4a890b41"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="34d78b43-2b97-4fbc-8077-d860fdb0b728"
+                  name="other"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="432f4520-e921-4146-aed6-7056d776e607"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dother"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5413e340-5eb9-42d5-9ac5-b674ccfbbfc0"
+                      LastKnownName="TValueObject"
+                      LastKnownLocation="Package_2358.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8bd83acf-7f90-4768-a1db-5487f094e208"
+            name="Equals"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="097bee2b-da23-4f37-b6c5-391f2b2dac1d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dac3c87d-219e-48b8-8aba-20c6d2e7fa4d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8742af1-6bb2-491a-9767-d0055494855b">
+                    <propertyInstance
+                      Id="8f2981b0-f394-44c6-94c8-99b5a297c31e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2100c8de-43e6-443a-9dfe-66a01182fe12">
+                    <propertyInstance
+                      Id="dcd815ab-5404-4121-9b47-231a61522fcb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1d99668-20c5-4f5c-b8be-217d1ae19109">
+                    <propertyInstance
+                      Id="5c42f88b-44a4-4057-ac71-142d2104c03f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="224e1208-1a7f-435e-aa5b-c1db65501a3b">
+                    <propertyInstance
+                      Id="56d8167d-674f-41ce-a761-3aff34812ae0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b065587-9899-4df8-a980-316fd78e98de">
+                    <propertyInstance
+                      Id="140cf066-b718-466e-869f-47e7111cee68"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="942d25ac-cba0-4399-abfb-a21137ad3676">
+                    <propertyInstance
+                      Id="2e90d4a4-eb88-4869-9448-4b19533747d6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="761ccdff-d670-4cf0-be5a-a956b91088d0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3ae59fa-20c4-4c10-97ac-7b7c3c958658"
+                  name="obj"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="589c8727-693f-42ec-bc0a-9f79ae044d63"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3DEquals OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Dobj"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="48c3ad88-1295-4b7a-a34d-767f896d4561"
+            name="operator =="
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="eb723e63-52af-4971-a60b-7fd2f63ad46c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4256d1c0-9215-4ead-b2a0-6f29e6a9c780"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e40d6f9-c129-41e3-becb-a7ecc9a74d2c">
+                    <propertyInstance
+                      Id="bd9ef27b-88a5-4519-8b8a-a30be3a47141"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e17677a-3079-458f-b662-0386bc167317">
+                    <propertyInstance
+                      Id="5ace26d9-bb07-4686-bcfc-6bbb530855d6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dce411cf-d146-4a91-94e1-89ae346b3aab">
+                    <propertyInstance
+                      Id="4be23968-a7ba-46de-a1a2-b84a046f4ea8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49981275-54d7-408b-9fe0-9af3a9ed4b37">
+                    <propertyInstance
+                      Id="105dcff7-7e86-41ba-9273-913f643ccef8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36066b8a-2a3a-4671-befb-309d67ee7f3a">
+                    <propertyInstance
+                      Id="bfc67d82-0f75-48db-a345-3b3e68c37791"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7a0ecb8-84f8-46bf-b5c2-feff3126d820">
+                    <propertyInstance
+                      Id="ba0dba1e-1359-47c4-9eb8-a99a2f2484fe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a08fd9b5-1fc2-4bee-a737-c2161019a349"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7073a56c-2673-4029-9bce-8cd7e1f815c5"
+                  name="left"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3d0c9345-e6fa-4e4d-bf7e-38bf68e3cef1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Dleft"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="af98d116-96a8-4eb0-b70a-ad3ee95985c1"
+                      LastKnownName="ValueObject&lt;TValueObject‎&gt;"
+                      LastKnownLocation="Package2_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a3fc49c9-560f-42b4-8c62-c1f55fb8da05"
+                  name="right"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="14fd7826-efe2-4aeb-8407-b715cd92e3e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Equality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Dright"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="af98d116-96a8-4eb0-b70a-ad3ee95985c1"
+                      LastKnownName="ValueObject&lt;TValueObject‎&gt;"
+                      LastKnownLocation="Package2_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="1e24acab-ede6-48b8-8235-9db8a660fc3d"
+            name="op_Inequality"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="02944db6-5af6-4dfc-b116-089721164fea"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4719018c-f021-4a5e-bff2-5e52bc52a460"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="087cdc35-7e5e-4b0c-b584-df41cf414445">
+                    <propertyInstance
+                      Id="b14097ea-2c3d-4d4b-be48-4f147e1ec159"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71ca659b-ca64-4744-963d-3c525fc709dd">
+                    <propertyInstance
+                      Id="2cc2352d-6be0-4c21-b738-8dbf106bbd3c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8afe0df7-4ccf-4637-8d8a-35a780086f8e">
+                    <propertyInstance
+                      Id="d40e3062-2868-4559-b6ac-2f153e50d715"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dc5cb3f9-bdbd-46d2-9545-ea183affb5f1">
+                    <propertyInstance
+                      Id="18d551c6-3d0a-41e9-bbe1-efb994345b71"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed4b434a-e4bb-45cb-a518-0eed94e25203">
+                    <propertyInstance
+                      Id="5adf1162-259f-4a2e-b6a3-8dc894f4714f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ff90bdf-0b86-4313-b7fc-9f4b61442cfa">
+                    <propertyInstance
+                      Id="cdab7e58-53aa-41b6-93c9-c3391982097d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ac01dd10-8181-4c69-8ecb-138557ceebe0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8eea06fc-bdf0-4741-a587-43aa99e71c24"
+                  name="left"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="521f477a-49d1-4518-a2d7-da50641dea25"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Dleft"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="af98d116-96a8-4eb0-b70a-ad3ee95985c1"
+                      LastKnownName="ValueObject&lt;TValueObject‎&gt;"
+                      LastKnownLocation="Package2_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d93f3a1-448a-4129-b17b-cb2b39e7dfc9"
+                  name="right"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3070ba0f-3f3e-41b4-be4e-c4274850171a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D(Name%3Dop_Inequality OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Dright"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="af98d116-96a8-4eb0-b70a-ad3ee95985c1"
+                      LastKnownName="ValueObject&lt;TValueObject‎&gt;"
+                      LastKnownLocation="Package2_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6998e818-c32a-41c7-bad6-b5ed9a16556c"
+            name="ValueObject"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="92784041-b910-4666-ba7d-b9756689a73f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="15fd2bf8-0ea3-4b7e-844e-008bc07d18d7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3a7664d6-2a4b-435a-b37c-c680d3418c3a">
+                    <propertyInstance
+                      Id="b02547e8-80ec-4cbc-80a8-117acd42beb3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b977c043-14a1-4da5-aa27-c918070fe37e">
+                    <propertyInstance
+                      Id="60e78ab8-0f59-4876-a082-2b6418d7523c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3dd78c5c-0bfd-4003-878a-fa1d3f5a741f">
+                    <propertyInstance
+                      Id="c21a5c03-354e-46e3-85cd-15032f449f42"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3087e5a8-786c-46dd-9556-c71d774437ff">
+                    <propertyInstance
+                      Id="6d19cd97-4612-48c8-931a-4fea050780d5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9863720-4bbc-44a3-b854-81c6a6da255f">
+                    <propertyInstance
+                      Id="f2cd6ff4-674d-4efd-84b0-ac28fb0b2358"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ff45f62-442f-46e3-81b7-701c9670e9bb">
+                    <propertyInstance
+                      Id="dcef012d-5e0a-4f10-88ee-687c5400689c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="db7c1768-a8e0-4ed3-96be-767df215ace2"
+            name="GetHashCode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c4bf5d2b-af51-4684-af7a-289a3e74054a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DValueObject GenericParameterCount%3D1) Member%3DGetHashCode"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4ce6cf9d-0d21-4f64-bf8a-3ef8f0c5426e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8c6d3bd-fa40-4460-9c3f-07a0a2810685">
+                    <propertyInstance
+                      Id="94f16771-803a-4eb2-995c-c1f28a2dbf15"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27f44c3c-14a2-46d9-bfea-5bab706db41e">
+                    <propertyInstance
+                      Id="47aa6206-1a93-4f92-8c08-3a66940d1975"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="906d640a-9d69-4fb6-b41a-1ef75e2d8731">
+                    <propertyInstance
+                      Id="7f9e45e7-20c4-4b9e-b9f1-0bec537131a3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf4118b5-aa5c-4bb3-8bad-de6dc4fca7a9">
+                    <propertyInstance
+                      Id="59c8570d-6084-479a-8b07-47fa49bf2936"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0374bd17-a9a6-435f-84d3-90e9f516a0c0">
+                    <propertyInstance
+                      Id="9842ab04-d6ff-4a21-84fb-201fae5a9c95"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8931aee2-0697-44e5-8be3-4ea410031811">
+                    <propertyInstance
+                      Id="ea4ed9cf-b88c-4c6e-b812-0d1e4f7364ab"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a3406b42-f766-44a2-a573-b37d36e0550b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1362b2b-013e-4be2-9ce4-67f04a4609da"
+        name="IdentityGenerator"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6ad0f0d3-6621-4212-90f7-1456cf4e14d2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIdentityGenerator"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c48b541b-2da4-4e82-a1f5-96e4bd2ccafa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d56dd496-40dd-46e5-9492-22db1e70f95c">
+                <propertyInstance
+                  Id="0cbedacd-f868-4b14-a4ba-3673b46cd4e5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60a1713c-96b1-471f-88a7-6aeeaf31d4d9">
+                <propertyInstance
+                  Id="c131f3a8-9269-4244-a025-d1cecc4e1706"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aee2324f-dac0-4c38-9d1a-9e746aa39fbe">
+                <propertyInstance
+                  Id="b0cbe618-9480-4b94-9ad5-bae88d04de35"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f5978f86-9c7b-44a3-abff-440cc06d1dce">
+                <propertyInstance
+                  Id="7659dfb9-32f1-402b-94fa-d56b56624729"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f6bc43f-4c13-40e3-8995-7dd360db14a2">
+                <propertyInstance
+                  Id="095eb246-56b5-456f-b43a-ec18b291da3f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fddfa5d8-9f13-4cff-9b0d-859ff6c6bc02"
+            name="NewSequentialGuid"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1aa517dc-f41d-42c0-84c6-68ac5831b840"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIdentityGenerator Member%3DNewSequentialGuid"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eef7bbb2-535e-4d1e-91ac-480fcaf81aed"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24906762-51bb-4ab5-b78b-d81bd61fd697">
+                    <propertyInstance
+                      Id="ea624bc4-80a3-407d-a9aa-4eba5a79c55f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09d408a2-11eb-44b8-afa5-b9d5787ea993">
+                    <propertyInstance
+                      Id="f495ae3c-a032-445a-bc26-4aa0878053f3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9fcf04c3-7d35-4030-9adf-b5e65703231c">
+                    <propertyInstance
+                      Id="a8580139-be8d-42f5-ac85-718d162de894"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a0bd019-4a5e-443b-b405-5952d0dd4a5d">
+                    <propertyInstance
+                      Id="fa0e3827-c7fb-4918-93cf-96ed5cfaa448"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c9f2265-b7fc-4ee6-945a-eece41d39533">
+                    <propertyInstance
+                      Id="10952d0a-36bc-443e-92b0-fa21eda3d597"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07008c6c-5fd3-4785-9d03-7ade9c772b75">
+                    <propertyInstance
+                      Id="101eca29-63d9-4b07-92da-f7ff7e3b90fe"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="66227f87-6c00-46f1-9911-b8943820afac"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="62cb8d90-e47c-41d3-bd96-e8318abeccb4"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="05308324-2a84-42db-95bf-0a19eff17146"
+        name="IUnitOfWork"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fdff73e6-b0e9-4ea4-beeb-d2958c8e333c"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIUnitOfWork"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4855914e-eaf2-410c-a9e1-278a0c9d10a8"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a8b02d1-01d8-4a0d-be34-50e32cc1f16e">
+                <propertyInstance
+                  Id="e1845d92-1d46-4a14-8d61-0cf3c9b37e83"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="66020dd6-980c-4c05-b48a-03da04c16d54">
+                <propertyInstance
+                  Id="b18ac1b5-5632-405f-82b8-0ec62720d15d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b7ae7378-cb0c-48f5-8c89-9d80d0f3032f">
+                <propertyInstance
+                  Id="9c4404e2-217a-4b64-af45-4fff55f69662"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05934ec8-cd3d-4a2e-9425-955d1f4f0316">
+                <propertyInstance
+                  Id="db6165a0-9174-475e-8349-8eb9ddba41f9"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="3b694ac2-f421-460c-988c-49258c35b857"
+            name="Commit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4e73bbc6-e61e-474b-8dc0-e026309d6b79"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIUnitOfWork Member%3DCommit"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a35ee692-b49a-42ad-8b4a-03a319634c72"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="abce6952-47d7-4a5a-9061-bff68b62c6b9">
+                    <propertyInstance
+                      Id="46198dd4-77ad-4214-9f94-16eb2059e4ec"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d1fbe02-311a-4398-817f-c2679509e54b">
+                    <propertyInstance
+                      Id="026cf72b-0aec-4672-9308-12c17328b060"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="90db6037-ea83-4226-bf4c-ab2facc2d87f">
+                    <propertyInstance
+                      Id="1a75c5cd-ee18-4761-abbe-1458abe77856"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be91447e-a3a6-40cc-a9cc-85cb825a3ec7">
+                    <propertyInstance
+                      Id="1a40fd7b-d81b-4289-a172-74b4588c99d9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="047b99a8-1ed3-4b27-95c2-1ae822a5d2ab">
+                    <propertyInstance
+                      Id="78b910bf-b407-400b-8b43-383b8ddc8e84"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2e4c74f-d3a8-465a-9aad-454dcd2fcd30">
+                    <propertyInstance
+                      Id="e0bfdcdb-0bfc-4c74-8a58-46a651ceb6ae"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="89166381-57a7-4d19-8975-a193c16c9824"
+            name="CommitAndRefreshChanges"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0295205a-1059-457d-82d5-2f1d2f8c370c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIUnitOfWork Member%3DCommitAndRefreshChanges"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1b264639-f6d0-4a1b-a044-88e68e5f6566"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52eb11ef-4c75-47e2-85ec-9a3580dd839d">
+                    <propertyInstance
+                      Id="7ace0a66-f532-4d52-b509-6206e2534251"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="560d446f-69f0-40ee-b130-7246350409e7">
+                    <propertyInstance
+                      Id="5c228c04-d94e-4418-811e-d216e67fa00f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27978948-379f-4c50-b74e-5a855ab0f8a6">
+                    <propertyInstance
+                      Id="13227ded-40f9-4abb-b008-f686376cb0fe"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3135753-0412-45d3-a000-c189370415b7">
+                    <propertyInstance
+                      Id="a75c4cec-0545-4949-9878-fd9cd06f4b8b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5417cb2a-fc1b-4a6c-9fdd-afafc76e0ea7">
+                    <propertyInstance
+                      Id="ccb3f096-6c71-4d84-995c-f72c3a0c3190"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="003ab74e-5995-4e36-af5d-54844029bd16">
+                    <propertyInstance
+                      Id="568adfb2-5cec-4650-ab38-04223ce50564"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="ce74a764-7142-4a96-8e01-e1c23201a1f6"
+            name="RollbackChanges"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77d751ae-a6de-476f-a40d-32c239398218"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3DIUnitOfWork Member%3DRollbackChanges"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="41fa27c6-ef47-417e-ade0-60735fe407fe"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="010dfe9a-3892-4dab-820f-220ec52f822e">
+                    <propertyInstance
+                      Id="3680434d-934b-4496-9fa5-3b0fd58630f0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66ae6aa0-6b5a-43a8-bff7-ebb5e6d71655">
+                    <propertyInstance
+                      Id="4ac0a3b2-a7d9-42fe-a1ad-55e3ab849b49"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="498b36f9-a82d-48fe-867c-dddb8f3134f6">
+                    <propertyInstance
+                      Id="47cd029e-a758-41d2-bade-6cc78d2dc8b7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="421980ae-4217-425f-8dcf-bb03d24dc587">
+                    <propertyInstance
+                      Id="0a585112-eec6-46fe-8e37-a54906ec3af4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de592b05-be1c-4bda-bb78-08bc5f452a01">
+                    <propertyInstance
+                      Id="02768891-2a58-4ee1-8cd6-bb3355554398"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d3bc1e1f-3ccc-4fc4-aafc-2c50ab68c9bf">
+                    <propertyInstance
+                      Id="87d9713e-1bf7-4997-b1fe-8e7f8a0cc04f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3b92e22b-5616-4d30-8297-854135ba6234"
+        name="IRepository"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="9e9aba0b-c373-4980-b4dc-3d3767be7b3e"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5dececd2-37f1-44cf-be2e-89e7ab7f5c85"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cc33ec0f-355d-463a-aec0-34339fb5f762">
+                <propertyInstance
+                  Id="6a59dd0c-f887-4deb-9702-774603a7f979"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06ad6d33-53dd-47f2-b192-5a38e356d7b3">
+                <propertyInstance
+                  Id="ffd1bd72-713d-47f9-a474-e17f9d3d041a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5af30eb3-d4ff-43d4-bd6f-da4f0b62fc6e">
+                <propertyInstance
+                  Id="1af74a24-8e9a-4db9-816a-44036f1fd4b9"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="55dc3c08-721f-470d-a634-58a9d9736a88">
+                <propertyInstance
+                  Id="8f0db1ef-800a-447d-ab77-b1cee925d72d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="10b168ee-a63a-4185-be84-5a0cb6b8a47f"
+            isDerived="false"
+            sourceEndRoleName="IRepository"
+            targetEndRoleName="UnitOfWork"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="05308324-2a84-42db-95bf-0a19eff17146"
+              LastKnownName="IUnitOfWork"
+              LastKnownLocation="Package_1216.uml" />
+            <description>Property UnitOfWork references type IUnitOfWork.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8ba880d-8c34-4750-b619-161ee2592a3f"
+                  name="IRepository"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b63822b4-433a-4d71-9eb0-da6e5d3a5369"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6827ea29-3582-40d0-bb51-4505594af073"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="07e45dcc-afaf-4b71-99f0-0a0ab6f6736f"
+                  name="UnitOfWork"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="924c2e59-5fe9-4189-be97-f06a5674fde3"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="26dd7515-6aa5-4d6c-949c-7f5ecf295cf2"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="a8243978-78eb-44cf-bbc3-9402da2eb69a"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="9342c98f-e10e-4310-965a-90bf6e7d1642">
+                <referencesInternal>
+                  <reference
+                    Id="6282d858-1800-4876-af05-155d44e26653"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="d29c7afa-fdb5-4ac9-8256-7fe0a1e2d5e8"
+                    name="TEntity"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+        <ownedAttributes>
+          <property
+            Id="acee849d-2462-4594-8617-58559498288d"
+            name="UnitOfWork"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="dffdfca2-cf83-4c33-8c7a-7189af3a1ecd"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3DUnitOfWork"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="67aaa8f2-a5cb-47d4-a495-88b533e569d9"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e638242-d1c8-4c73-945c-c773fa491eac">
+                    <propertyInstance
+                      Id="5c69b5ff-43d1-41a2-98e2-c1c1629af994"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c20bb9f8-a046-4373-a404-fbcfa4fe4a76">
+                    <propertyInstance
+                      Id="a83e2e40-58bc-4dc7-b5fe-d1b7c4c7a902"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae73834e-f80f-43f3-9d66-0226ed131025">
+                    <propertyInstance
+                      Id="342a3fee-2b9c-4e47-921c-9ffa5f4305f4"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4a9d48-181f-4e8a-bce3-6fe61c5d0345">
+                    <propertyInstance
+                      Id="03de2f6d-aa99-4548-9bea-0b8f3d449404"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c33bd18-0e78-4a08-b94a-9825e77d26ae">
+                    <propertyInstance
+                      Id="a6bdc64b-0881-497d-8918-8a99a686f192"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4155c5f4-a3c0-41d8-9531-eeaa8c2d37d7">
+                    <propertyInstance
+                      Id="13b87678-f435-45d8-af10-1efd789b51d1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bf8ff06-9db0-4e6c-b9eb-f2e159a2d63d">
+                    <propertyInstance
+                      Id="743ddd14-7ff9-48c3-980d-fe8a072c9644"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f7d47243-3f32-4dee-aa5a-6242f18e8db6"
+                LastKnownName="IUnitOfWork"
+                LastKnownLocation="Package_2358.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="7d018065-7ac4-4d44-a4d4-d24bdae3a824"
+            name="Add"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d76662d6-db8e-4602-bb00-6a6687591577"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2ab7ed88-adcb-4197-a75b-f719a95c40d4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="799eeec0-0c06-47e9-b92a-73739027c381">
+                    <propertyInstance
+                      Id="6aec3565-36a6-4519-9a65-5c3cb57de309"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4892b14-8784-4a20-9c8c-0cc130ff7661">
+                    <propertyInstance
+                      Id="06930c9e-6105-4a0d-9b18-b9a86253306b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0a7cf8f-7c55-4c7e-8cfd-76e59143b879">
+                    <propertyInstance
+                      Id="2c58a66e-d2e7-446f-93a3-dabbc691be5a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7f32663-180b-44a9-ade4-f53f47992b69">
+                    <propertyInstance
+                      Id="5a7e98e5-78a5-4e3b-9b85-6748326d1f05"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12e95dcc-d78e-4739-8660-ca6b78040489">
+                    <propertyInstance
+                      Id="7768fe12-2269-4737-84ee-505f07792a4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b7a217c-c413-43cd-97f2-dc9975a710e5">
+                    <propertyInstance
+                      Id="ec172b73-3acd-4f84-a69f-33b660f94f77"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8fa501c7-cfea-4a01-b29d-7d4941935710"
+                  name="item"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d5ac11e2-a148-45e6-9240-e7b3a153e000"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DAdd OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Ditem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e63b00f5-88e4-457a-ba31-246ae97b5cc2"
+            name="AllMatching"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6020b4dd-0589-46fa-a687-9c5f2e76841e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DAllMatching OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork.Specification Type%3D(Name%3DISpecification GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dbf7e007-08c2-4034-ba25-54a5f2382740"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="73b30847-c2d8-41f8-979c-88aa30c53fde">
+                    <propertyInstance
+                      Id="1ff19b10-af45-4703-9029-5108473b9356"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce5dc1fa-d9f4-4e70-ab3e-18518e67f728">
+                    <propertyInstance
+                      Id="36dbc2d5-ea1a-4445-b659-3a624f87562c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e85eb70-c157-4051-9be9-0847877159b3">
+                    <propertyInstance
+                      Id="17f891bb-bc1f-49bf-95dd-e38456637405"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc304273-d8d0-4a7a-adf6-1e5da5b57103">
+                    <propertyInstance
+                      Id="bf0bf80d-14b2-44c6-afcd-09c6188d58ca"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b434952a-6877-407e-94ea-3e77c245486b">
+                    <propertyInstance
+                      Id="22b87778-67c7-43a7-a2e6-7cb50be4de0d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2dd1760d-1b39-4b1a-a363-4c51ca95a7f5">
+                    <propertyInstance
+                      Id="e9d5a947-3bf7-4eb0-aa61-8102b12a8926"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4902280c-0969-4fae-87f8-f17469fb1aad"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e51e6a41-9925-4cad-b55d-499c533f5dcb"
+                      LastKnownName="IEnumerable&lt;TEntity‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e2526e2a-b744-4fda-a55e-32cbdab7811a"
+                  name="specification"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f7dbb28f-3839-490b-a81f-ceec44d34d55"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DAllMatching OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork.Specification Type%3D(Name%3DISpecification GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]))]) ParameterIdentifier%3Dspecification"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="67a91cfc-a79d-4a17-b3fb-32be13c495a8"
+                      LastKnownName="ISpecification&lt;TEntity‎&gt;"
+                      LastKnownLocation="Package2_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="fa967400-85d5-450c-a7b3-b7ba56cb6346"
+            name="Get"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8f5b257c-8ab6-4f10-b598-4c173d8b8747"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98f4e7f1-2c3b-4d3d-a3f9-21366095b128"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d2c46db-7487-4455-8484-ff9de1d1fc04">
+                    <propertyInstance
+                      Id="31ba47ce-3ba3-419c-8002-93e3c0e6ee92"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b16c432-18a9-43f0-b1d9-e8bc3c61a928">
+                    <propertyInstance
+                      Id="5fd808e1-877a-4a0e-a2d7-9e065b8ddf34"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22651b72-1096-44d1-85d8-9644d69c0703">
+                    <propertyInstance
+                      Id="f1142eb6-5a92-44dd-9c9c-b7bf4222f842"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82830723-87aa-42cc-84d8-2e61968975c9">
+                    <propertyInstance
+                      Id="1682c871-b232-4331-8029-22c434d6d0cc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="488ea45f-a749-4018-8917-3f14808e5b5f">
+                    <propertyInstance
+                      Id="c8348de4-c1e3-4e7a-8237-c3138452c11f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="065f636e-0b9f-4556-aa96-a7b4b05eb4d2">
+                    <propertyInstance
+                      Id="4e6c3e9a-95a0-4572-98d6-9995b7306e43"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de69c753-c6ab-499a-ac05-724bb4a1d66d"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc461695-0356-478c-b2f1-47798e7a4343"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5721919d-a939-410a-9cda-ce7bd3c3f125"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGet OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DGuid)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="62cb8d90-e47c-41d3-bd96-e8318abeccb4"
+                      LastKnownName="Guid"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eae7ff70-5207-4b1b-bc32-b2089e0a536c"
+            name="GetFiltered"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4918ed16-539a-417b-980c-14fc3d822fcc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetFiltered OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e28bc028-cb02-409d-8636-8f2ab65c9332"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1764e907-5f9b-4431-95cc-13d518e0091d">
+                    <propertyInstance
+                      Id="d05289f0-94c2-4c09-bac4-d23652cd177d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dc879e6-1028-4436-9303-446f1a60c7dc">
+                    <propertyInstance
+                      Id="66f00a01-9a3f-4d2d-90f9-c10c1f613619"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36fee4d8-ac16-4cdd-9715-0a885744c264">
+                    <propertyInstance
+                      Id="3222aa49-1d5b-4adc-aac1-5b3b8edf389a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0cd2473-1253-4d74-b20c-b8f6236a8a1b">
+                    <propertyInstance
+                      Id="8e227818-2450-4713-b9c6-259bf7cb4df2"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="00c85b7c-8d4b-49cb-bccf-b1ff76820775">
+                    <propertyInstance
+                      Id="d6f3f46e-ada9-4265-a766-9849d4e947bf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e0b2840-e6f1-4568-8e86-28399b9ed73a">
+                    <propertyInstance
+                      Id="7996cc6f-57c5-45f3-a2c7-8fa335444321"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00cf5826-6062-4b6a-b25e-58797b2f5872"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e51e6a41-9925-4cad-b55d-499c533f5dcb"
+                      LastKnownName="IEnumerable&lt;TEntity‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1ab4b7e6-1334-4213-858d-c947a498239f"
+                  name="filter"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0a135bb8-1781-4a09-92b2-91572fe66c36"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetFiltered OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]))]))]) ParameterIdentifier%3Dfilter"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="5bad5b86-143f-479a-a0ce-3ef8ba239d8d"
+                      LastKnownName="Expression&lt;Func‎&lt;TEntity‎, Boolean‎&gt;‎&gt;"
+                      LastKnownLocation="Package4_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8d797d0e-f769-4136-8aa5-0ea2953c6ffc"
+            name="GetPaged‎&lt;KProperty‎&gt;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f23288af-6de8-44db-a754-bcb9b111d67e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetPaged GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D0)]))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ccdf66ce-5b6e-4319-90c4-d5536cec76eb"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="597cc312-56a7-4291-8078-9d637bbe6566">
+                    <propertyInstance
+                      Id="9e2445ea-60b9-41c0-8a8d-dfc1f9fe7f22"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b40c1610-3eb0-4595-9f4e-8750c707322e">
+                    <propertyInstance
+                      Id="50353996-3a5e-4622-9586-58dcaf9181f3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e9a5d78-0ebb-4094-bd7f-00ede9127321">
+                    <propertyInstance
+                      Id="8e1b6ed7-910d-4e08-874a-393fb7d7bd52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f216fbd-31ac-478e-9950-6567cb3a31fd">
+                    <propertyInstance
+                      Id="421fe7ab-3891-4e8a-b0bf-8a7b28fe244f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29c36e5d-0025-4990-bd71-a6b28f85aef6">
+                    <propertyInstance
+                      Id="8c13fef2-7c3e-41fa-a4c3-b4033a2ab0ae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4fdc250-28c9-4f53-a1a5-6386523b6764">
+                    <propertyInstance
+                      Id="36c1b4ca-3aeb-4622-9842-d97f3dbd138f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8d3d867a-a24b-4eb9-9c4e-612e26e45412"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e51e6a41-9925-4cad-b55d-499c533f5dcb"
+                      LastKnownName="IEnumerable&lt;TEntity‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cc7e0791-90ac-4773-a84a-4a06bac22b03"
+                  name="pageIndex"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="64a1fa54-0441-4aa1-9473-5face56e2e74"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetPaged GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D0)]))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DpageIndex"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5dec39de-35c0-443c-9e32-d63b21fbab3e"
+                  name="pageCount"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9b569331-4f58-4537-9ce3-34a6cf64c793"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetPaged GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D0)]))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DpageCount"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cd283354-90c7-416c-a1c7-1831defeca12"
+                  name="orderByExpression"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="26dfdd04-3e66-4c17-afb1-5345288c202d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetPaged GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D0)]))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3DorderByExpression"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="84ca43c8-591b-40e4-8286-761aec952385"
+                      LastKnownName="Expression&lt;Func‎&lt;TEntity‎, KProperty‎&gt;‎&gt;"
+                      LastKnownLocation="Package4_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9be705d1-c600-44df-873e-dbe96c7c6cd5"
+                  name="ascending"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c6b20220-306a-441e-b596-7e235bc154af"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DGetPaged GenericParameterCount%3D1 OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Core.dll&quot; Namespace%3DSystem.Linq.Expressions Type%3D(Name%3DExpression GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DFunc GenericParameterCount%3D2 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(ParameterIdentifier%3D0)]))]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DBoolean)]) ParameterIdentifier%3Dascending"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5163d01f-e042-415b-9319-47bd62bd850b"
+            name="Merge"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="10754313-0b9e-432e-87f5-dfcb97a0b27a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DMerge OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ba7a45c-c606-4517-8dd1-66639e5be336"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ea7f579-3dea-48ac-bfa3-4841bbe4d2ba">
+                    <propertyInstance
+                      Id="fafe0309-71fe-44c6-a694-35241fada311"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7c81f29-1f12-4a61-abcc-de2d94f2ac4a">
+                    <propertyInstance
+                      Id="5f65add3-5dd7-44ed-b160-75dc0b5e8337"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34814118-b1b9-41d2-bd7a-ca1e0719037b">
+                    <propertyInstance
+                      Id="dbd19f4f-1fd2-4d24-bd2a-ea0f97f70635"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f0e3d10-3b3d-49b1-823c-d81b14eee91a">
+                    <propertyInstance
+                      Id="76e6238a-fcab-4e81-b941-783b63c212c7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d002662-6ada-4652-bcb8-6e92993d4017">
+                    <propertyInstance
+                      Id="7d9411a9-52b5-4c9c-b49f-ff469562d00c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e22bac95-4813-4910-9aa2-2c1699dc6534">
+                    <propertyInstance
+                      Id="9d29e1d9-9266-4159-91a0-f9d6ea7047fb"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7d9eca50-d881-47b7-9307-c5cb9da37e42"
+                  name="persisted"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="15fb95ac-ca5e-47f7-9523-c77192e7ad53"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DMerge OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dpersisted"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0feec560-352d-427e-8286-acd9b916735b"
+                  name="current"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c4deedf0-d492-46fb-859a-563ef89a337d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DMerge OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Dcurrent"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5da957e8-debb-4545-91dd-c8d61e5a6d88"
+            name="Modify"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="dd9c228c-aa1f-4ae5-85ed-f4c6666f4674"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DModify OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="57e406df-f947-4bc6-97af-337f00c95790"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff8ac20b-029a-4078-819a-733b9079d3a4">
+                    <propertyInstance
+                      Id="ff73df50-4ca2-4a0d-87d9-52f6336f74c1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e2aa511-de8f-4889-9009-5677d13d418c">
+                    <propertyInstance
+                      Id="65f9ebfe-aba8-4d74-968e-8022c6c3cc73"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b1cdc85-9c7e-4627-9a27-8da04f4d4b91">
+                    <propertyInstance
+                      Id="376b69b7-7bca-474b-a2d5-1c0d2f82ccd8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9dd745c-b21e-4a30-b4d2-e96416868b1f">
+                    <propertyInstance
+                      Id="0f03e87d-adc7-4c1e-9e63-c1f685b40b60"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6031c89c-9693-462d-83fb-13db920fd645">
+                    <propertyInstance
+                      Id="5e51a485-5429-4ba9-a528-b698ca25ac0b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db6297fb-0b87-480f-b138-e60cfb2db63a">
+                    <propertyInstance
+                      Id="94883042-0647-465b-ba89-5f226c9b6827"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e23bfd43-fa2f-487c-8fe9-29f5eb286200"
+                  name="item"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1325df00-4a2d-4158-bac0-cc71c373fd83"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DModify OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Ditem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6d6772b1-26c7-4b07-8a05-1ad257422a87"
+            name="Remove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="57514ddf-792d-4e4b-9267-bdc2ae22a3c7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DRemove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e0690a82-5540-460a-a285-f7585a3cf0e6"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4fc538f-9ba2-43f5-bf6c-d141abe38dfb">
+                    <propertyInstance
+                      Id="6ce1b299-04bc-400b-b8ad-dde2b2857d8c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7eea4476-0b4b-472b-a7de-823a6974caaa">
+                    <propertyInstance
+                      Id="000dafa1-09eb-4735-8577-4b7affd30e57"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a172c86-2392-453f-b589-9d10fcf3811a">
+                    <propertyInstance
+                      Id="12715e5e-3fc5-4297-9ae8-b8d9dfa1f1b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="982948e0-f382-4520-9135-7d557fb32368">
+                    <propertyInstance
+                      Id="a2e96b98-25d3-4cf8-8a70-04254ff0c53a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9b2fb3d-6c64-4896-be06-de3ac5dea777">
+                    <propertyInstance
+                      Id="4eee3741-f2d9-401e-9453-a745e7940273"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="532ec7b9-040c-4e17-bd37-c1029b14be8a">
+                    <propertyInstance
+                      Id="7a287fb1-32b0-4f6d-a327-16ce60cc1858"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="04ee870c-4c30-4849-b440-715a65a67eb0"
+                  name="item"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c433f602-2f2e-49ba-8fbd-89edbcf1dd7a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DRemove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Ditem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="79c703be-e26d-407c-a356-f5d28988209f"
+            name="TrackItem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="23664aba-3efb-43ad-a123-5a9b3863f9cf"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DTrackItem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1ca80b1-848a-400d-9161-c561efdaf604"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80afce80-bcd3-4cbf-a140-0bc2df6a47a6">
+                    <propertyInstance
+                      Id="12de02f2-3189-4ab0-bf4e-e23e9eb4082b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cd9c59e-097d-4e8e-adbb-d2b23e7464af">
+                    <propertyInstance
+                      Id="f871902e-baea-4f7a-9942-207d1fb2dfd9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba7688f1-0c43-43bf-bd12-2c483595379c">
+                    <propertyInstance
+                      Id="7beeb8ba-fffb-4c48-827c-10ead188f743"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b83c5cb-08f8-4b2e-887d-a8c5376bb604">
+                    <propertyInstance
+                      Id="596868c4-c67a-48b0-b332-cb7ecdbecba7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d120b7e1-917a-4da1-b3f6-4e666d0f34ec">
+                    <propertyInstance
+                      Id="56560300-9fca-44ba-bb65-7cb6ac688484"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8de14cd-d58a-4fff-8604-df971d99e20a">
+                    <propertyInstance
+                      Id="e1fb2731-ef60-4e3e-80d8-3e839e2e8e3b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="74af123a-e827-4f33-bcd6-32aad55612a2"
+                  name="item"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="5250b8f4-2848-4f02-9fc1-16a1dce31e70"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3D(Name%3DTrackItem OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) ParameterIdentifier%3D0)]) ParameterIdentifier%3Ditem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="46c68de2-dfb3-496f-80dc-c469e1d4cdb9"
+                      LastKnownName="TEntity"
+                      LastKnownLocation="Package1_2359.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="31c2741b-2fe4-419c-83f4-d95ef4bd7f91"
+            name="GetAll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4278ef2e-37fb-4ff0-b378-b1aa7bf76f4f"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.Seedwork%2Fbin%2FDebug%2FSmsGateway.Domain.Seedwork.dll&quot; Namespace%3DSmsGateway.Domain.Seedwork Type%3D(Name%3DIRepository GenericParameterCount%3D1) Member%3DGetAll"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="090395d0-55bd-43dd-a80f-81060275f84b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4788e4d6-9b38-4971-9122-eb3ae999f154">
+                    <propertyInstance
+                      Id="c42f950a-08ba-4f7f-8eb4-2323df5b31da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bc0155b-9a74-4029-beba-7d796a296971">
+                    <propertyInstance
+                      Id="5add937d-71b6-4c01-b937-0e2428876301"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4091d37-58d1-47f9-9634-467deb171cdd">
+                    <propertyInstance
+                      Id="b52f767e-a3ba-48aa-a86e-10a93b59fc59"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97e1ec8c-891b-47d1-b22d-b48ea7a7e359">
+                    <propertyInstance
+                      Id="89d4551f-d540-4c7c-88f8-7a92cf8eaeb1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f494bf58-a7be-451a-95d6-ba090e163ac8">
+                    <propertyInstance
+                      Id="06a71c12-cb33-4064-a802-c595b624e42a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d44b5e37-38e6-40f8-be8a-506c02030ffa">
+                    <propertyInstance
+                      Id="725d6594-5c2e-4e99-ba8c-d1924cc9cc30"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="52dfd6c8-7b7b-4df0-b5cf-d1420246a587"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="e51e6a41-9925-4cad-b55d-499c533f5dcb"
+                      LastKnownName="IEnumerable&lt;TEntity‎&gt;"
+                      LastKnownLocation="Package1_2225.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c380dcbe-fe86-4e14-ab9d-89294a21c812"
+        LastKnownName="Specification"
+        LastKnownLocation="Package1_1216.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

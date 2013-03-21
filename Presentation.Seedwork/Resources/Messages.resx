@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GeneralException" xml:space="preserve">
+    <value>Houve um erro inesperado.</value>
+  </data>
+  <data name="LoginInvalidEmail" xml:space="preserve">
+    <value>Invalid Email</value>
+  </data>
+  <data name="LoginInvalidPassword" xml:space="preserve">
+    <value>Invalid Password</value>
+  </data>
+  <data name="LoginInvalid" xml:space="preserve">
+    <value>Invalid Login</value>
+  </data>
+  <data name="LoginNotEnabled" xml:space="preserve">
+    <value>Account Disabled</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="RestfulServiceURINotFound" xml:space="preserve">
+    <value>The URI of the service was not found in the applications configuration file.</value>
+  </data>
+  <data name="website_Admin" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="website_Adminsitradores" xml:space="preserve">
+    <value>Administradores</value>
+  </data>
+  <data name="website_Ativar" xml:space="preserve">
+    <value>Ativar</value>
+  </data>
+  <data name="website_Back" xml:space="preserve">
+    <value>Voltar</value>
+  </data>
+  <data name="website_Bemvindo" xml:space="preserve">
+    <value>Bem Vindo</value>
+  </data>
+  <data name="website_Cliente" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+  <data name="website_Clientes" xml:space="preserve">
+    <value>Clientes</value>
+  </data>
+  <data name="website_Contratos" xml:space="preserve">
+    <value>Contratos</value>
+  </data>
+  <data name="website_Create" xml:space="preserve">
+    <value>Novo</value>
+  </data>
+  <data name="website_Desativar" xml:space="preserve">
+    <value>Desativar</value>
+  </data>
+  <data name="website_Details" xml:space="preserve">
+    <value>Detalhes</value>
+  </data>
+  <data name="website_Edit" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="website_Email" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="website_Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="website_IsEnabled" xml:space="preserve">
+    <value>Ativo</value>
+  </data>
+  <data name="website_Logoff" xml:space="preserve">
+    <value>Logoff</value>
+  </data>
+  <data name="website_Mensagem" xml:space="preserve">
+    <value>Mensagem</value>
+  </data>
+  <data name="website_Mensagens" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="website_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="website_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="website_Submit" xml:space="preserve">
+    <value>Salvar</value>
+  </data>
+  <data name="website_Title" xml:space="preserve">
+    <value>Sms Gateway</value>
+  </data>
+  <data name="MinhasDuvidas" xml:space="preserve">
+    <value>Meus Tickets</value>
+  </data>
+  <data name="website_Contrato" xml:space="preserve">
+    <value>Contrato</value>
+  </data>
+  <data name="website_DataFinal" xml:space="preserve">
+    <value>Data de Expiração</value>
+  </data>
+  <data name="website_DataInicial" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="website_Id" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="website_SaldoMensagens" xml:space="preserve">
+    <value>Messages Credit</value>
+  </data>
+  <data name="website_ValorCobrado" xml:space="preserve">
+    <value>Ammount Charged</value>
+  </data>
+  <data name="website_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="website_ClientId" xml:space="preserve">
+    <value>Selecione o Cliente</value>
+  </data>
+  <data name="website_CreateTestMessage" xml:space="preserve">
+    <value>Envie uma mensagem SMS</value>
+  </data>
+  <data name="website_MensagemDestinatario" xml:space="preserve">
+    <value>Number to send</value>
+  </data>
+  <data name="website_MensagemTexto" xml:space="preserve">
+    <value>Message Text</value>
+  </data>
+  <data name="AdicionarContato" xml:space="preserve">
+    <value>Adicionar Contato</value>
+  </data>
+  <data name="Adicionar" xml:space="preserve">
+    <value>Adicionar</value>
+  </data>
+  <data name="AdicionarLista" xml:space="preserve">
+    <value>Adicionar Lista</value>
+  </data>
+  <data name="DataExpiracao" xml:space="preserve">
+    <value>Data de Expiração</value>
+  </data>
+  <data name="Editar" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="Excluir" xml:space="preserve">
+    <value>Excluir</value>
+  </data>
+  <data name="Identificador" xml:space="preserve">
+    <value>Identificador</value>
+  </data>
+  <data name="MeusContatos" xml:space="preserve">
+    <value>Meus Contatos</value>
+  </data>
+  <data name="MeusDadosDeAcesso" xml:space="preserve">
+    <value>Dados de acesso</value>
+  </data>
+  <data name="MinhasListas" xml:space="preserve">
+    <value>Minhas Listas</value>
+  </data>
+  <data name="Nome" xml:space="preserve">
+    <value>Nome</value>
+  </data>
+  <data name="Numero" xml:space="preserve">
+    <value>Número</value>
+  </data>
+  <data name="PainelDoCliente" xml:space="preserve">
+    <value>Painel do Cliente</value>
+  </data>
+  <data name="QuantidadeDeContatos" xml:space="preserve">
+    <value>Quantidade de Contatos</value>
+  </data>
+  <data name="Remover" xml:space="preserve">
+    <value>Remover</value>
+  </data>
+  <data name="ResumoDeOperacoes" xml:space="preserve">
+    <value>Resumo de Operações</value>
+  </data>
+  <data name="SaldoTotal" xml:space="preserve">
+    <value>Saldo de Mensagens</value>
+  </data>
+  <data name="Senha" xml:space="preserve">
+    <value>Senha</value>
+  </data>
+  <data name="TotalMsgEnviadas" xml:space="preserve">
+    <value>Total de Mensagens Enviadas</value>
+  </data>
+  <data name="TrocarSenha" xml:space="preserve">
+    <value>Trocar Senha</value>
+  </data>
+  <data name="Contato" xml:space="preserve">
+    <value>Contato</value>
+  </data>
+  <data name="ContatosDaLista" xml:space="preserve">
+    <value>Contatos da Lista</value>
+  </data>
+  <data name="ContatosForaDaLista" xml:space="preserve">
+    <value>Contatos fora da Lista</value>
+  </data>
+  <data name="ExcluirContato" xml:space="preserve">
+    <value>Tem certeza que deseja exluir este contato?</value>
+  </data>
+  <data name="ExcluirListaDeContatos" xml:space="preserve">
+    <value>Tem certeza que deseja exluir esta lista?</value>
+  </data>
+  <data name="ListaDeContatos" xml:space="preserve">
+    <value>Lista de Contatos</value>
+  </data>
+  <data name="ConfirmacaoSenhaErrada" xml:space="preserve">
+    <value>O campo confirmação está diferente da nova senha.</value>
+  </data>
+  <data name="ConfirmaSenha" xml:space="preserve">
+    <value>Confirmação da nova Senha</value>
+  </data>
+  <data name="NovaSenha" xml:space="preserve">
+    <value>Nova Senha</value>
+  </data>
+  <data name="SenhaAtual" xml:space="preserve">
+    <value>Senha Atual</value>
+  </data>
+  <data name="SenhaAtualErrada" xml:space="preserve">
+    <value>Senha atual não está correta.</value>
+  </data>
+  <data name="MensagemEnviadaComErro" xml:space="preserve">
+    <value>Erro enviando mensagens.</value>
+  </data>
+  <data name="MensagensEnvidasComSucesso" xml:space="preserve">
+    <value>Mensagens enviadas com sucesso.</value>
+  </data>
+  <data name="Enviar" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="EnviarMensagem" xml:space="preserve">
+    <value>Enviar Mensagem</value>
+  </data>
+  <data name="SelecionarContato" xml:space="preserve">
+    <value>Selecione um Contato</value>
+  </data>
+  <data name="SelecionarLista" xml:space="preserve">
+    <value>Selecione uma Lista</value>
+  </data>
+  <data name="TextodaMensagem" xml:space="preserve">
+    <value>Texto da Mensagem</value>
+  </data>
+  <data name="CadastreContatosParaEnviarMensagens" xml:space="preserve">
+    <value>Cadastre contatos para poder enviar mensagens.</value>
+  </data>
+  <data name="Destinatario" xml:space="preserve">
+    <value>Destinatário</value>
+  </data>
+  <data name="EnviarMensagemParaContato" xml:space="preserve">
+    <value>Enviar mensagem para um contato</value>
+  </data>
+  <data name="EnviarMensagemParaLista" xml:space="preserve">
+    <value>Enviar mensagem para uma lista</value>
+  </data>
+  <data name="MensagensEnviadas" xml:space="preserve">
+    <value>Mensagens Enviadas</value>
+  </data>
+  <data name="QuantoFoiCobrado" xml:space="preserve">
+    <value>Saldo Cobrado</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="AdicionarMensagem" xml:space="preserve">
+    <value>Nova Mensagem</value>
+  </data>
+  <data name="Assunto" xml:space="preserve">
+    <value>Assunto</value>
+  </data>
+  <data name="Data" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Mensagens" xml:space="preserve">
+    <value>Mensagens</value>
+  </data>
+  <data name="NovaDuvida" xml:space="preserve">
+    <value>Cadastrar novo Ticket</value>
+  </data>
+  <data name="NovaMensagem" xml:space="preserve">
+    <value>NovaMensagem</value>
+  </data>
+  <data name="Pendente" xml:space="preserve">
+    <value>Pendente</value>
+  </data>
+  <data name="Respondido" xml:space="preserve">
+    <value>Respondido</value>
+  </data>
+  <data name="Ticket" xml:space="preserve">
+    <value>Dados do Ticket</value>
+  </data>
+  <data name="Ver" xml:space="preserve">
+    <value>Ver</value>
+  </data>
+  <data name="SolicitacaoDeCadastro" xml:space="preserve">
+    <value>Solicitação de Cadastro</value>
+  </data>
+  <data name="SolicitacoesDeCadastro" xml:space="preserve">
+    <value>Solicitações de Cadastro</value>
+  </data>
+  <data name="Telefone" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="TextoSolicitacaodeCadastro" xml:space="preserve">
+    <value>TextoSolicitacaoDeCadastro</value>
+  </data>
+  <data name="Tickets" xml:space="preserve">
+    <value>Tickets</value>
+  </data>
+  <data name="NovoCadastro" xml:space="preserve">
+    <value>Solicitar Acesso</value>
+  </data>
+  <data name="RecuperarSenha" xml:space="preserve">
+    <value>Recuperar Senha</value>
+  </data>
+  <data name="RecuperouSenha" xml:space="preserve">
+    <value>Um email com a sua senha foi enviado para sua conta. </value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Sim</value>
+  </data>
+</root>

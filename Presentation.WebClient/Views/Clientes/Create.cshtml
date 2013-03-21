@@ -1,0 +1,50 @@
+﻿@model SmsGateway.Presentation.WebClient.Models.CreateClientesModel
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <h2>@Messages.website_Create </h2>
+    <fieldset>
+        <legend>@Messages.website_Details</legend>
+
+        <div class="display-label">@Messages.website_Name</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.Cliente.Nome)
+        </div>
+        <div class="display-label">@Messages.website_Password</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.Cliente.Senha)
+        </div>
+    
+   
+    </fieldset>
+    <fieldset>
+         <legend>@Messages.website_Contrato</legend>
+        <div class="display-label">@Messages.website_DataInicial</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.ContratoAtual.DataInicial)
+        </div>
+        <div class="display-label">@Messages.website_DataFinal</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.ContratoAtual.DataFinal)
+        </div>
+        <div class="display-label">@Messages.website_SaldoMensagens</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.ContratoAtual.SaldoDeMensagens)
+        </div>
+        <div class="display-label">@Messages.website_ValorCobrado</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.ContratoAtual.ValorMensagem)
+        </div>
+    </fieldset>
+     <input type="submit" value="@Messages.website_Submit" />
+            @ViewBag.ErrorMsg
+}
+
+<div>
+    @Html.ActionLink(@Messages.website_Back, "Index")
+</div>

@@ -1,0 +1,435 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d43c4ae1-deab-47c8-9f05-9ccc69d434e7}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Model</Name>
+    <RootNamespace>Model</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="ModelDefinition\Package1_1210.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1214.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_1216.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2224.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2304.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2307.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2308.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2351.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package1_2359.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1210.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_1214.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2224.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2304.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2307.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2308.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package2_2351.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2224.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2307.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2308.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package3_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package4_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package5_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package6_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package7_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package8_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package9_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1205.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1206.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1210.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1211.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1212.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1213.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1214.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_1216.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2224.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2225.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2230.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2241.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2242.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2243.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2249.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2304.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2307.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2308.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2311.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2344.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2347.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2348.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2349.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2350.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2351.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2353.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2355.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2358.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModelDefinition\Package_2359.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.2 - Distributed Services\DistributedServices.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.2 - Distributed Services\DistributedServices.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UML Classes Diagrams\1.2 - Distributed Services\DistributedServices.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.3 - Application\Application.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.3 - Application\Application.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UML Classes Diagrams\1.3 - Application\Application.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.4 - Domain\Domain.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.4 - Domain\Domain.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UML Classes Diagrams\1.4 - Domain\Domain.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.1 - Data\Data.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.1 - Data\Data.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UML Classes Diagrams\1.5  - Infrastructure\1.5.1 - Data\Data.classdiagram</DependentUpon>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.2 - Crosscutting\Crosscutting.classdiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.2 - Crosscutting\Crosscutting.classdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>UML Classes Diagrams\1.5  - Infrastructure\1.5.2 - Crosscutting\Crosscutting.classdiagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Model.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Layers Diagrams" />
+    <Folder Include="UML Classes Diagrams" />
+    <Folder Include="UML Classes Diagrams\1.1 - Presentation" />
+    <Folder Include="UML Classes Diagrams\1.2 - Distributed Services" />
+    <Folder Include="UML Classes Diagrams\1.3 - Application" />
+    <Folder Include="UML Classes Diagrams\1.4 - Domain\" />
+    <Folder Include="UML Classes Diagrams\1.5  - Infrastructure\" />
+    <Folder Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.1 - Data" />
+    <Folder Include="UML Classes Diagrams\1.5  - Infrastructure\1.5.2 - Crosscutting" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers Diagrams\LayerDiagram.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers Diagrams\LayerDiagram.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers Diagrams\LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers Diagrams\LayerDiagram.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers Diagrams\LayerDiagram.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Application.CoreContext.DTO\Application.CoreContext.DTO.csproj">
+      <Name>Application.CoreContext.DTO</Name>
+      <Project>{62fb7287-fe06-4e8b-ab66-25603d9e2610}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.CoreContext\Application.CoreContext.csproj">
+      <Name>Application.CoreContext</Name>
+      <Project>{75e4283a-61d1-4067-9f51-25efb55113a6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Application.Seedwork\Application.Seedwork.csproj">
+      <Name>Application.Seedwork</Name>
+      <Project>{7f17bc81-b7d1-46d8-a94b-fdbae17f94b7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedServices.Restful.CoreContext\DistributedServices.Restful.CoreContext.csproj">
+      <Name>DistributedServices.Restful.CoreContext</Name>
+      <Project>{79c6281c-4cbd-4758-a556-f48c7a837805}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DistributedServices.Seedwork\DistributedServices.Seedwork.csproj">
+      <Name>DistributedServices.Seedwork</Name>
+      <Project>{32241c1d-e0d2-41d0-907a-0631943b360c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.CoreContext\Domain.CoreContext.csproj">
+      <Name>Domain.CoreContext</Name>
+      <Project>{f7f15f85-a171-4edc-b507-03a8d80915a8}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Seedwork\Domain.Seedwork.csproj">
+      <Name>Domain.Seedwork</Name>
+      <Project>{04d675a3-b794-44bd-a25c-673bb44739cb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Crosscutting.NetFramework\Infrastructure.Crosscutting.NetFramework.csproj">
+      <Name>Infrastructure.Crosscutting.NetFramework</Name>
+      <Project>{81cab7aa-5235-42db-82e6-2b4a0a1f9987}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Crosscutting\Infrastructure.Crosscutting.csproj">
+      <Name>Infrastructure.Crosscutting</Name>
+      <Project>{106c7f00-c03f-4e29-87af-acd1ba292078}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.CoreContext\Infrastructure.Data.CoreContext.csproj">
+      <Name>Infrastructure.Data.CoreContext</Name>
+      <Project>{35e13cfb-e992-475d-8e53-ea09a539ab43}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.Data.Seedwork\Infrastructure.Data.Seedwork.csproj">
+      <Name>Infrastructure.Data.Seedwork</Name>
+      <Project>{09aaf2c8-47dc-4f12-a3a0-130dcdb1495b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentation.Seedwork\Presentation.Seedwork.csproj">
+      <Name>Presentation.Seedwork</Name>
+      <Project>{d85cb642-0037-4d1d-bb4a-0242af2afe1d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Presentation.WebClient\Presentation.WebClient.csproj">
+      <Name>Presentation.WebClient</Name>
+      <Project>{a426683c-0a73-4934-a2df-013ebc40d686}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

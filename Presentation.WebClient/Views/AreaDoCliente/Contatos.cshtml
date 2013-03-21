@@ -1,0 +1,85 @@
+﻿@model SmsGateway.Presentation.WebClient.Models.AreaDoClienteModel
+
+@{
+    ViewBag.Title = "Contatos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<fieldset>
+    <legend>@Messages.MeusContatos</legend>
+    @if (Model.Contatos != null && Model.Contatos.Count(c => c.IsEnabled) > 0)
+    {
+        <table>
+            <tr>
+                <th>
+                    @Messages.Nome
+                </th>
+                <th>
+                    @Messages.Numero
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model.Contatos.Where(c => c.IsEnabled))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Numero)
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Editar, "SalvarContato", new { id = item.Id })
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Excluir, "ExcluirContato", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+    @Html.ActionLink(@Messages.AdicionarContato, "SalvarContato", new { id = string.Empty })
+</fieldset>
+
+<fieldset>
+    <legend>@Messages.MinhasListas</legend>
+
+    @if (Model.ListasDeContatos != null && Model.ListasDeContatos.Count(l => l.IsEnabled) > 0)
+    {
+        <table>
+            <tr>
+                <th>
+                    @Messages.Nome
+                </th>
+                <th>
+                    @Messages.QuantidadeDeContatos
+                </th>
+                <th></th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model.ListasDeContatos.Where(c => c.IsEnabled))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Contatos.Count)
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Editar, "SalvarLista", new { id = item.Id })
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Excluir, "ExcluirLista", new { id = item.Id })
+                    </td>
+                </tr>
+            }
+        </table>
+    }
+
+    @Html.ActionLink(@Messages.AdicionarLista, "SalvarLista", new { id = string.Empty })
+</fieldset>
+
+

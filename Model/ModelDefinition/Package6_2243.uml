@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="458dd74d-2b2f-4b3a-8603-52378f0d553b"
+  name="StatusAgg"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="44b5d38d-6c02-460e-ad1c-c56b59ff392e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="050f3770-5b31-4800-ba96-81b6580d7470"
+        name="Status"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5f72a704-2e1e-49a1-ba48-c4dc70cc3f8f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DStatus"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0658ba2f-c60f-4a10-9b98-dc51fccfaeda"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9c96ae67-3cc3-449d-9db8-275013b76f09">
+                <propertyInstance
+                  Id="a15f0403-6483-4a32-9203-02ec3864d8de"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0a935a00-362a-439b-b119-d298cd7aaa1b">
+                <propertyInstance
+                  Id="5f5a1a04-4ca4-4d1a-83e6-a102e8097ef5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d23390ac-3fb7-4a3e-971a-0ce0dd21ee7c">
+                <propertyInstance
+                  Id="9eaa72ab-e843-4152-9df0-a588411c6398"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a9392d6-eae8-40b2-ab62-1122433baf21">
+                <propertyInstance
+                  Id="26cbd589-ccbb-40d9-bd06-f7ef98d4eb2e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d240667d-1ef5-4aae-bad1-5d6cf3738024">
+                <propertyInstance
+                  Id="d0ed33c3-d991-4ef7-9beb-fd298a7c63f4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="bfd7e206-fbaa-4185-85d7-1c6b8238df15"
+            isSubstitutable="false">
+            <classMoniker
+              Id="984d5a56-63a3-4c0b-a5f2-ea14b83ac2f5"
+              LastKnownName="Entity"
+              LastKnownLocation="Package_2358.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="e037ad24-350e-49ff-84d6-fb16b60574de"
+        name="IStatusRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="58755846-1db6-4b95-9e28-4d5e70c8e025"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg.StatusAgg Type%3DIStatusRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d357c778-3537-471c-88b5-01c24cb17411"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ac0396fc-a345-4ca1-b365-aad27adc8222">
+                <propertyInstance
+                  Id="6f079e2e-4759-4eae-9344-356ec5c2ac8f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b544dd03-06e2-4803-bfa0-a7eae5f14b1a">
+                <propertyInstance
+                  Id="8f4b3cac-27cd-4b89-9e8b-e5fe1698c1e4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09c00d24-615b-4f01-9d9c-e3efa02be2f3">
+                <propertyInstance
+                  Id="2065be33-ee4b-4af7-977b-51965b5fb2bf"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35924bc2-60a0-45b8-83e4-fee9015dcb69">
+                <propertyInstance
+                  Id="b987a2a8-b605-4791-91e0-366d3b134b05"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="5ab17b6f-81de-4df1-beb8-111683b40416"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="cc9ec406-12b0-482f-a197-c9210fee983c"
+              LastKnownName="IRepository&lt;Administrador‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+          <generalization
+            Id="210bd579-95b2-4146-adc0-b5e8972ab4ed"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="e8cd5696-87ae-4aa2-9f68-2778e435961d"
+              LastKnownName="IRepository&lt;Cliente‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+          <generalization
+            Id="9f7fd115-9755-408d-97c6-2ad1d202b3bd"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="8d879dd2-aa21-4cd2-8c10-7cdc29f086ed"
+              LastKnownName="IRepository&lt;Mensagem‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+          <generalization
+            Id="261b4e16-da75-4450-b14d-f13ddea9aefe"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="a8679cf8-2255-4fcd-bacc-c36dc023f5fc"
+              LastKnownName="IRepository&lt;Contrato‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+          <generalization
+            Id="e3817a78-f6a0-443a-854c-2aebcf0b5d20"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="44276345-8620-467b-8a0b-403f8358265f"
+              LastKnownName="IRepository"
+              LastKnownLocation="Package_2358.uml" />
+          </generalization>
+          <generalization
+            Id="4ed03751-7c2f-4a71-9bb7-309c3d45938c"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="ab66a4ee-f22f-4552-81a3-0b22cb8b2913"
+              LastKnownName="IRepository&lt;Status‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

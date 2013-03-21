@@ -1,0 +1,35 @@
+﻿ 
+@model SmsGateway.Presentation.WebClient.Models.AreaDoClienteModel
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Messages.PainelDoCliente</h2>
+
+<fieldset>
+    <legend>@Messages.MeusDadosDeAcesso</legend>
+
+    <div class="display-label">@Messages.Identificador :    @Html.DisplayFor(model => model.Cliente.Id)</div>
+ 
+    <div class="display-field">
+        @Html.ActionLink(@Messages.TrocarSenha, "TrocarSenha")
+    </div>
+</fieldset>
+
+<fieldset>
+    <legend>@Messages.ResumoDeOperacoes</legend>
+    <div class="display-label">@Messages.TotalMsgEnviadas :</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mensagens.Count)
+    </div>
+    <div class="display-label">@Messages.SaldoTotal</div>
+    <div class="display-field">
+         @Html.DisplayFor(model => model.Contrato.SaldoDeMensagens)
+    </div>
+    <div class="display-label">@Messages.DataExpiracao</div>
+    <div class="display-field">
+         @Html.DisplayFor(model => model.Contrato.DataFinal)
+    </div>
+</fieldset>
+ 
+ 

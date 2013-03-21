@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="68b25717-54bb-453d-87a0-9fed0fe51635"
+  name="SMSModule"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="cb19616d-c2a2-4a08-ad87-434f0f6fe0a3"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Domain.CoreContext.SMSModule"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e8ce228c-b8fc-4e17-b5df-7b8ed9d10ecc"
+        LastKnownName="Services"
+        LastKnownLocation="Package2_2243.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="86711381-2154-46ee-9a94-3e28f3f88f1d"
+        LastKnownName="Aggregates"
+        LastKnownLocation="Package3_2243.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

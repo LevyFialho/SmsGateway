@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:2197/ApiService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" />
+  <xs:import schemaLocation="http://localhost:2197/ApiService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:element name="GetSaldoDeMensagens">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q1:AutenticacaoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSaldoDeMensagensResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetSaldoDeMensagensResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensagensEnviadas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q2:AutenticacaoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensagensEnviadasResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="GetMensagensEnviadasResult" nillable="true" type="q3:ArrayOfMensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q4:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="idMensagem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMensagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="GetMensagemResult" nillable="true" type="q5:MensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagem">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q6:AutenticacaoDTO" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="mensagem" nillable="true" type="q7:MensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="EnviarMensagemResult" nillable="true" type="q8:MensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemStringRemetente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q9:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="destinatario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remetente" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="texto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemStringRemetenteResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="EnviarMensagemStringRemetenteResult" nillable="true" type="q10:MensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemString">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q11:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="destinatario" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="texto" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemStringResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="EnviarMensagemStringResult" nillable="true" type="q12:MensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdicionarContato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q13:AutenticacaoDTO" />
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="contato" nillable="true" type="q14:ContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AdicionarContatoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="AdicionarContatoResult" nillable="true" type="q15:ContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtualizarContato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q16:AutenticacaoDTO" />
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="contato" nillable="true" type="q17:ContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AtualizarContatoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoverContato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q18:AutenticacaoDTO" />
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="contatoId" type="q19:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="RemoverContatoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemParaContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q20:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="texto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remetente" nillable="true" type="xs:string" />
+        <xs:element xmlns:q21="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="contatos" nillable="true" type="q21:ArrayOfContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemParaContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="EnviarMensagemParaContatosResult" nillable="true" type="q22:ArrayOfMensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Contato">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q23:AutenticacaoDTO" />
+        <xs:element xmlns:q24="http://schemas.microsoft.com/2003/10/Serialization/" minOccurs="0" name="contatoId" type="q24:guid" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ContatoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="ContatoResult" nillable="true" type="q25:ContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TodosOsContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q26:AutenticacaoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TodosOsContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="TodosOsContatosResult" nillable="true" type="q27:ArrayOfContatoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q28:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetListaDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="GetListaDeContatosResult" nillable="true" type="q29:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListListasDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q30:AutenticacaoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListListasDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="ListListasDeContatosResult" nillable="true" type="q31:ArrayOfListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateListaDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q32:AutenticacaoDTO" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="dtoInstance" nillable="true" type="q33:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateListaDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="CreateListaDeContatosResult" nillable="true" type="q34:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateListaDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q35:AutenticacaoDTO" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="dtoInstance" nillable="true" type="q36:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateListaDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisableListaDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q37="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q37:AutenticacaoDTO" />
+        <xs:element xmlns:q38="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="dtoInstance" nillable="true" type="q38:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DisableListaDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemParaListaDeContatos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q39="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="autenticacao" nillable="true" type="q39:AutenticacaoDTO" />
+        <xs:element minOccurs="0" name="texto" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="remetente" nillable="true" type="xs:string" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="dtoInstance" nillable="true" type="q40:ListaDeContatosDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="EnviarMensagemParaListaDeContatosResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" minOccurs="0" name="EnviarMensagemParaListaDeContatosResult" nillable="true" type="q41:ArrayOfMensagemDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

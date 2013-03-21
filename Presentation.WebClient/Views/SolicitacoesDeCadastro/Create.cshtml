@@ -1,0 +1,39 @@
+﻿@model SmsGateway.Application.CoreContext.DTO.SMSModule.SolicitacaoDeCadastroDTO
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+ 
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+<fieldset>
+    <legend>@Messages.SolicitacoesDeCadastro</legend>
+
+   
+        @Html.HiddenFor(model => model.Data)
+        
+        @Html.HiddenFor(model => model.IsEnabled)
+   
+   
+    <div class="display-label">@Messages.Nome</div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Nome)
+    </div>
+  <div class="display-label">@Messages.website_Email</div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Email)
+    </div>
+    <div class="display-label">@Messages.Telefone</div>
+    <div class="display-field">
+        @Html.EditorFor(model => model.Telefone)
+    </div>
+       
+     
+</fieldset>
+     <input type="submit" value="@Messages.website_Submit" />
+    @Html.ActionLink(@Messages.website_Back,"Cliente", "Login")
+            @ViewBag.ErrorMsg
+}

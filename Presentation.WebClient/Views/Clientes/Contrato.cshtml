@@ -1,0 +1,41 @@
+﻿@model SmsGateway.Application.CoreContext.DTO.SMSModule.ContratoDTO
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Messages.website_Contrato</h2>
+
+<fieldset>
+    <legend>@Messages.website_Details</legend>
+
+    <div class="display-label">@Messages.website_DataInicial</div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.DataInicial)
+        </div>
+        <div class="display-label">@Messages.website_DataFinal</div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.DataFinal)
+        </div>
+        <div class="display-label">@Messages.website_SaldoMensagens</div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.SaldoDeMensagens)
+        </div>
+        <div class="display-label">@Messages.website_ValorCobrado</div>
+        <div class="display-field">
+            @Html.DisplayFor(model => model.ValorMensagem)
+        </div>
+  
+    <div class="display-label">@Messages.website_IsEnabled</div>
+    <div class="display-field">
+     @(Model.IsEnabled ? SmsGateway.Presentation.Seedwork.Resources.Messages.Yes : SmsGateway.Presentation.Seedwork.Resources.Messages.No)
+  
+    </div>
+</fieldset>
+<p>
+        
+    @Html.ActionLink(@Messages.website_Edit, "Edit","Contratos", new { clienteId = Model.ClienteId}, null) |
+     @Html.ActionLink(@Messages.website_Cliente, "Details", new { id = Model.ClienteId }) |
+    @Html.ActionLink(@Messages.website_Back, "Index")
+ 
+</p>

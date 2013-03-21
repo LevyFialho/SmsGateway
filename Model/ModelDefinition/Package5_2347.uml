@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b6b9f162-9af3-426b-beca-7f2af7c580ce"
+  name="SMSModule"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0b41897a-19fb-47e3-ad49-951238e1e6c5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="3b1bcd53-6b8c-43e4-81d0-4a2e64f4b0ea"
+        name="AdministradorDTO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="03c16c1e-1a48-43e0-9b96-4b60f5065fc0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.CoreContext.DTO%2Fbin%2FDebug%2FSmsgateway.Application.CoreContext.DTO.dll&quot; Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule Type%3DAdministradorDTO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6a42ed04-ca2e-4819-b7c3-4338bb66a0b6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ecfc5b50-cf57-4533-a1df-d1ec2b1e2d83">
+                <propertyInstance
+                  Id="ade2848e-df45-45e6-8510-d0c88bbd4be6"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7a3ec9de-7d3a-49e3-b885-f1c4b0b0e331">
+                <propertyInstance
+                  Id="dd478ace-08d6-4384-ab6e-f067ab5bf58a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c980e89-fa20-4701-a60b-dd3dcfe7504c">
+                <propertyInstance
+                  Id="d83a5699-d472-4938-9baf-7655502e6e41"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="046bde01-bd4b-46ad-b83c-13e31f4c5aeb">
+                <propertyInstance
+                  Id="3bc2b5c9-dc09-456a-8817-5d32305fa3e6"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8751ab92-8b03-423f-8cca-b90f49e4a1f8">
+                <propertyInstance
+                  Id="7a5e98e0-e8a1-45d4-98ad-22a8ef785ca2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b96e2708-a418-45af-a952-f2061a350b3f"
+        name="ClienteDTO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a064d30b-f2bf-4a25-aba4-9a49ad20e980"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.CoreContext.DTO%2Fbin%2FDebug%2FSmsgateway.Application.CoreContext.DTO.dll&quot; Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule Type%3DClienteDTO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="48872b49-23d1-49f7-b8c6-37041c034e68"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="252a2be9-4ec1-47b6-bb95-f112a4690146">
+                <propertyInstance
+                  Id="c51403a7-aa56-4bf9-b4df-420a37aa628b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="74835412-ab49-485d-8cc4-4db00c233cd0">
+                <propertyInstance
+                  Id="c4236e22-40fe-4131-8307-b90a3f9f5420"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4e076727-3e74-49c5-9d3a-cf2bdd4ea208">
+                <propertyInstance
+                  Id="086ee7dd-0a5e-4bad-84c2-6e8234e5c03a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="09c7adbf-a11b-40b9-950a-61932c496cd6">
+                <propertyInstance
+                  Id="732c0a07-a21b-4ded-88f0-cc7eb38e6116"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0a1c49d-cd15-4f51-a8ae-a29521ea50b4">
+                <propertyInstance
+                  Id="bea3127a-d2f9-4df5-a681-a4ee9fb96bea"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="adeeeddb-fc08-42a0-84ab-d809f7950f02"
+        name="ContratoDTO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5b7b6073-57ab-465e-980d-9443da2582b2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.CoreContext.DTO%2Fbin%2FDebug%2FSmsgateway.Application.CoreContext.DTO.dll&quot; Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule Type%3DContratoDTO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e59f76f8-8ccc-4921-9370-714b205d5482"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0018aa02-0004-465a-81ed-ef27c3832f98">
+                <propertyInstance
+                  Id="3bb9d4a7-36a0-4875-abd6-60327d90ca26"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0fbd9318-6914-42e2-a1d1-4819da83766b">
+                <propertyInstance
+                  Id="6137be07-381a-41ae-8260-d00d9a931477"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1780e13c-96bf-41a9-8449-083796d493ec">
+                <propertyInstance
+                  Id="0db2f285-f14f-45cc-9020-7bf2eb56f7cc"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2c424803-e578-4507-9361-c39bbbf86d32">
+                <propertyInstance
+                  Id="249598ac-486d-460f-9543-23232d02c688"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1784f776-578a-479d-b9c9-6756f40933a0">
+                <propertyInstance
+                  Id="41b635bd-0afa-434d-af25-91891bc5300c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="70d5ee26-ef67-494d-a8a7-c0785166af58"
+        name="MensagemDTO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f4cee1e5-f0b9-4bdf-8023-bf987a9e8098"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.CoreContext.DTO%2Fbin%2FDebug%2FSmsgateway.Application.CoreContext.DTO.dll&quot; Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule Type%3DMensagemDTO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a205f3bc-db27-418b-8cc5-54ba864753b5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff59dca3-bb79-4fea-ae4c-3408d8ba3339">
+                <propertyInstance
+                  Id="e6299311-ec4a-4b61-8f97-da5a5a28ae89"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="763080b2-6807-4b3f-89de-18e6a7bf54eb">
+                <propertyInstance
+                  Id="c8c78eab-4aa4-4ad2-b58f-aaf084de9ae7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15b3b50a-8e69-4844-9697-5024cf9349f7">
+                <propertyInstance
+                  Id="9c982180-2066-4b96-8b33-98f88853c804"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8b1f4eb3-741c-44c8-84cd-956c2be40c6c">
+                <propertyInstance
+                  Id="55a063c2-d306-4418-8815-5cdc377ce8f7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="996cd91b-5f94-4201-a6e7-39355f1614b6">
+                <propertyInstance
+                  Id="befc4221-5885-4463-ac02-4a8360e01d16"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ad098b02-ac9f-42fd-9a00-e704ce1c5f8b"
+        name="StatusDTO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2ee26f59-4c5b-4ba7-8fa0-1c5551ce0b1b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FApplication.CoreContext.DTO%2Fbin%2FDebug%2FSmsgateway.Application.CoreContext.DTO.dll&quot; Namespace%3DSmsGateway.Application.CoreContext.DTO.SMSModule Type%3DStatusDTO"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ad088289-59dc-4d38-8dc9-4a744804e80b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c56b9183-8117-488d-b5b8-ed4327556ee3">
+                <propertyInstance
+                  Id="5882cf18-de4d-4897-bbf1-59f234647ebb"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af29a882-111b-423d-a091-fe7cd47eafbd">
+                <propertyInstance
+                  Id="e6f79de6-ca44-40b8-b384-28b7289d69e8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1a0021a6-f65f-4d2a-b69a-1f7b11edc1ff">
+                <propertyInstance
+                  Id="05b42d9a-bd58-43ee-9539-1ad53851dd02"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7bcd94c5-577a-43f1-aa52-a3078eadcbdb">
+                <propertyInstance
+                  Id="9002c7c7-1ebf-465e-9f91-875d38c893e1"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ec4efdfb-4608-4498-b5ce-51c3ccab4578">
+                <propertyInstance
+                  Id="f7f02729-72fc-487e-9473-2c1982929703"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="SmsGateway.DistributedServices.Restful.CoreContext.Global" Language="C#" %>

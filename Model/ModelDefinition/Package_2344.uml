@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="87855a0d-539b-476f-a0d3-01e7a605d385"
+  name="Crosscutting"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="061cbbda-0447-431d-a060-b6f7a94136d5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Infrastructure.Crosscutting"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="45591e55-6dae-45fe-ab50-6c06b5177901"
+        LastKnownName="NetFramework"
+        LastKnownLocation="Package1_2344.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="58806452-3204-403f-977e-f6ef28b6dcfb"
+        LastKnownName="Adapter"
+        LastKnownLocation="Package3_2344.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="17a6f217-4e31-49a5-ba6c-9bf14945530e"
+        LastKnownName="Validator"
+        LastKnownLocation="Package5_2344.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="efe35d35-c928-413f-be0a-01101f7c5ca9"
+        LastKnownName="Logging"
+        LastKnownLocation="Package6_2344.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

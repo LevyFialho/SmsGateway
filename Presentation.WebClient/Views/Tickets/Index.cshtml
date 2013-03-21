@@ -1,0 +1,50 @@
+﻿@using SmsGateway.Application.CoreContext.DTO.SMSModule
+@model List<SmsGateway.Application.CoreContext.DTO.SMSModule.TicketDTO>
+
+@{
+    ViewBag.Title = "Contatos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<fieldset>
+    <legend>@Messages.MinhasDuvidas</legend>
+    @if (Model != null && Model.Count(c => c.IsEnabled) > 0)
+    {
+        <table>
+            <tr>
+                <th>
+                    @Messages.Data
+                </th>
+                <th>
+                    @Messages.Assunto
+                </th>
+                <th> @Messages.Status</th>
+                <th></th>
+            </tr>
+            @foreach (var item in Model.Where(c => c.IsEnabled))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Data)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Assunto)
+                    </td>
+                     <td>
+                         @(item.Status == StatusDoTicketDTO.Pendente ? @Messages.Pendente : @Messages.Respondido)
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Ver, "Ticket", new { id = item.Id })
+                    </td>
+                     
+                </tr>
+            }
+        </table>
+    }
+
+    @Html.ActionLink(@Messages.NovaDuvida, "Ticket", new { id = string.Empty })
+</fieldset>
+ 
+
+
+

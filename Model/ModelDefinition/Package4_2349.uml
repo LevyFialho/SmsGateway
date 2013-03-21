@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="40281c1c-3ce5-4028-a0bd-873fc1eb2711"
+  name="Unity"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="a44c37ad-dbc8-4f10-805d-aca4c18bcb62"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Practices.Unity"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="a0edfaf2-26e2-4c39-b6cd-0740de1a4ab2"
+        name="IUnityContainer"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="67ea75e0-bb54-4c63-bca7-1ed92cd14809"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDistributedServices.CoreContext%2Fbin%2FMicrosoft.Practices.Unity.dll&quot; Namespace%3DMicrosoft.Practices.Unity Type%3DIUnityContainer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ff88dc15-b97a-40e6-b7e1-492fe6c8dff8"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="df813a34-8d9a-4728-8150-2e37fb03883c">
+                <propertyInstance
+                  Id="962e2220-aa44-446a-8658-a33a2db80759"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b5dc62a-6272-456d-b7db-0fdc87344fa9">
+                <propertyInstance
+                  Id="ba97edbc-3892-43e2-97db-8d69a8c684e8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="64acd752-16c6-49de-9c2c-def3ff9243d8">
+                <propertyInstance
+                  Id="d48b31cf-889a-4d5a-a7ec-aac2cb60bcdb"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e1b0805a-d3b4-4a88-8820-5bd69bcab128">
+                <propertyInstance
+                  Id="5d9ca822-2974-4f80-991e-a8d58edddea8"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="2085f784-2aae-4f21-9885-4e553ca9b7a6"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="65a3d5ca-f568-4cf7-bb5f-52d5c8a688f0"
+              LastKnownName="IDisposable"
+              LastKnownLocation="Package3_2224.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SmsGateway.DistributedServices.Soap.CoreContext.ApiService" CodeBehind="ApiService.svc.cs" %>

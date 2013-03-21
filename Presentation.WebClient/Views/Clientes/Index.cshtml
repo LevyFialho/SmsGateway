@@ -1,0 +1,50 @@
+﻿@model List<SmsGateway.Application.CoreContext.DTO.SMSModule.ClienteDTO>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+     @Messages.website_Clientes</h2>
+<p>
+    @Html.ActionLink( @Messages.website_Create, "Create")
+</p>
+
+    @if (Model != null)
+    {
+        <table>
+    <tr>
+        <th>
+           @Messages.website_Name
+        </th>
+        <th>
+            @Messages.website_Id
+        </th>
+        <th>
+            @Messages.website_IsEnabled
+        </th>
+        <th>
+        </th>
+    </tr>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @(item.IsEnabled ?  SmsGateway.Presentation.Seedwork.Resources.Messages.Yes :  SmsGateway.Presentation.Seedwork.Resources.Messages.No)
+            </td>
+            <td>
+                @Html.ActionLink( @Messages.website_Details, "Details", new { id = item.Id })  
+            </td>
+            <td>
+                @Html.ActionLink( @Messages.website_Contrato, "Contrato", new { id = item.Id })
+            </td>
+        </tr>
+        }
+        </table>
+    }
+

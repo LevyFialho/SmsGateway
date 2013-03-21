@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="86711381-2154-46ee-9a94-3e28f3f88f1d"
+  name="Aggregates"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3c5a4f10-283b-49cc-a4ea-40d8a6cc1432"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="994a9ad6-734a-4fc2-b4f6-293e2303356f"
+        LastKnownName="MensagemAgg"
+        LastKnownLocation="Package4_2243.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8cc92942-ec61-41bd-abf8-ea84499c1b3b"
+        LastKnownName="ContratoAgg"
+        LastKnownLocation="Package5_2243.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a5430a6d-3ee4-46fc-b535-afe89e9356d7"
+        LastKnownName="AdministradorAgg"
+        LastKnownLocation="Package_2249.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e5e44919-cda9-4d71-8c97-e2fc0a9d0698"
+        LastKnownName="ClienteAgg"
+        LastKnownLocation="Package3_2249.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4b675176-4f8d-4360-953d-67b6357a7023"
+        LastKnownName="OperadoraAgg"
+        LastKnownLocation="Package4_2249.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4a8953c8-4806-45c3-b0d2-e1a45bf0ee10" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:2197/ApiService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ApiService.disco" MetadataType="Disco" ID="8f6ed876-3bd2-42e7-8142-e18015fcbaf4" SourceId="1" SourceUrl="http://localhost:2197/ApiService.svc?disco" />
+    <MetadataFile FileName="ApiService.xsd" MetadataType="Schema" ID="5672c497-236d-4bed-9af8-13b4eb1fdb14" SourceId="1" SourceUrl="http://localhost:2197/ApiService.svc?xsd=xsd2" />
+    <MetadataFile FileName="ApiService.wsdl" MetadataType="Wsdl" ID="f0447a9b-c179-4f14-8bbe-88efa5c8c914" SourceId="1" SourceUrl="http://localhost:2197/ApiService.svc?wsdl" />
+    <MetadataFile FileName="ApiService1.xsd" MetadataType="Schema" ID="d8666092-8b9d-46f4-89ed-f4e959aab3a0" SourceId="1" SourceUrl="http://localhost:2197/ApiService.svc?xsd=xsd0" />
+    <MetadataFile FileName="ApiService2.xsd" MetadataType="Schema" ID="238adf49-2334-485d-97b8-62fb8324f1c3" SourceId="1" SourceUrl="http://localhost:2197/ApiService.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

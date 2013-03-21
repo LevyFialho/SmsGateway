@@ -1,0 +1,57 @@
+﻿@model List<SmsGateway.Application.CoreContext.DTO.SMSModule.SolicitacaoDeCadastroDTO>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+ 
+<fieldset>
+    <legend>@Messages.SolicitacoesDeCadastro</legend>
+     @if (Model != null && Model.Count(s => s.IsEnabled) > 0)
+    {
+        <table>
+    <tr>
+        <th>
+           @Messages.Data
+        </th>
+        <th>
+            @Messages.Nome
+        </th>
+        <th>
+            @Messages.website_Email
+        </th>
+        <th>
+            @Messages.Telefone
+        </th>
+        <th></th>
+    </tr>
+        @foreach (var item in Model.Where(s => s.IsEnabled))
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Data)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+
+            </td>
+            <td>
+                @Html.ActionLink( @Messages.website_Details, "Details", "SolicitacoesDeCadastro",new { id = item.Id }, null)  
+            </td>
+            <td>
+                       @Html.ActionLink( @Messages.Remover, "Remove", "SolicitacoesDeCadastro",new { id = item.Id }, null)  
+    
+            </td>
+        </tr>
+        }
+        </table>
+    }
+</fieldset>
+   
+

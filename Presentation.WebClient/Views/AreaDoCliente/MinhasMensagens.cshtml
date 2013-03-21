@@ -1,0 +1,102 @@
+﻿@model SmsGateway.Presentation.WebClient.Models.MinhasMensagensModel
+@{
+    ViewBag.Title = "MinhasMensagens";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+@Html.ValidationSummary(true)
+@using (Html.BeginForm("EnviarMensagemParaContato", "AreaDoCliente"))
+{
+    if (Model.DadosDoCliente.Contatos != null && Model.DadosDoCliente.Contatos.Count > 0)
+     {
+         <fieldset>
+             <legend>@Messages.EnviarMensagem</legend>
+             <div class="display-label">@Messages.TextodaMensagem</div>
+             <div class="display-field">
+                 @Html.EditorFor(model => model.Mensagem)
+             </div>
+             <div class="display-label">@Messages.SelecionarContato</div>
+             <div class="display-field">
+         
+                 @Html.DropDownListFor(m => m.ContatoId, new SelectList(Model.DadosDoCliente.Contatos.Where(c => c.IsEnabled), "Id", "Nome"))
+
+                 <input type="submit" value="@Messages.Enviar" />
+
+             </div>
+   
+    
+         </fieldset>
+     }
+}
+@using (Html.BeginForm("EnviarMensagemParaLista", "AreaDoCliente"))
+{
+    if (Model.DadosDoCliente.ListasDeContatos != null && Model.DadosDoCliente.ListasDeContatos.Count > 0)
+    {
+
+        <fieldset>
+            <legend>@Messages.EnviarMensagemParaLista</legend>
+            <div class="display-label">@Messages.TextodaMensagem</div>
+            <div class="display-field">
+                @Html.EditorFor(model => model.Mensagem)
+            </div>
+            <div class="display-label">@Messages.SelecionarLista</div>
+            <div class="display-field">
+         
+
+                @Html.DropDownListFor(m => m.ListaId, new SelectList(Model.DadosDoCliente.ListasDeContatos.Where(c => c.IsEnabled), "Id", "Nome"))
+
+                <input type="submit" value="@Messages.Enviar" />
+
+            </div>
+
+        </fieldset>
+    }
+
+}
+@Html.DisplayFor(model => model.Resultado)
+@if ((Model.DadosDoCliente.ListasDeContatos != null && Model.DadosDoCliente.ListasDeContatos.Count > 0)
+    && (Model.DadosDoCliente.Contatos != null && Model.DadosDoCliente.Contatos.Count > 0))
+{
+    @Messages.CadastreContatosParaEnviarMensagens
+}
+ @if (Model.DadosDoCliente.Mensagens != null && Model.DadosDoCliente.Mensagens.Count(l => l.IsEnabled) > 0)
+ {
+     <fieldset>
+         <legend>@Messages.MensagensEnviadas</legend>
+   
+         <table>
+             <tr>
+                 <th>
+                     @Messages.Destinatario
+                 </th>
+                 <th>
+                     @Messages.TextodaMensagem
+                 </th>
+                 <th>@Messages.Status</th>
+                 <th>@Messages.QuantoFoiCobrado</th>
+             </tr>
+             @foreach (var item in Model.DadosDoCliente.Mensagens.Where(c => c.IsEnabled))
+             {
+                 <tr>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.NumeroDoDestinatario)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.TextoDaMensagem)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.StatusMensagemAoCliente)
+                     </td>
+                     <td>
+                         @Html.DisplayFor(modelItem => item.StatusQuantoDebitarDoContratoDoCliente)
+                     </td>
+                 </tr>
+             }
+         </table>
+    
+     </fieldset>
+ }
+
+

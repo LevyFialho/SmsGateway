@@ -1,0 +1,61 @@
+﻿@model SmsGateway.Application.CoreContext.DTO.SMSModule.ListaDeContatosDTO
+
+
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    
+    <fieldset>
+         <legend>@Messages.ListaDeContatos</legend>
+        <div class="display-label">@Messages.Nome</div>
+        <div class="display-field">
+            @Html.EditorFor(model => model.Nome)
+        </div>
+        
+        
+    </fieldset>
+     <input type="submit" value="@Messages.website_Submit" />
+            @ViewBag.ErrorMsg
+}
+
+<fieldset>
+    <legend>@Messages.ContatosDaLista</legend>
+    @if (Model.Contatos != null && Model.Contatos.Count(c => c.IsEnabled) > 0)
+    {
+        <table>
+            <tr>
+                <th>
+                    @Messages.Nome
+                </th>
+                <th>
+                    @Messages.Numero
+                </th>
+                <th></th>
+                 
+            </tr>
+            @foreach (var item in Model.Contatos.Where(c => c.IsEnabled))
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Numero)
+                    </td>
+                    <td>
+                        @Html.ActionLink(@Messages.Remover, "RemoverContato", new { idContato = item.Id, idLista = Model.Id })
+                    </td>
+                    
+                </tr>
+            }
+        </table>
+    }
+
+    @Html.ActionLink(@Messages.AdicionarContato, "AdicionarContato", new { idLista = Model.Id })
+</fieldset>
+<div>
+    @Html.ActionLink(@Messages.website_Back, "Contatos")
+</div>

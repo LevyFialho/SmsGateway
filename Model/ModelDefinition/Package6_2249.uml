@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="223d743b-742b-4ade-a3a0-d07cc9b9dccf"
+  name="Operadoras"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="e84d5906-2907-47e1-8760-394cbdc344c2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.OperadoraAgg.Operadoras"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a21dca6a-d76e-42d2-be9c-15466863f6de"
+        LastKnownName="Comtele"
+        LastKnownLocation="Package7_2249.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="7b7250e2-b82a-4e5e-bbf3-0bbb7b11c76f"
+        LastKnownName="HumanSMS"
+        LastKnownLocation="Package8_2249.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ca1ef6f9-daaa-45dc-afc0-daf747005e69"
+        LastKnownName="Tww"
+        LastKnownLocation="Package9_2249.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b55f3496-a120-4e42-81fd-a89e1ff47b05"
+  name="Model" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="e27ff99a-26ca-4b3f-b225-88cd84c1c9b6">
+      <profileInstance
+        Id="6b0680c2-49f4-47c2-b4ca-253cb39de4cc"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2a050895-557b-4832-a48f-483390811976"
+        LastKnownName="SmsGateway"
+        LastKnownLocation="Package_2224.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="93373be9-2907-43b5-b08f-78a4bd8711bc"
+        LastKnownName="System"
+        LastKnownLocation="Package3_2224.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5d012963-c3a1-4d38-b3ee-36f26ba95aa7"
+        LastKnownName="Domain.CoreContext.SmsModule"
+        LastKnownLocation="Package_2241.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e9f67f6b-71ce-4ca9-8ca7-0a391c08912b"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package2_2349.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="94d68832-27c3-44b6-a793-cb54fff83f36"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package5_2349.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="221aca98-5280-404c-a3a5-3eb4064cc483"
+        LastKnownName="CoreContext"
+        LastKnownLocation="Package6_2349.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4e7b7653-009a-4df0-86ef-771f3d5e7c27"
+        LastKnownName="Restful.CoreContext"
+        LastKnownLocation="Package_2350.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0dabf25f-5bb8-4ad3-a2dd-d41809a60a98"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package_2353.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="0fcf7aec-9012-44ae-a1f3-29b799e02370"
+        LastKnownName="CoreContext"
+        LastKnownLocation="Package_2355.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="994c2760-275a-482a-92d7-2f4ce9f9403d"
+        LastKnownName="Seedwor"
+        LastKnownLocation="Package_2358.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c9a42c88-bcc2-42c8-9bb6-908fff5e6cb6"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package_2359.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="74ab04b8-ac95-4d01-804a-100c5984d611"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package_1205.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6ee57d38-3d6b-44ec-8d16-39504bbfbe49"
+        LastKnownName="CoreContext"
+        LastKnownLocation="Package_1206.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="4a4d0712-b701-451f-b4a7-1d66e479190d"
+        LastKnownName="Domain"
+        LastKnownLocation="Package_1210.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a6880b8f-04dc-4fcf-8f4a-6edf06dcefad"
+        name="Model::SmsModule::Aggregates::Contrato" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="79f9c149-b609-490f-ae08-1f973a5f6679"
+        name="Model::SmsModule::Aggregates::Mensagem" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

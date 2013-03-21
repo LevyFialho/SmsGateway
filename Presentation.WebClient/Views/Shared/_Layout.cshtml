@@ -1,0 +1,171 @@
+﻿@{
+    ViewBag.Title = @Messages.website_Title;
+}
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>SMS Agile</title>
+    <link rel="stylesheet" href="~/Content/css/style.css" type="text/css" media="all" />
+    <script src="~/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery.jcarousel.pack.js" type="text/javascript"></script>
+    <script src="~/Scripts/jquery-func.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <div id="header">
+        <div class="shell">
+
+            <!-- Logo -->
+            <h1 id="logo"><a href="~/">SMS Agile</a></h1>
+            <!-- End Logo -->
+
+            <!-- Navigation -->
+            <div id="navigation">
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, null)</li>
+                    <li><a href="~/#">Serviço<span><em></em></span></a></li>
+                    <li><a href="~/#">Contato<span><em></em></span></a></li>
+                    <li>@Html.ActionLink("Área do Cliente", "Index", "AreaDoCliente", null, null)</li>
+                    <li>@Html.ActionLink("Área do Administrador", "Solicitacoes", "Administradores", null, null)</li>
+                </ul>
+
+            </div>
+            <!-- End Navigation -->
+
+        </div>
+    </div>
+    <!-- End Header -->
+    @if (ViewData["Slider"] != null)
+    {
+
+
+     
+        <!-- Slider -->
+        <div id='slider'>
+            <div class='shell'>
+
+                <!-- Slides -->
+                <div class='slides'>
+                    <ul>
+                        <!-- Slide -->
+                        <li>
+                            <div class='slide-info'>
+                                <h2><span>+Mobilidade  </span> +Agilidade </h2>
+                                <p>Deixe a sua empresa mais móvel. Oferecemos um portal web, aplicações e APIs em diversas linguagens para envio de mensagens de maneira Ágil, Simples e Segura.</p>
+                                <p>Além disso, oferecemos exemplos de código e tutoriais 
+                                em diversas linguagens de programação, além de suporte online 24 horas por dia.</p>
+                                <p> Nossos serviço suportam integação com qualquer sistema conectado a wold wide web e garantem a entrega para mais de 200
+                                 países ao redor do mundo.</p>
+                            
+                            </div>
+                            <span class='slide-image image1'></span>
+                        </li>
+                        <!-- End Slide -->
+
+                        <!-- Slide -->
+                        <li>
+                            <div class='slide-info'>
+                                <h2><span>+Segurança</span> +Performance</h2>
+                                <p>Nossos serviços estão disponíveis 24 horas por dia e
+                                 possuem um dos menores tempos de resposta do mercado.</p>
+                                <p>Garantimos a entrega de suas mensagens de maneira segura, com criptografia dos dados transmitidos. 
+                                    Nossos serviços utilizam tecnologias que suportam o alto nível de escalonabilidade e performance, sendo capaz de
+                                    se comunicar com as maiores operadoras do mercado para envia a sua mensagem a mais de 200 países ao redor do mundo.</p>
+                            </div>
+                            <span class='slide-image image1'></span>
+                        </li>
+                        <!-- End Slide -->
+
+                        <!-- Slide -->
+                        <li>
+                            <div class='slide-info'>
+                                <h2>Experimente<span> Grátis</span></h2>
+                                <p>Solicite uma proposta de cadastro e ganhe créditos para experimentar nossos serviços.</p>
+                                <p>Oferecemos documentação técnica, suporte online, tutoriais e exemplos de código totalmente grátis. </p>
+                                <p>Faça agora a sua solicitação de cadasto e conheça nossos pacotes. Quanto mais mensagens você enviar, mais barato é!</p>
+                            </div>
+                            <span class='slide-image image1'></span>
+                        </li>
+                        <!-- End Slide -->
+
+                    </ul>
+                </div>
+                <!-- End Slides -->
+
+            </div>
+        </div>
+        <!-- End Slider -->
+
+        <!-- Slider Nav -->
+        <div id='slider-navigation'>
+            <div class='shell'>
+                <ul>
+                    <li><a href='#' class='active'>COM<strong>FACILIDADE</strong><em class='ico1'></em></a></li>
+                    <li><a href='#'>COM<strong>SEGURANÇA</strong><em class='ico2'></em></a></li>
+                    <li class='last'><a href='#'>COM<strong>BOM PREÇO</strong><em class='ico3'></em></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End Slider Nav -->
+
+    }
+
+    <!-- Main -->
+    <div id="main">
+
+        <div class="shell">
+        <ul id="menu">
+            @if (ViewData["adminMenu"] != null)
+            {
+                
+                    <li>@Html.ActionLink(@Messages.SolicitacoesDeCadastro, "Solicitacoes", "Administradores")</li>
+                    <li>@Html.ActionLink(@Messages.website_Adminsitradores, "Index", "Administradores")</li>
+                <li>@Html.ActionLink(@Messages.website_Clientes, "Index", "Clientes")</li>
+                <li>@Html.ActionLink(@Messages.Tickets, "Index", "Tickets")</li>
+                    <li>@Html.ActionLink(@Messages.website_Logoff, "Logoff", "Administradores", null, null)</li>
+                
+            }
+            @if (ViewData["clienteMenu"] != null)
+            {
+                    <li>@Html.ActionLink("Perfil", "Index", "AreaDoCliente")</li>
+                    <li>@Html.ActionLink("Contatos", "Contatos", "AreaDoCliente")</li>
+                    <li>@Html.ActionLink("Mensagens", "MinhasMensagens", "AreaDoCliente")</li>
+                    <li>@Html.ActionLink("Downloads", "Documentacao", "AreaDoCliente")</li>
+                    <li>@Html.ActionLink("Ajuda", "Ajuda", "AreaDoCliente", null, null)</li>
+                    <li>@Html.ActionLink(@Messages.website_Logoff, "Logoff", "AreaDoCliente", null, null)</li>
+                
+            }
+            </ul>
+            @RenderBody()
+
+
+
+        </div>
+    </div>
+    <!-- End Main -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="shell">
+
+            <!-- Footer Logo -->
+            <a href="#" class="notext footer-logo">Company Name</a>
+            <!-- End Footer -->
+
+            <!-- Footer Nav -->
+            <div class="right">
+                <p>
+                    &copy; SMSAGILE 
+                </p>
+            </div>
+            <!-- End Footer Nav -->
+        </div>
+    </div>
+    <!-- End Footer -->
+</body>
+</html>
+

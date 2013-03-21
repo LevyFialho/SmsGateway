@@ -1,0 +1,32 @@
+﻿@model SmsGateway.Application.CoreContext.DTO.SMSModule.AdministradorDTO
+
+@{
+   
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Messages.website_Admin</h2>
+
+<fieldset>
+    <legend>@Messages.website_Details</legend>
+
+    <div class="display-label">@Messages.website_Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Nome)
+    </div>
+
+    <div class="display-label">@Messages.website_Email</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+   
+    <div class="display-label">IsEnabled</div>
+    <div class="display-field">
+        @(Model.IsEnabled ? @Messages.Yes : @Messages.No)
+        
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink(@Messages.website_Edit, "Edit", new { id = Model.Id.ToString() }) |
+    @Html.ActionLink(@Messages.website_Back, "Index")
+</p>

@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="a5430a6d-3ee4-46fc-b535-afe89e9356d7"
+  name="AdministradorAgg"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="217ac681-3244-44c4-9854-fe327b634bcb"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.AdministradorAgg"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="05aa7a1f-9bf3-49f0-826d-26275bc2c809"
+        name="IAdministradorRepository"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="33316eab-0aad-48bb-a971-33fd34109c2b"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FDomain.CoreContext%2Fbin%2FDebug%2FSmsGateway.Domain.CoreContext.dll&quot; Namespace%3DSmsGateway.Domain.CoreContext.SMSModule.Aggregates.AdministradorAgg Type%3DIAdministradorRepository"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0ef50685-daa7-4bbd-8ba1-4563ccda2415"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="902cb8e7-06c6-4ec6-b82e-488d931801df">
+                <propertyInstance
+                  Id="2b748a26-6fb6-46df-a374-c9f43f94b2be"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3c89aab0-d2ca-4463-a485-7d1ae58e7e89">
+                <propertyInstance
+                  Id="7c8afbeb-dd38-4a2a-9d4e-52e646af2980"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="802ab910-3266-487c-94ec-6b429026ea3c">
+                <propertyInstance
+                  Id="255d0516-e75b-42be-ba81-72fde46cbcfe"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6500debb-4e42-4ce1-9eb2-dc85771f14b6">
+                <propertyInstance
+                  Id="45abcb61-331c-437f-85be-13ecbfe9cb10"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="b9008002-8fa0-439b-bf15-4e1984a63064"
+            isSubstitutable="false">
+            <interfaceMoniker
+              Id="cc9ec406-12b0-482f-a197-c9210fee983c"
+              LastKnownName="IRepository&lt;Administrador‎&gt;"
+              LastKnownLocation="Package2_2224.uml" />
+          </generalization>
+        </generalsInternal>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

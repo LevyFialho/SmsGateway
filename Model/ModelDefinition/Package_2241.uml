@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="5d012963-c3a1-4d38-b3ee-36f26ba95aa7"
+  name="Domain.CoreContext.SmsModule" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <suppliersInternal>
+    <dependency
+      Id="adac3c0e-a5fb-416d-af1d-72b2f0b419fd">
+      <packageMoniker
+        Id="c9a42c88-bcc2-42c8-9bb6-908fff5e6cb6"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package_2359.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a716af49-ef3c-4bc7-a3b4-48c6c5c13e92"
+        LastKnownName="Aggregates"
+        LastKnownLocation="Package_2242.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fa4344c7-6a8c-4c23-aeb9-bde7caaea626"
+        LastKnownName="Services"
+        LastKnownLocation="Package1_2242.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

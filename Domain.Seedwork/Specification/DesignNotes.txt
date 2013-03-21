@@ -1,0 +1,42 @@
+﻿---------------------------
+SPECIFICATION PATTERN
+---------------------------
+O padrão Specification (originalmente difinido por Eric Evans e martin Fowler) é uma boa maneira de encapsular
+critérios de Query e fazer operações compostas e complexas.
+Definição do Padrão: http://en.wikipedia.org/wiki/Specification_pattern
+Artigo de Martin Fowler e eric Evans: http://www.martinfowler.com/apsupp/spec.pdf
+
+O código deste framework Specification foi reaproveitado de uma solution disponibilizada no codeplex 
+e adaptado para o Framework 4.5. Abaixo segue informações de licença do código e as notas originais:
+
+//===================================================================================
+// Microsoft Developer & Platform Evangelism
+//=================================================================================== 
+// THIS CODE AND INFORMATION ARE PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
+// EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES 
+// OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+//===================================================================================
+// Copyright (c) Microsoft Corporation.  All Rights Reserved.
+// This code is released under the terms of the MS-LPL license, 
+// http://microsoftSmsGateway.codeplex.com/license
+//===================================================================================
+Although the original pattern worked just with in-memory-objects, we changed the implementation to be based on Lambda-Expressions against EF,
+so the performance can be much better.
+Composing several expressions with AND, OR, NOT, (composition operations) cannot be done with simple expressions without implementing some ‘plumbing’.
+Second reason is that Specifications allows defining a query criterion and simply referencing it. If you would want to do the same you’d need to make a class returning an expression, therefore it would be similar but with no composition, denial, etc. 
+Ok, you can do something like: 
+Expression<Func<T,bool>> expression = t.property==true; 
+Which is really what we can be returning, but our specification implementation allows composition and criteria encapsulation instead of spreading it directly on lambda expressions.
+Finally, the use of the composite specification pattern is not mandatory in this Architecture, for instance, instead of using a AllMatching() for specifications you can always use the filter method providing a lambda expression directly.
+
+More examples about SPECIFICATION PATTERN and LINQ:
+http://linqspecs.codeplex.com/    
+
+Specifications provide us with a mechanism to know the criteria of the elements we want to search for; 
+but it does not know anything about who will perform the search operation thereof. 
+In addition to this clear separation of concerns, the creation of these elements also helps us 
+to make important domain operations, such as types of search criteria, perfectly clear. 
+Otherwise, these would be scattered around different parts of the code, making them more difficult and expensive to modify. 
+
+Finally, another advantage of specifications, as proposed here, is the possibility of performing SPECIFICATION COMPOSITION (logical operations),
+ which provides us with a simple mechanism to perform dynamic queries in LINQ.

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4a4d0712-b701-451f-b4a7-1d66e479190d"
+  name="Domain" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e02c4c7a-8ef3-4240-a379-cace09a265c2"
+        LastKnownName="Seedwork"
+        LastKnownLocation="Package1_1210.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="8909b89d-b02b-4fd3-b793-c4b7f96de72a"
+        LastKnownName="CoreContext"
+        LastKnownLocation="Package2_1210.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b6a82eb3-b2ac-4229-be7e-4ca838311201"
+        LastKnownName="Seedwork1"
+        LastKnownLocation="Package_1216.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

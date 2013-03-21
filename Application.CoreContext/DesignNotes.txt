@@ -1,0 +1,6 @@
+﻿
+DTO & Conventions
+-----------------
+Geralmente objetos usados para trabsferência de dados são nomeados adicionando um sufixo específico (DTO).
+Essa nomeação serve para destacar o fato que esses objetos são externos ao modelo de domínio e são usados como data contracts
+para sistemas extenos e para o layer de apresentação.

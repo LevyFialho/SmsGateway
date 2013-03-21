@@ -1,0 +1,1579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="efe35d35-c928-413f-be0a-01101f7c5ca9"
+  name="Logging"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="4359b1d7-e5c2-4e72-b357-e2427b1e44c2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="c58c60b8-e5dd-4ede-af90-85e5b250d028"
+        name="ILogger"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="54702c33-d014-413c-ace7-5c06c40af811"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6d56339a-59ed-4a4a-969e-d6fc7bad1956"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cbd95389-34fc-49d4-a871-8b95c0b4b4ba">
+                <propertyInstance
+                  Id="b87acdd2-38e5-40fe-8b38-c343159ebc4e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89e9144d-eea4-4b3c-8ca0-2588de48ec2d">
+                <propertyInstance
+                  Id="b436345b-0eca-4499-95e8-e08c2f902d6a"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c92d51f-d7a1-44d8-b88a-640aa94a25a7">
+                <propertyInstance
+                  Id="d7fab2cc-1d67-40b9-9ae7-c87e20314b12"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="501248ab-30cd-4ece-bfcf-b6f8143b8298">
+                <propertyInstance
+                  Id="d0c02919-c01f-4d58-881d-65a0fddc6278"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="63671194-dbf7-4802-b4d4-3660263013fa"
+            name="Debug"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9697679a-0b70-4483-a249-e49627124bdb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="eee199db-6b51-4535-96b9-90d31eb5edd4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="352660a3-6051-4b31-9b2b-4c60697daf62">
+                    <propertyInstance
+                      Id="a9e4ac54-d943-4bd5-bff9-be9497b8a383"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="421f0b0b-6077-403c-8e3a-853ee4f1ca52">
+                    <propertyInstance
+                      Id="8dec1995-de53-427a-a8ef-9ec8b3409854"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29ded62b-63d8-417d-b3d2-3b857c71129e">
+                    <propertyInstance
+                      Id="1edf0fbd-0a2a-43e7-8d16-5af2fe356ad8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8be0805f-df22-4ff7-b26b-c05d9ebca2ff">
+                    <propertyInstance
+                      Id="c6097368-77cf-4a0b-895b-43fcc954038c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd05637b-4438-4e23-89c2-d91f80c7b59d">
+                    <propertyInstance
+                      Id="eb2c9ac3-bb82-48c9-8c05-d98bf8b23082"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b81c3928-d4e9-4911-a233-c9a5da8ece48">
+                    <propertyInstance
+                      Id="d969b191-f6fb-4d6b-bc81-7d26307f0a01"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cdcb9ee3-afc0-43cf-a6a1-cf4d58b6e0b5"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7dc86aa6-ad24-4013-abc1-9e77f889dac5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="469b403a-af5a-40a4-a8d5-d6834e79496a"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="3708d428-7f40-493e-9922-959bcce7fe1c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="32747f5a-6470-4f82-bcdf-ffa6ac9555b5"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="6debe05b-7707-4195-a118-875fa2cb1e9a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="52447b3c-d545-4924-bf32-57c931f353b2"
+            name="Debug"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8797d0c4-d798-4f40-9d43-b49f888f847c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="afc60c94-31cf-4d74-b63c-022e08cc268b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c72d7204-1d11-4bef-809a-7f25dacc59f9">
+                    <propertyInstance
+                      Id="7c6d8502-1c16-4a95-a0ce-683f1b00fd6a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1c7d3372-e6f8-47ed-8140-e532aa8730bd">
+                    <propertyInstance
+                      Id="1524210f-c6e2-4d74-a176-cf2a59a2c908"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d529be1f-fb78-40ab-a6b6-47e55325c7a5">
+                    <propertyInstance
+                      Id="a36ed94f-43d5-411a-b9fb-349d5709933b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bb189a18-3d55-46d8-a79a-3fef8f7aab79">
+                    <propertyInstance
+                      Id="3222d8e8-755a-46b0-aa29-b47ec4251d8f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d8a1e3d-669e-4556-8df9-90284825584e">
+                    <propertyInstance
+                      Id="1ee5da11-9d7b-4beb-80e7-cdecdf14dc0a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f11fc7b8-9319-4a7b-83af-f9f3ec058e5a">
+                    <propertyInstance
+                      Id="d6d8d44f-f7c6-4606-a061-59cd13156bf7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="92bd9ac4-e5b5-4e18-b434-f6c87531d17e"
+                  name="item"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ff163b88-5acc-4e7d-8cec-75c05c53ca98"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DObject)]) ParameterIdentifier%3Ditem"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0b889576-aa43-4e8c-8a06-d4f8bea23d97"
+            name="Debug"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="095594fa-9d9c-43b4-9656-0994c3bb1f7d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fbad47b7-717c-4506-8a30-773b91d601b1"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49de73d2-9110-4502-85bd-7fc425faf74a">
+                    <propertyInstance
+                      Id="b0c8305d-bee8-4792-91f3-86d7f731d7ef"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e25200e0-b3f2-44e4-b10c-dd574f3870ce">
+                    <propertyInstance
+                      Id="970f7fc6-a3ec-4019-93f8-7a7356307dbf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e029eb8b-825b-4a9e-9128-84d2e8426f5d">
+                    <propertyInstance
+                      Id="b41faf1d-2bf6-4267-b6bb-389ad78a12e9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5461cede-d643-44fc-b33b-e7682dfa6696">
+                    <propertyInstance
+                      Id="5b53ce69-df89-4359-9345-d7ad0c1c87a1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9f4428b-afa7-4e65-bda9-1d2f3c9d5062">
+                    <propertyInstance
+                      Id="4e8b243e-815e-45ea-81a9-fdbe13fe489c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7ec76fb-93b2-4cd8-8dac-be8fa552571b">
+                    <propertyInstance
+                      Id="6259eedb-bfbe-435c-a76e-c569bf30598a"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="89af3455-de37-4462-9638-d1810a36d590"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4936994b-4ba4-4d2d-a243-997687b0db72"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b60e863e-a9af-4088-8e4c-45e2fe3ab49b"
+                  name="exception"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d19652fe-93e7-47e9-b06a-681d301a1a66"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dexception"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ecc44f46-5299-4d54-8c8a-316ce424241b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3aa5d4b0-bef0-42e1-9fb5-1bf576742c7a"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="8131a7f6-a4e7-447c-b943-0be9fd01a8c1"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DDebug OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4d678416-493b-4de2-94cf-c3d628da2f8e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a21112ba-9a67-45a6-87b5-5623b0c1cabc"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="eac69d7d-a55d-4e58-8311-c5a5eeab727e"
+            name="Fatal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d65ab4c0-2491-4540-89b0-24af7ce9e8df"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a0917f8d-ea9b-41f5-8052-9972786b3a95"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c47636a2-2d01-46bc-810a-80474b050c50">
+                    <propertyInstance
+                      Id="e487b054-90e2-4be5-a332-be3846f48681"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab6a499f-d2f4-4932-8987-6e7a92f1eebb">
+                    <propertyInstance
+                      Id="6abe6ca6-c9ba-43ed-993b-ef205f5c1c00"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba4d2277-8c98-428d-9217-fe1cb4202b4b">
+                    <propertyInstance
+                      Id="daabb0b7-ede5-4ccb-92ab-a1c06f9b0f91"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27e1acac-2cc4-4e21-b9c6-bb800e8986cf">
+                    <propertyInstance
+                      Id="e08f9bb2-91e7-44c0-bdb9-abfdc4fdeecb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bc756dff-0097-4e1c-9553-6062e4723dba">
+                    <propertyInstance
+                      Id="1bcb0274-b427-457c-bb21-01018f847533"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1714e39-0f14-49c2-a9c9-a3a97cf97eae">
+                    <propertyInstance
+                      Id="07ebd447-4193-46ef-aaee-ebf296329db6"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="612c2945-b8b0-4e8d-a5b1-dc577e59a169"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9c68e809-3012-4e2a-a6ca-fa349ae134d8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="545b01ec-d80f-4b1f-8d3b-e8e7727b4aea"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="f8652f98-c8b0-4330-a787-fb0dba74aafe"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a73005cc-53c9-4a44-b7aa-037ae35fbd8a"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="9e6c248f-d9a8-420e-b1af-faf8c7b1d95f"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="db9dc067-dfee-49ef-8819-d4db4f076e60"
+            name="Fatal"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ecbfa742-cad6-486d-b14c-b36f977509d0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="97c199eb-aab6-4245-97dc-228ce8275301"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b83a252-5a24-4796-9459-3926bd398cf1">
+                    <propertyInstance
+                      Id="51973f02-ba62-49d7-bc6e-509bacf22efa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f5d191f-5296-422a-982f-b8979a16fe2b">
+                    <propertyInstance
+                      Id="2656450f-22f9-409b-8367-3893bd9d6287"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34d40823-9f4b-46ec-b073-4885051a4f61">
+                    <propertyInstance
+                      Id="f12942af-d951-4d2b-a732-cf9acc766da9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="064b8925-f78a-4ca6-81d4-141b27f41f2c">
+                    <propertyInstance
+                      Id="20f4a93e-fde3-4362-a334-149df5cd6550"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e7da8686-fe13-4901-9ef3-ee282207e3f8">
+                    <propertyInstance
+                      Id="e5f4f723-4947-44bf-ba47-e812be7e4dac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c3c525f2-733b-4fe8-a0f7-77abc643a296">
+                    <propertyInstance
+                      Id="d598ed5a-a565-45d7-9d54-322e9132ec43"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b22b393-46f7-4e27-bb28-7a809a98c216"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a2fbc3a4-d3b9-4a3a-8e0d-29ff376fa955"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2ce0923a-ea94-4b52-b8f5-97d971918ae1"
+                  name="exception"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d9c00063-0f37-4599-8ce9-309ae5bc6037"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dexception"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ecc44f46-5299-4d54-8c8a-316ce424241b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c47f3999-bbf8-4f5e-8df6-3e6b08f226a3"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="4a37c517-1ffe-40b1-8d26-1c6fff8afd27"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DFatal OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a64d5779-171a-4100-9c25-f934b8b811f9"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="d3ac9a3b-902d-4ad0-987b-5a83778f3e5e"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6e9aaef5-4eff-4650-834e-51ee7ac5816a"
+            name="LogError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9f50945a-29cc-4445-b9ac-22be00f798f7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="71f2034d-126c-44bd-8c5b-ba43d8fa71b7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45e19097-5bfd-462e-a65d-1128748d1c77">
+                    <propertyInstance
+                      Id="e33371e8-d369-473c-891a-ae82067e92ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b36d750e-0449-436c-9cc0-225998346a96">
+                    <propertyInstance
+                      Id="8c21f0e5-9da5-4dde-a8e0-2b1c29b34820"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="23050d1e-d87b-4029-8d5a-08571acf7f64">
+                    <propertyInstance
+                      Id="f89beb13-a559-4764-8a5d-84104dca693c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="74968b35-504d-45f2-ad99-31d703368604">
+                    <propertyInstance
+                      Id="ad51e51c-26fd-43a0-b38f-d41b3ede3f56"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5e6aa43d-6b3f-4b5b-9a66-6d9892bfd2fd">
+                    <propertyInstance
+                      Id="9e493cce-83dd-4627-bbe5-e46a5f6cd5d0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20c8d54c-eac6-4253-863b-60f025b7a670">
+                    <propertyInstance
+                      Id="b0194051-1e54-438e-93b7-e46d30b37027"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fea6b53c-5d5c-41dd-b50a-d0b6fcec9072"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0d363b19-3446-45d2-a259-952568d41c9e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3202ece7-6ba1-4612-a150-d9106e2c2ba3"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="0827e696-f32e-43e3-88ea-8800f2ef7a8a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="73e7ca43-2a0a-438c-8629-8bceb5f2b38b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a7da1509-a62d-4f47-95a2-e9d92dd48450"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7c4f4b86-b594-48e4-bf5f-f8a370ef3546"
+            name="LogError"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ce53c4f4-662d-40aa-9fa1-2d7bfdfe244b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2e044543-3552-4072-85c4-9656569f58d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a5eb4e0-364d-4652-846d-cee19c31849f">
+                    <propertyInstance
+                      Id="72ed0610-136d-49be-9021-14b75bb653b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8fa1f10-a2af-4fbd-a66c-10f332e9ede3">
+                    <propertyInstance
+                      Id="b22f4690-42da-47d6-8fa6-621bf7a7a6ee"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7dab2c50-3b46-46f1-81d0-8690f872b33d">
+                    <propertyInstance
+                      Id="eb31db42-ce84-424c-869d-c79ef0629b4f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ab80a11-b69d-4072-a8d7-324a746b4f1d">
+                    <propertyInstance
+                      Id="159306ed-51ca-4894-b0a3-c0dcf59afcf8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7c711138-6fc8-414e-a041-435a2c5d341c">
+                    <propertyInstance
+                      Id="b7fee813-4e0c-4a0d-a678-b00e3f87f278"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e91b38d-5bfe-49c8-a397-93c7f43c8c2b">
+                    <propertyInstance
+                      Id="d5208dd7-6e46-468d-ac22-0fe5af14c392"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f48d0def-0725-49ea-b459-4494d7f2a442"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="42c79733-32f0-4028-885a-dcebd7c1218e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be170e78-3b9d-46fb-bd56-4186c9673177"
+                  name="exception"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4a1c03ff-e45b-42e5-a325-eb9f778160cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dexception"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ecc44f46-5299-4d54-8c8a-316ce424241b"
+                      LastKnownName="Exception"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="87b8b752-022c-4076-bc2b-00b686be7c9f"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="9b771ecb-173c-485d-acc9-4502704dcb58"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogError OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DException)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c817b3f0-4ada-49fd-b067-3d161be73ab4"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="89874c89-6e5a-48ea-813e-7cf11c5fdbd0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0975b13d-db2e-400a-85b2-bf0fdbb89287"
+            name="LogInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="98ff3ac1-2b69-40fb-9f8e-9343a46e619e"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogInfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="039639e3-b1dc-40ff-8efc-c5eb429e16d4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36af3888-49db-458e-abb8-fbe695f76107">
+                    <propertyInstance
+                      Id="da84ea03-1240-46e9-8b1f-a1f199491e22"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cea827cf-91d8-46a4-941f-2ab8f855a289">
+                    <propertyInstance
+                      Id="2db3f60a-7720-485f-bb4b-f90bf8948141"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f4824ee-e95e-4ae3-8a50-18e67cee0445">
+                    <propertyInstance
+                      Id="466dcbab-c683-46b2-8151-e7c3c34298b7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7093737-991d-487b-8c48-c4afb882a3cc">
+                    <propertyInstance
+                      Id="9383a6ab-f7ce-44cf-9329-b1689a3b90be"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cebb370-7b5e-4fa8-9183-3f22bb3459f4">
+                    <propertyInstance
+                      Id="39c9eaa8-6606-4185-b5ac-d8af14be2dcd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31b9e882-f941-4667-b949-894f98d5a5f8">
+                    <propertyInstance
+                      Id="071a1606-595d-47df-a55f-e8e7d4588e5d"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="877464e5-5862-4c5a-9669-41e00811ddfd"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="509a0d8c-fce5-4120-88b1-f89558d0d36f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogInfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e17b5ec-3597-402c-9d9e-0f9b44a6efc1"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="31339835-04d8-4c19-8915-86de36d418ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogInfo OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a60ba7e6-a09a-42a4-a35e-7c4d1d0fc857"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c3c8e787-408f-45cd-9d3f-4c149215651a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c9fa050b-ebf2-4e53-8fc5-14fc86af66bc"
+            name="LogWarning"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9023efef-ec87-4090-8dd8-b9a04cdf54eb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogWarning OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f1aa5809-e6d8-4722-993a-6f8b33960c05"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="75a0b95a-ac72-473f-b150-28b0f357ac1c">
+                    <propertyInstance
+                      Id="5277169f-bf62-4176-ae2f-34b5ded64785"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="268ca1fb-328a-4f2c-a221-67d8b7a4d448">
+                    <propertyInstance
+                      Id="76b6acd4-be26-4fcb-b49b-8bebef46daa8"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce86dfac-9f11-406f-980e-dddff549f504">
+                    <propertyInstance
+                      Id="76d331e6-e485-444b-a06b-d3aefef06029"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a140f944-34fc-4c12-b867-3958eb6cf636">
+                    <propertyInstance
+                      Id="13888bd0-34e1-4232-bf79-47c8f6b8a435"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a684c5e-dcc1-415c-9b63-7be9766622c3">
+                    <propertyInstance
+                      Id="335d56b6-ed95-434b-b252-44865d1d164f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4d21c41-ccae-409c-9a47-2ef75b140e67">
+                    <propertyInstance
+                      Id="8bfb906e-cd67-4f60-bef4-8b9008d5481b"
+                      name="params"
+                      value="True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="82eeca9e-0498-4d81-941c-68d0b8c2649a"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a7eb27a6-3e69-441f-8956-77b65d533472"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogWarning OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="Model.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2b14c16a-4b92-41ef-b7e9-7cf203708f65"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="a87415b9-65f7-4d79-8174-2104f9d27ec9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILogger Member%3D(Name%3DLogWarning OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DObject ArrayRank%3D1 ParentType%3DObject))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a96fd7af-c67c-48cb-89ca-beef791e035b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a73d2352-2300-475b-9b5f-19f6ab561885"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="12528ceb-0824-497e-b740-42b330854420"
+                      LastKnownName="Object"
+                      LastKnownLocation="Package3_2224.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f2c7f9b5-ea19-4daf-b86a-db28884971c1"
+        name="ILoggerFactory"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="aa5016b9-1c3c-4a65-8346-aca562f34cd6"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILoggerFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ba56bef9-c6dc-494a-8a7c-c419862f6687"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5d0c8d9b-b027-4a4b-bafa-2c9cbfa58d68">
+                <propertyInstance
+                  Id="5ede8bdd-f41f-420c-93b9-31a5b5a2564d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e16445d-f7ca-4cc1-b340-8547f16de1ab">
+                <propertyInstance
+                  Id="7e665067-7e05-42ec-bd65-f80627c3b722"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="29cc1189-0f31-4e35-93b1-8a0773cb56d3">
+                <propertyInstance
+                  Id="6b4ae24a-aa2c-479f-bc29-26a48d94971e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eacfc597-74e1-4da5-abad-815b238fb169">
+                <propertyInstance
+                  Id="c2de00e4-0310-4c5e-82ca-e7e700893580"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="88826042-357c-4a8a-a287-90ba7e57dac1"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="30df4eb7-5721-4cc5-95ca-6772ae837e11"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILoggerFactory Member%3DCreate"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="98892eb0-148e-41ef-99ed-c429e92865a2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c2142f26-1454-474e-bde6-b0a587eb40e5">
+                    <propertyInstance
+                      Id="81a617bb-cc1e-474e-86cd-3ceda4e76031"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="854e5e28-6bc5-4a6e-8d18-1a712ad69f7f">
+                    <propertyInstance
+                      Id="a261355a-8934-43e6-83bc-c9def232b45e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e86cc4c-81e5-47e2-a4ae-f6f36c304fa6">
+                    <propertyInstance
+                      Id="876cc2c7-6c8e-4672-b197-85a9ee75b3f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7654276-63d3-4670-aade-170ec605fe20">
+                    <propertyInstance
+                      Id="c7cd4474-675f-416c-9350-b45a6e309fbf"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf7618ba-addc-4119-8839-af19a538308e">
+                    <propertyInstance
+                      Id="6ffd03df-f509-4d4b-be67-2ce92beaffbc"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d7820bc-d77f-4e96-8134-9ba671c75abf">
+                    <propertyInstance
+                      Id="8ea71eb0-e9db-44ec-afdd-eb36b3bb8902"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="941b3335-efd2-4ad1-b26e-56fc4d3029a4"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c58c60b8-e5dd-4ede-af90-85e5b250d028"
+                      LastKnownName="ILogger"
+                      LastKnownLocation="Package6_2344.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c9d67b03-f66b-4d21-829b-949e4baa09c4"
+        name="LoggerFactory"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="631faaf2-fcd9-45ae-bd5d-d2f923678f69"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DLoggerFactory"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="03c4a391-5f0e-46f3-9199-b6511db66068"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="559a0fe6-ce28-4f63-a725-264b3541da25">
+                <propertyInstance
+                  Id="aae37b7a-2dc0-4b9b-a522-10a18f8f430a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dedb71ef-647f-45d6-9edc-833da8d095dc">
+                <propertyInstance
+                  Id="18b467d3-71a5-4752-9522-9e4ae47ac198"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60216cf4-e770-427e-872d-f205bd53be92">
+                <propertyInstance
+                  Id="2ec07bc7-42f0-4734-8a39-bb19b956da70"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f8daaaa2-2a90-4c46-921c-e224fe15edb2">
+                <propertyInstance
+                  Id="521f9fb6-2e12-479f-ade9-1718299cdac5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44c7ace6-6d48-46ec-87f6-37f8488822da">
+                <propertyInstance
+                  Id="2dac6139-79c0-4e67-935d-07f9c274d4ee"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1f365ad1-f514-4e7f-b04a-7429887ecd2d"
+            name="_currentLogFactory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5a84293f-082c-46cb-b323-7f0cbaae1822"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DLoggerFactory Member%3D_currentLogFactory"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e4ad1739-344a-42dc-906a-30f74d562476"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="89dc8866-f5f2-4bd0-bf95-1d917e677180">
+                    <propertyInstance
+                      Id="1a23a5e2-5650-4d77-b827-83bd572ae870"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a0f68e26-9ce3-4601-9cff-d7778b98fd16">
+                    <propertyInstance
+                      Id="18987b74-bb40-4caf-8a94-96495b30822c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1c20dd3-f877-400b-986b-2aebcab5c0d9">
+                    <propertyInstance
+                      Id="8591f04a-6550-40a7-bf38-35c7feb1adba"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac5894c8-5242-42c2-ae72-9ff1edf09c68">
+                    <propertyInstance
+                      Id="99ddc6f8-06c3-4d0a-bf51-b9f86b51a969"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b05de93-3e85-4ea1-8377-26b2f1d1a26d">
+                    <propertyInstance
+                      Id="ddfbcb48-7996-47bf-b6f3-1a4fa125d8e9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="f2c7f9b5-ea19-4daf-b86a-db28884971c1"
+                LastKnownName="ILoggerFactory"
+                LastKnownLocation="Package6_2344.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2c55896a-d4a4-49d9-b7a5-811872675aaa"
+            name="SetCurrent"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="75aff817-218e-4eda-875c-f64d08caeec5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DLoggerFactory Member%3D(Name%3DSetCurrent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILoggerFactory)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="100d6ec7-176e-4940-bb5f-c9853aa5a153"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3f41429-3f3f-4439-a2be-e69302368d7d">
+                    <propertyInstance
+                      Id="cc7b0321-32a6-4427-8ce0-53bafc0bbff7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a1665581-4d89-4de4-b4a8-290d6d82b716">
+                    <propertyInstance
+                      Id="e732bd24-c88a-4352-b728-7131e4d940c0"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841c8c13-5c1a-4b08-90e8-87f96624562c">
+                    <propertyInstance
+                      Id="f8ad6ba0-dc89-499d-97fc-0526486f5b31"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c7b98db-8214-45d7-aca2-b0c5081dc999">
+                    <propertyInstance
+                      Id="45669015-1aed-4b09-ad1a-07a2ad851fab"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1f99888-7d80-4853-b758-a90dc6f02f4c">
+                    <propertyInstance
+                      Id="d2fe9235-11ac-42a1-b523-3ecf58d9451f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bbf63be-f9e1-478a-83ba-e2159f7ce4f8">
+                    <propertyInstance
+                      Id="1dfe009f-9a10-435e-ba54-52a09b4a76b6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="80c0b15d-3def-481b-bf83-be1545a79602"
+                  name="logFactory"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="aaa23d60-ff56-4e91-88f3-cea10d4f9e79"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DLoggerFactory Member%3D(Name%3DSetCurrent OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DILoggerFactory)]) ParameterIdentifier%3DlogFactory"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="f2c7f9b5-ea19-4daf-b86a-db28884971c1"
+                      LastKnownName="ILoggerFactory"
+                      LastKnownLocation="Package6_2344.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="461a9aaa-345b-40a2-83c2-02efd2a2eb64"
+            name="CreateLog"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="96dc7936-913b-4906-802e-d617fee385ba"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FLevy%2FDocuments%2FVisual Studio 2012%2FProjects%2FSmsGateway%2FInfrastructure.Crosscutting%2Fbin%2FDebug%2FSmsGateway.Infrastructure.Crosscutting.dll&quot; Namespace%3DSmsGateway.Infrastructure.Crosscutting.Logging Type%3DLoggerFactory Member%3DCreateLog"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b6e35e5b-3175-4f4c-be93-6263b9d887d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee13f370-76db-4e23-9b99-683ff089a5cd">
+                    <propertyInstance
+                      Id="cc562e2b-0ee2-484b-9222-57e1a98219c4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b68cc5bb-60bb-4954-8729-ed9b5593a9ca">
+                    <propertyInstance
+                      Id="334a190c-02e9-4dd1-ab01-1c5b48214695"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc96fd8f-0423-461f-b323-c6e8079cd573">
+                    <propertyInstance
+                      Id="81aa4dba-2873-44a4-95d3-a0adc6a07d20"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ed2eeab-f493-4176-8269-2a973a64a2cb">
+                    <propertyInstance
+                      Id="aa639e23-8837-4309-bec1-1c90d7838691"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="32f868cf-8d29-4117-b7b9-2060e4a9ba24">
+                    <propertyInstance
+                      Id="03637771-f4bf-4e8e-8824-094cc13e9641"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d859e912-5f70-4ce0-ab27-2be49942453f">
+                    <propertyInstance
+                      Id="2d7992a0-3254-4f28-8305-ae79c4e375be"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a392458a-5b6e-4385-9c59-36a0c14cf003"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="c58c60b8-e5dd-4ede-af90-85e5b250d028"
+                      LastKnownName="ILogger"
+                      LastKnownLocation="Package6_2344.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

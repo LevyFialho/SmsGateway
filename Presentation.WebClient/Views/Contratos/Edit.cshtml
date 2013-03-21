@@ -1,0 +1,60 @@
+﻿@model SmsGateway.Application.CoreContext.DTO.SMSModule.ContratoDTO
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@Messages.website_Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>@Messages.website_Contrato</legend>
+
+        @Html.HiddenFor(model => model.Id)
+        @Html.HiddenFor(model => model.ClienteId)
+         @Html.HiddenFor(model => model.ContratoRenovadoId)
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataInicial)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataInicial)
+            @Html.ValidationMessageFor(model => model.DataInicial)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DataFinal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DataFinal)
+            @Html.ValidationMessageFor(model => model.DataFinal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.SaldoDeMensagens)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.SaldoDeMensagens)
+            @Html.ValidationMessageFor(model => model.SaldoDeMensagens)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.ValorMensagem)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.ValorMensagem)
+            @Html.ValidationMessageFor(model => model.ValorMensagem)
+        </div>
+  
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+ 
+<div>
+    @Html.ActionLink(@Messages.website_Back, "Details", "Clientes", new { id = Model.Id }, null)
+</div>

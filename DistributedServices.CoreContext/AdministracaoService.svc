@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SmsGateway.DistributedServices.CoreContext.AdministracaoService" CodeBehind="AdministracaoService.svc.cs" %>

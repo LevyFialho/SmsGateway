@@ -1,0 +1,113 @@
+﻿-------------------------------------
+Blocos de construção do Model Driven Design (MDD)
+-------------------------------------
+Uma vez que decidimos criar um modelo usando MDD, isolamos o modelo de domínio das demais partes que compõem o sistema. 
+Essa separação pode ser feita utilizando-se uma arquitetura em camadas, que dividirá nossa aplicação em cinco partes:
+
+1.1 - Presentation and Client API – parte responsável pela exibição de informações do sistema ao usuário e também por 
+ interpretar comandos do usuário;
+1.2 - Distributed Services –  responsável por fornecer serviços RESTFUL que serão consumidos pela camada 1.1 e serão 
+responsáveis pela injeção de dependência e delegação de trabalho para a camada 1.3.
+1.3 - Application - Camada de aplicação. Essa camada não possui lógica de negócio. Ela é apenas uma camada fina, 
+responsável por conectar as camadas superiores ao domínio. Aqui que acontece a conversão dos DTOS para os objetos do domínio, 
+assim como a persistência (com auxílio da camada de infra-estrutura), uma vez que adotamos o padrão Persistence ignorant Domain.
+1.4 - Domínio – representa os conceitos, regras e lógicas de negócio. Todo o foco de DDD está nessa camada. 
+1.5- Infra-estrutura – fornece recursos técnicos que darão suporte às camadas superiores. Responsável por persistência de dados, 
+conexões com bancos de dados, envio de mensagens por redes, gravação e leitura de discos, etc.
+ 
+Para modelagem da camada de Domínio, utilizamos alguns Padrões propostos em DDD. 
+
+Entidades – classes de objetos que necessitam de uma identidade. 
+Objetos de Valores – objetos que só carregam valores, mas que não possuem distinção de identidade. 
+Agregados – compostos de Entidades ou Objetos de Valores que são encapsulados numa única classe. 
+Fábricas – classes responsáveis pelo processo de criação dos Agregados ou dos Objetos de Valores. 
+Serviços – classes que contém lógica de negócio, mas que não pertence a nenhuma Entidade ou Objetos de Valores. (Stateless)
+Repositórios –  Os repositórios são classes que centralizam operações de criação, alteração e remoção de objetos.
+Módulos – abstrações que têm por objetivos agrupar classes por um determinado conceito do domínio. 
+
+ 
+
+-------------------------------------
+Módulos e Bounded Contexts
+-------------------------------------
+O relacionamento entre um Bounded Context e um Modelo é geralmente 1 : 1,apesar disso nós poderíamos compartilhar 
+o mesmo banco de dados entre diferentes contextos, cada um desses BCs eteriam uma view diferente da base de dados 
+(modelos diferentes). Ou então poderíamos ter diferentes bases de dados por contexto.
+
+Nós podemos ter diversos Módulos por contexto. Módulos são usados para organizar elementos em um Modelo usando namespaces,
+demarcações e organizações específicas.
+
+Cada modelo depende de seu domínio específico. Na nossa aplicação temos um único Contexto, modelo e um único módulo porém
+mantemos em mente que cada domínio possui seu própio modelo e seus própios módulos, e poderiam ser adicionados ao projeto de
+maneira que o baixo acoplamento seja mantido.
+
+-----------------------------
+Composição de Contextos Delimitados
+-----------------------------
+Embora não tenhamos aplicados na nossa aplicação, existem vários padrões que ajudar a manter a organização dos Bounded contexts
+Exemplo:
+- Shared Kernel
+- Customer Supplier
+- Conformist
+- Anticorruption Layer
+- Separate Ways
+- Open-Host Service 
+
+-----------------------------
+ENTITIES & AGGREGATES
+-----------------------------
+As entidades da aplicação poderiam ser ainda mais bem desenhadas caso o approuch Code First permitisse coisas 
+como Mapear membros privados. Tentamos evitar ao máximo o chamado "Anemic Domain Model", incorporando comportamento 
+aos objetos do dominio.
+
+-----------------------------
+AGGREGATE FACTORIES
+-------------------------
+Estes padrões são explicados por Eric Evans no seu livro (Domain Driven Design: http://domaindrivendesign.org/books/evans_2003),
+ assim como utilizado exaustivamente no livro de Jimmy Nilson (Applying Domain-Driven Design: http://domaindrivendesign.org/books/nilsson_2006)
+
+ Não é obrigatório usar uma Factory para cada Aggregate, o ideal é aplicar o padrão Factory apenas nos aggregates cuja construção
+ é muito complexa
+
+ ----------------------
+ DTO & Conventions
+-----------------------
+Geralmente objetos usados para trabsferência de dados são nomeados adicionando um sufixo específico (DTO).
+Essa nomeação serve para destacar o fato que esses objetos são externos ao modelo de domínio e são usados como data contracts
+para sistemas extenos e para o layer de apresentação.
+
+SmsGateway.Infrastructure.Crosscutting.Adapter  (DTO Adapters)
+-----------------------
+Adaptam um DTO para uma entidade e vice-versa.
+
+A definição do mapeamento de um tipo para o outro é um elemento independente no projeto:
+
+
+Através deste framework conseguimos construir adapters que não possuem dependencia direta de frameworks de mapeamento 
+Cada módulo do domínio pode ter seu próprio assembly de mapeamento, independente do mapeamento de outros módulos.
+Podemos assim utilizar diferentes ferramentas para cada módulo, no nosso caso usamos o AutoMapper.
+ 
+Extendendo TypeMapConfigurationBase e implementando os métodos BeforeMap, Map e Aftermap somos capazes de definir o mapeamento para cada um
+dos pares de tipos. (dtos x entitys)
+
+A classe RegisterTypeMap permite definir os mapeamentos de um determinado módulo.
+Cada instância  desta classe vai ser injetada automaticamente em TypeAdapter, como uma coleção de serviços.
+
+
+-------------------------
+
+SmsGateway.Infrastructure.Crosscutting.Logging 
+-------------------------
+
+Com a interface ILogger conseguimos contruir uma ferramenta de Log que pode implementada com diversos frameworks.
+Por exemplo: NET Diagnostics API, EntLib, Log4Net,NLog etc.
+No nosso caso, implementamos a ferramenta System.Diagnostics.TraceSource 
+
+
+------------------------- 
+
+SmsGateway.Infrastructure.Crosscutting.Validator
+-------------------------
+
+Com este framework, podemos aplicar ferramentas diferentes para validar nossas entidades, no nosso caso vamos usar
+ System.ComponentModel.DataAnnotations.
