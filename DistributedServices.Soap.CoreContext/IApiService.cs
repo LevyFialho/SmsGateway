@@ -10,6 +10,15 @@ namespace SmsGateway.DistributedServices.Soap.CoreContext
     {
 
         [OperationContract]
+        DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao);
+
+        [OperationContract]
+        AutenticacaoDTO  Autenticar(string email, string senha);
+
+        [OperationContract]
+        AutenticacaoDTO AutenticarCliente(Guid id, string senha);
+
+        [OperationContract]
        
         int GetSaldoDeMensagens(AutenticacaoDTO autenticacao);
 

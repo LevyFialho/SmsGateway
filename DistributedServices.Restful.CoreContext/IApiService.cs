@@ -89,6 +89,12 @@ namespace SmsGateway.DistributedServices.Restful.CoreContext
            ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
         IEnumerable<ContatoDTO> TodosOsContatos(AutenticacaoDTO autenticacao);
 
+        [OperationContract]
+        [WebInvoke(UriTemplate = "/dadosdocliente/", Method = "PUT", RequestFormat = WebMessageFormat.Json,
+           ResponseFormat = WebMessageFormat.Json, BodyStyle = WebMessageBodyStyle.WrappedRequest)]
+        DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao);
+
+
         #region ListasDeContatos
 
         [OperationContract]

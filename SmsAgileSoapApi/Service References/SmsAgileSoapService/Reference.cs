@@ -77,6 +77,116 @@ namespace SmsAgileSoapApi.SmsAgileSoapService {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="DadosDoClienteDTO", Namespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SM" +
+        "SModule")]
+    [System.SerializableAttribute()]
+    public partial class DadosDoClienteDTO : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private System.Guid IdField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string NomeField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int SaldoRemanescenteField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string SenhaField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int TotalDeMensagensEnviadasField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public System.Guid Id {
+            get {
+                return this.IdField;
+            }
+            set {
+                if ((this.IdField.Equals(value) != true)) {
+                    this.IdField = value;
+                    this.RaisePropertyChanged("Id");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Nome {
+            get {
+                return this.NomeField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.NomeField, value) != true)) {
+                    this.NomeField = value;
+                    this.RaisePropertyChanged("Nome");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int SaldoRemanescente {
+            get {
+                return this.SaldoRemanescenteField;
+            }
+            set {
+                if ((this.SaldoRemanescenteField.Equals(value) != true)) {
+                    this.SaldoRemanescenteField = value;
+                    this.RaisePropertyChanged("SaldoRemanescente");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string Senha {
+            get {
+                return this.SenhaField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.SenhaField, value) != true)) {
+                    this.SenhaField = value;
+                    this.RaisePropertyChanged("Senha");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public int TotalDeMensagensEnviadas {
+            get {
+                return this.TotalDeMensagensEnviadasField;
+            }
+            set {
+                if ((this.TotalDeMensagensEnviadasField.Equals(value) != true)) {
+                    this.TotalDeMensagensEnviadasField = value;
+                    this.RaisePropertyChanged("TotalDeMensagensEnviadas");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
     [System.Runtime.Serialization.DataContractAttribute(Name="MensagemDTO", Namespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SM" +
         "SModule")]
     [System.SerializableAttribute()]
@@ -553,6 +663,24 @@ namespace SmsAgileSoapApi.SmsAgileSoapService {
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="SmsAgileSoapService.IApiService")]
     public interface IApiService {
         
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/DadosDoCliente", ReplyAction="http://tempuri.org/IApiService/DadosDoClienteResponse")]
+        SmsAgileSoapApi.SmsAgileSoapService.DadosDoClienteDTO DadosDoCliente(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/DadosDoCliente", ReplyAction="http://tempuri.org/IApiService/DadosDoClienteResponse")]
+        System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.DadosDoClienteDTO> DadosDoClienteAsync(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/Autenticar", ReplyAction="http://tempuri.org/IApiService/AutenticarResponse")]
+        SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO Autenticar(string email, string senha);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/Autenticar", ReplyAction="http://tempuri.org/IApiService/AutenticarResponse")]
+        System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO> AutenticarAsync(string email, string senha);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/AutenticarCliente", ReplyAction="http://tempuri.org/IApiService/AutenticarClienteResponse")]
+        SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO AutenticarCliente(System.Guid id, string senha);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/AutenticarCliente", ReplyAction="http://tempuri.org/IApiService/AutenticarClienteResponse")]
+        System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO> AutenticarClienteAsync(System.Guid id, string senha);
+        
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IApiService/GetSaldoDeMensagens", ReplyAction="http://tempuri.org/IApiService/GetSaldoDeMensagensResponse")]
         int GetSaldoDeMensagens(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao);
         
@@ -687,6 +815,30 @@ namespace SmsAgileSoapApi.SmsAgileSoapService {
         
         public ApiServiceClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(binding, remoteAddress) {
+        }
+        
+        public SmsAgileSoapApi.SmsAgileSoapService.DadosDoClienteDTO DadosDoCliente(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao) {
+            return base.Channel.DadosDoCliente(autenticacao);
+        }
+        
+        public System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.DadosDoClienteDTO> DadosDoClienteAsync(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao) {
+            return base.Channel.DadosDoClienteAsync(autenticacao);
+        }
+        
+        public SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO Autenticar(string email, string senha) {
+            return base.Channel.Autenticar(email, senha);
+        }
+        
+        public System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO> AutenticarAsync(string email, string senha) {
+            return base.Channel.AutenticarAsync(email, senha);
+        }
+        
+        public SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO AutenticarCliente(System.Guid id, string senha) {
+            return base.Channel.AutenticarCliente(id, senha);
+        }
+        
+        public System.Threading.Tasks.Task<SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO> AutenticarClienteAsync(System.Guid id, string senha) {
+            return base.Channel.AutenticarClienteAsync(id, senha);
         }
         
         public int GetSaldoDeMensagens(SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO autenticacao) {

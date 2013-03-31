@@ -28,6 +28,21 @@ namespace SmsAgileSoapApi
 
         }
 
+        public static DadosDoCliente Convert(DadosDoClienteDTO dados)
+        {
+
+            return new DadosDoCliente()
+                {
+                    Nome =  dados.Nome,
+                    Senha = dados.Senha,
+                    Id = dados.Id.ToString(),
+                    SaldoRemanescente = dados.SaldoRemanescente,
+                    TotalDeMensagensEnviadas = dados.TotalDeMensagensEnviadas
+
+                };
+
+        }
+
         public static Contato Convert(ContatoDTO contato)
         {
             return new Contato(contato.Nome,contato.Numero)

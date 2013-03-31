@@ -8,7 +8,21 @@ namespace SmsAgileSoapApi
 {
     public sealed class Service
     {
-
+        private AutenticacaoDTO Autenticar(string email, string senha, ref string erro)
+        {
+            try
+            {
+                var autenticacao = Api.Autenticar(email, senha);
+                if (autenticacao == null)
+                    erro = "Não foi possível fazer a autenticação.";
+                return autenticacao;
+            }
+            catch (Exception)
+            {
+                erro = "Não foi possível fazer a autenticação. Verifique sua conexão com a internet";   
+                return null;
+            }
+        }
         private readonly AutenticacaoDTO _autenticacao = new AutenticacaoDTO();
         private ApiServiceClient Api
         {
@@ -34,26 +48,35 @@ namespace SmsAgileSoapApi
         /// <summary>
         /// Cria um serviço para envio de mensagens que se comunica através de um servidor proxy
         /// </summary>
-        /// <param name="id">Identificador do cliente</param>
+        /// <param name="email">Identificador do cliente</param>
         /// <param name="senha">Senha paa autenticação</param>
         /// <param name="proxyAddress">Endereço do servidor Proxy</param>
         /// <param name="useDefaultWebPoxy">True para usar o servidor proxy default do sistema, se estiver disponível</param>
-        public Service(string id, string senha, string proxyAddress, bool useDefaultWebPoxy = false)
+        public Service(string email, string senha, string proxyAddress, bool useDefaultWebPoxy = false)
         {
-            _autenticacao.Id = id;
-            _autenticacao.Senha = senha;
             _proxyAddress = proxyAddress;
             _useDefaultWebProxy = useDefaultWebPoxy;
+            var erro = string.Empty;
+            var autenticacao = Autenticar(email, senha, ref erro);
+            if(autenticacao == null)
+               throw  new Exception(erro);
+            _autenticacao.Id = autenticacao.Id;
+            _autenticacao.Senha = autenticacao.Senha;
         }
+      
         /// <summary>
         /// Cria um serviço para envio de mensagens
         /// </summary>
-        /// <param name="id">Identificador do cliente</param>
-        /// <param name="senha">Senha paa autenticação</param>
-        public Service(string id, string senha)
+        /// <param name="autenticacao">Identificador do cliente</param>
+        /// <param name="proxyAddress">Endereço do servidor Proxy</param>
+        /// <param name="useDefaultWebPoxy">True para usar o servidor proxy default do sistema, se estiver disponível</param>
+        public Service(AutenticacaoDTO autenticacao, string proxyAddress, bool useDefaultWebPoxy = false)
         {
-            _autenticacao.Id = id;
-            _autenticacao.Senha = senha;
+            _proxyAddress = proxyAddress;
+            _useDefaultWebProxy = useDefaultWebPoxy;
+        
+            _autenticacao.Id = autenticacao.Id;
+            _autenticacao.Senha = autenticacao.Senha;
         }
 
         /// <summary>
@@ -64,6 +87,11 @@ namespace SmsAgileSoapApi
         public Mensagem EnviarMensagem(Mensagem mensagem)
         {
             return Assembler.Convert(Api.EnviarMensagem(_autenticacao, Assembler.Convert(mensagem)));
+        }
+
+        public DadosDoCliente Dados()
+        {
+            return Assembler.Convert(Api.DadosDoCliente(_autenticacao));
         }
 
         /// <summary>

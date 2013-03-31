@@ -10,7 +10,8 @@
 // padrões de desenvolvimento de software adotados no mercado no ano de 2012.
 
 // Mais especificamente, o código demonstra a aplicação prática de conceitos abordados
-// em Domain driven Design e Patterns of Application Architechture na plataforma .Net
+// nos livros Domain driven Design (E. Evans) e 
+//Patterns of Application Architechture (M. Fowler) na plataforma .Net
 //===================================================================================
 
 using System;
@@ -25,12 +26,15 @@ namespace SmsGateway.Application.CoreContext.SMSModule.Services.Contracts
     ///  </summary>
     public interface IClientesAppService: IDisposable
     {
+         AutenticacaoDTO Autenticar(string email, string senha);
+         AutenticacaoDTO Autenticar(Guid id, string senha);
          ClienteDTO Add(ClienteDTO dto);
          void Update(ClienteDTO dto);
          void Remove(Guid id);
          List<ClienteDTO> Find(int pageIndex, int pageCount);
          List<ClienteDTO> ListAll();
          ClienteDTO Find(Guid id);
+         DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao);
 
     }
 

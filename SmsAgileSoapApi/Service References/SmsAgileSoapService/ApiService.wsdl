@@ -7,6 +7,24 @@
       <xsd:import schemaLocation="http://localhost:2197/ApiService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" />
     </xsd:schema>
   </wsdl:types>
+  <wsdl:message name="IApiService_DadosDoCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:DadosDoCliente" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_DadosDoCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DadosDoClienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_Autenticar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Autenticar" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_Autenticar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AutenticarCliente_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarCliente" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AutenticarCliente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutenticarClienteResponse" />
+  </wsdl:message>
   <wsdl:message name="IApiService_GetSaldoDeMensagens_InputMessage">
     <wsdl:part name="parameters" element="tns:GetSaldoDeMensagens" />
   </wsdl:message>
@@ -116,6 +134,18 @@
     <wsdl:part name="parameters" element="tns:EnviarMensagemParaListaDeContatosResponse" />
   </wsdl:message>
   <wsdl:portType name="IApiService">
+    <wsdl:operation name="DadosDoCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/DadosDoCliente" message="tns:IApiService_DadosDoCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/DadosDoClienteResponse" message="tns:IApiService_DadosDoCliente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Autenticar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/Autenticar" message="tns:IApiService_Autenticar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/AutenticarResponse" message="tns:IApiService_Autenticar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarCliente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/AutenticarCliente" message="tns:IApiService_AutenticarCliente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/AutenticarClienteResponse" message="tns:IApiService_AutenticarCliente_OutputMessage" />
+    </wsdl:operation>
     <wsdl:operation name="GetSaldoDeMensagens">
       <wsdl:input wsaw:Action="http://tempuri.org/IApiService/GetSaldoDeMensagens" message="tns:IApiService_GetSaldoDeMensagens_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IApiService/GetSaldoDeMensagensResponse" message="tns:IApiService_GetSaldoDeMensagens_OutputMessage" />
@@ -191,6 +221,33 @@
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IApiService" type="tns:IApiService">
     <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="DadosDoCliente">
+      <soap:operation soapAction="http://tempuri.org/IApiService/DadosDoCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Autenticar">
+      <soap:operation soapAction="http://tempuri.org/IApiService/Autenticar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutenticarCliente">
+      <soap:operation soapAction="http://tempuri.org/IApiService/AutenticarCliente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="GetSaldoDeMensagens">
       <soap:operation soapAction="http://tempuri.org/IApiService/GetSaldoDeMensagens" style="document" />
       <wsdl:input>

@@ -82,6 +82,10 @@ namespace SmsGateway.DistributedServices.Restful.CoreContext
 
         #region IClientService Members
 
+        public DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao)
+        {
+            return _clientesAppService.DadosDoCliente(autenticacao);
+        }
 
         public void AtualizarContato(ContatoDTO contato)
         {

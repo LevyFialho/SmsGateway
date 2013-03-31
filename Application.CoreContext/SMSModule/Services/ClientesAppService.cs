@@ -18,6 +18,7 @@ using SmsGateway.Application.CoreContext.DTO.SMSModule;
 using SmsGateway.Application.CoreContext.SMSModule.Services.Contracts;
 using SmsGateway.Domain.CoreContext.SMSModule.Aggregates.AdministradorAgg;
 using SmsGateway.Domain.CoreContext.SMSModule.Aggregates.ContratoAgg;
+using SmsGateway.Domain.CoreContext.SMSModule.Aggregates.MensagemAgg;
 
 namespace SmsGateway.Application.CoreContext.SMSModule.Services
 {
@@ -42,17 +43,19 @@ namespace SmsGateway.Application.CoreContext.SMSModule.Services
 
         private readonly IClienteRepository _repositorioClientes;
         private readonly IContratoRepository _repositorioContratos;
+        private readonly IMensagemRepository _repositorioMensagens;
         #endregion
 
         #region Constructors
 
-        
         /// <summary>
         /// Cria uma nova instância do serviço 
         /// </summary>
         /// <param name="repositorio">Repositorio associado, injeção de dependência</param>
         /// <param name="repositorioContratos">Repositorio associado, injeção de dependência</param>
-        public ClientesAppService(IClienteRepository repositorio, IContratoRepository repositorioContratos)
+        /// <param name="repositorioMensagens">Repositorio associado, injeção de dependência </param>
+        public ClientesAppService(IClienteRepository repositorio, IContratoRepository repositorioContratos,
+            IMensagemRepository repositorioMensagens)
         {
             if (repositorio == null)
                 throw new ArgumentNullException("repositorio");
@@ -64,11 +67,39 @@ namespace SmsGateway.Application.CoreContext.SMSModule.Services
 
             _repositorioContratos = repositorioContratos;
 
+            if (repositorioMensagens == null)
+                throw new ArgumentNullException("repositorioMensagens");
+
+            _repositorioMensagens = repositorioMensagens;
+
         }
 
         #endregion
 
         #region Interface Members
+
+        public AutenticacaoDTO Autenticar(string email, string senha)
+        {
+            var cliente = _repositorioClientes.GetFiltered(c => c.Email == email && c.Senha == senha).FirstOrDefault();
+            if (cliente == null) return null;
+            return new AutenticacaoDTO()
+                {
+                    Id = cliente.Id.ToString(),
+                    Senha = cliente.Senha
+                };
+
+        }
+
+        public AutenticacaoDTO Autenticar(Guid id, string senha)
+        {
+            var cliente = _repositorioClientes.GetFiltered(c => c.Id == id && c.Senha == senha).FirstOrDefault();
+            if (cliente == null) return null;
+            return new AutenticacaoDTO()
+            {
+                Id = cliente.Id.ToString(),
+                Senha = cliente.Senha
+            };
+        }
 
         public ClienteDTO Add(ClienteDTO clienteDto)
         {
@@ -177,6 +208,22 @@ namespace SmsGateway.Application.CoreContext.SMSModule.Services
             }
             else
                 return null;
+        }
+
+        public DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao)
+        {
+            var dados = new DadosDoClienteDTO();
+            var cliente = _repositorioClientes.Get(new Guid(autenticacao.Id));
+            if ((cliente != null) && (cliente.Senha == autenticacao.Senha))
+            {
+                dados.Id = new Guid(autenticacao.Id);
+                dados.Nome = cliente.Nome;
+                dados.SaldoRemanescente = cliente.ContratoAtual.SaldoDeMensagens;
+                dados.Senha = cliente.Senha;
+                dados.TotalDeMensagensEnviadas =
+                    _repositorioMensagens.GetFiltered(m => m.ContratoDoCliente.ClienteId == cliente.Id).Count();
+            }
+            return dados;
         }
 
         #endregion

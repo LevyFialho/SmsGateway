@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Assembler.cs" />
     <Compile Include="Contato.cs" />
+    <Compile Include="DadosDoCliente.cs" />
     <Compile Include="ListaDeContatos.cs" />
     <Compile Include="Mensagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,7 +73,13 @@
     <None Include="Service References\SmsAgileSoapService\ApiService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <None Include="Service References\SmsAgileSoapService\SmsAgileSoapApi.SmsAgileSoapService.AutenticacaoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Service References\SmsAgileSoapService\SmsAgileSoapApi.SmsAgileSoapService.ContatoDTO.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\SmsAgileSoapService\SmsAgileSoapApi.SmsAgileSoapService.DadosDoClienteDTO.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
     <None Include="Service References\SmsAgileSoapService\SmsAgileSoapApi.SmsAgileSoapService.ListaDeContatosDTO.datasource">

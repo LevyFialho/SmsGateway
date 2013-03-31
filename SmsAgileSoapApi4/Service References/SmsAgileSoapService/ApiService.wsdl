@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ApiService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://70.38.8.59/soap/ApiService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://70.38.8.59/soap/ApiService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://70.38.8.59/soap/ApiService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IApiService_GetSaldoDeMensagens_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaldoDeMensagens" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetSaldoDeMensagens_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSaldoDeMensagensResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetMensagensEnviadas_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensagensEnviadas" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetMensagensEnviadas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensagensEnviadasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetMensagem_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensagem" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetMensagem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMensagemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagem_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagem" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagem_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemStringRemetente_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemStringRemetente" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemStringRemetente_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemStringRemetenteResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemString_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemString" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemString_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemStringResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AdicionarContato_InputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarContato" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AdicionarContato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AdicionarContatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AtualizarContato_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarContato" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_AtualizarContato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarContatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_RemoverContato_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverContato" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_RemoverContato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoverContatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemParaContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemParaContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemParaContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemParaContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_Contato_InputMessage">
+    <wsdl:part name="parameters" element="tns:Contato" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_Contato_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ContatoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_TodosOsContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:TodosOsContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_TodosOsContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TodosOsContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetListaDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_GetListaDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetListaDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_ListListasDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListListasDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_ListListasDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListListasDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_CreateListaDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateListaDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_CreateListaDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateListaDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_UpdateListaDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateListaDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_UpdateListaDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateListaDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_DisableListaDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:DisableListaDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_DisableListaDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DisableListaDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemParaListaDeContatos_InputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemParaListaDeContatos" />
+  </wsdl:message>
+  <wsdl:message name="IApiService_EnviarMensagemParaListaDeContatos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EnviarMensagemParaListaDeContatosResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IApiService">
+    <wsdl:operation name="GetSaldoDeMensagens">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/GetSaldoDeMensagens" message="tns:IApiService_GetSaldoDeMensagens_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/GetSaldoDeMensagensResponse" message="tns:IApiService_GetSaldoDeMensagens_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMensagensEnviadas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/GetMensagensEnviadas" message="tns:IApiService_GetMensagensEnviadas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/GetMensagensEnviadasResponse" message="tns:IApiService_GetMensagensEnviadas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMensagem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/GetMensagem" message="tns:IApiService_GetMensagem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/GetMensagemResponse" message="tns:IApiService_GetMensagem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagem">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/EnviarMensagem" message="tns:IApiService_EnviarMensagem_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemResponse" message="tns:IApiService_EnviarMensagem_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemStringRemetente">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemStringRemetente" message="tns:IApiService_EnviarMensagemStringRemetente_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemStringRemetenteResponse" message="tns:IApiService_EnviarMensagemStringRemetente_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemString">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemString" message="tns:IApiService_EnviarMensagemString_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemStringResponse" message="tns:IApiService_EnviarMensagemString_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AdicionarContato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/AdicionarContato" message="tns:IApiService_AdicionarContato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/AdicionarContatoResponse" message="tns:IApiService_AdicionarContato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarContato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/AtualizarContato" message="tns:IApiService_AtualizarContato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/AtualizarContatoResponse" message="tns:IApiService_AtualizarContato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoverContato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/RemoverContato" message="tns:IApiService_RemoverContato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/RemoverContatoResponse" message="tns:IApiService_RemoverContato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemParaContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemParaContatos" message="tns:IApiService_EnviarMensagemParaContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemParaContatosResponse" message="tns:IApiService_EnviarMensagemParaContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Contato">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/Contato" message="tns:IApiService_Contato_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/ContatoResponse" message="tns:IApiService_Contato_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TodosOsContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/TodosOsContatos" message="tns:IApiService_TodosOsContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/TodosOsContatosResponse" message="tns:IApiService_TodosOsContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetListaDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/GetListaDeContatos" message="tns:IApiService_GetListaDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/GetListaDeContatosResponse" message="tns:IApiService_GetListaDeContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListListasDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/ListListasDeContatos" message="tns:IApiService_ListListasDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/ListListasDeContatosResponse" message="tns:IApiService_ListListasDeContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateListaDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/CreateListaDeContatos" message="tns:IApiService_CreateListaDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/CreateListaDeContatosResponse" message="tns:IApiService_CreateListaDeContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateListaDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/UpdateListaDeContatos" message="tns:IApiService_UpdateListaDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/UpdateListaDeContatosResponse" message="tns:IApiService_UpdateListaDeContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DisableListaDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/DisableListaDeContatos" message="tns:IApiService_DisableListaDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/DisableListaDeContatosResponse" message="tns:IApiService_DisableListaDeContatos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemParaListaDeContatos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemParaListaDeContatos" message="tns:IApiService_EnviarMensagemParaListaDeContatos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IApiService/EnviarMensagemParaListaDeContatosResponse" message="tns:IApiService_EnviarMensagemParaListaDeContatos_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IApiService" type="tns:IApiService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetSaldoDeMensagens">
+      <soap:operation soapAction="http://tempuri.org/IApiService/GetSaldoDeMensagens" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMensagensEnviadas">
+      <soap:operation soapAction="http://tempuri.org/IApiService/GetMensagensEnviadas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMensagem">
+      <soap:operation soapAction="http://tempuri.org/IApiService/GetMensagem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagem">
+      <soap:operation soapAction="http://tempuri.org/IApiService/EnviarMensagem" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemStringRemetente">
+      <soap:operation soapAction="http://tempuri.org/IApiService/EnviarMensagemStringRemetente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemString">
+      <soap:operation soapAction="http://tempuri.org/IApiService/EnviarMensagemString" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AdicionarContato">
+      <soap:operation soapAction="http://tempuri.org/IApiService/AdicionarContato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarContato">
+      <soap:operation soapAction="http://tempuri.org/IApiService/AtualizarContato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemoverContato">
+      <soap:operation soapAction="http://tempuri.org/IApiService/RemoverContato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemParaContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/EnviarMensagemParaContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Contato">
+      <soap:operation soapAction="http://tempuri.org/IApiService/Contato" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TodosOsContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/TodosOsContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetListaDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/GetListaDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListListasDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/ListListasDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateListaDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/CreateListaDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateListaDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/UpdateListaDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DisableListaDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/DisableListaDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EnviarMensagemParaListaDeContatos">
+      <soap:operation soapAction="http://tempuri.org/IApiService/EnviarMensagemParaListaDeContatos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ApiService">
+    <wsdl:port name="BasicHttpBinding_IApiService" binding="tns:BasicHttpBinding_IApiService">
+      <soap:address location="http://70.38.8.59/soap/ApiService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

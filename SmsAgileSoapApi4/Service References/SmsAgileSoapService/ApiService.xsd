@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/SmsGateway.Application.CoreContext.DTO.SMSModule" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://70.38.8.59/soap/ApiService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="AutenticacaoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Senha" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AutenticacaoDTO" nillable="true" type="tns:AutenticacaoDTO" />
+  <xs:complexType name="ArrayOfMensagemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemDTO" nillable="true" type="tns:MensagemDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMensagemDTO" nillable="true" type="tns:ArrayOfMensagemDTO" />
+  <xs:complexType name="MensagemDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ContratoDaOperadoraId" type="ser:guid" />
+      <xs:element minOccurs="0" name="ContratoDoClienteId" type="ser:guid" />
+      <xs:element minOccurs="0" name="DataDeEnvio" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataDeRegistro" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DataDoUltimoUpdate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="NumeroDoDestinatario" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="NumeroDoRemetente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusCodigo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusId" type="ser:guid" />
+      <xs:element minOccurs="0" name="StatusMensagemAoCliente" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="StatusQuantoDebitarDoContratoDoCliente" type="xs:int" />
+      <xs:element minOccurs="0" name="TextoDaMensagem" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MensagemDTO" nillable="true" type="tns:MensagemDTO" />
+  <xs:complexType name="ContatoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClienteId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Numero" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContatoDTO" nillable="true" type="tns:ContatoDTO" />
+  <xs:complexType name="ArrayOfContatoDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ContatoDTO" nillable="true" type="tns:ContatoDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfContatoDTO" nillable="true" type="tns:ArrayOfContatoDTO" />
+  <xs:complexType name="ListaDeContatosDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClienteId" type="ser:guid" />
+      <xs:element minOccurs="0" name="Contatos" nillable="true" type="tns:ArrayOfContatoDTO" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsEnabled" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ListaDeContatosDTO" nillable="true" type="tns:ListaDeContatosDTO" />
+  <xs:complexType name="ArrayOfListaDeContatosDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ListaDeContatosDTO" nillable="true" type="tns:ListaDeContatosDTO" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfListaDeContatosDTO" nillable="true" type="tns:ArrayOfListaDeContatosDTO" />
+</xs:schema>

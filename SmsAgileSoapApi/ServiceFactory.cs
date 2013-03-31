@@ -24,7 +24,7 @@ namespace SmsAgileSoapApi
     /// </summary>
     internal abstract class Factory
     {
-        private const string _url = "http://70.38.8.59/soap/ApiService.svc?wsdl";
+        private const string _url = "http://localhost:2197/ApiService.svc?wsdl";
         public static ApiServiceClient Service()
         {
             #region Biding

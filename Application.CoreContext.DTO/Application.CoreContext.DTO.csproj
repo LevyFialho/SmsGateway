@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SMSModule\DadosDoClienteDTO.cs" />
     <Compile Include="Profiles\SmsModuleProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SMSModule\AdministradorDTO.cs" />

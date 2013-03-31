@@ -1,20 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿//=================================================================================== 
+// INSTITUTO INFNET - GRADUAÇÃO EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
+// TRABALHO DE CONCLUSÃO DO CURSO
+// AUTORES:
+// JAIR MARTINS
+// LEVY FIALHO
+// MARCELO SÁ
+//===================================================================================
+// Este código foi desenvolvido com o objetivo de demonstrar a aplicação prática de 
+// padrões de desenvolvimento de software adotados no mercado no ano de 2012.
+
+// Mais especificamente, o código demonstra a aplicação prática de conceitos abordados
+// nos livros Domain driven Design (E. Evans) e 
+//Patterns of Application Architechture (M. Fowler) na plataforma .Net
+//===================================================================================
+
+using System;
+using System.Collections.Generic; 
 using System.ServiceModel;
-using System.ServiceModel.Activation;
-using System.Web;
+using System.ServiceModel.Activation; 
 using SmsGateway.Application.CoreContext.DTO.SMSModule;
-using SmsGateway.Application.CoreContext.SMSModule.Services.Contracts;
-using SmsGateway.DistributedServices.Seedwork.ErrorHandlers;
+using SmsGateway.Application.CoreContext.SMSModule.Services.Contracts; 
 using SmsGateway.DistributedServices.Soap.CoreContext.InstanceProviders;
 
 namespace SmsGateway.DistributedServices.Soap.CoreContext
 {
     [AspNetCompatibilityRequirements(RequirementsMode = AspNetCompatibilityRequirementsMode.Allowed)]
-    //[ServiceBehavior(InstanceContextMode = InstanceContextMode.Single)]
-   // [ApplicationErrorHandler()] // manage all unhandled exceptions
-    [UnityInstanceProviderServiceBehavior()] //create instance and inject dependencies using unity container
+    [UnityInstanceProviderServiceBehavior()]  
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall,
     ConcurrencyMode = ConcurrencyMode.Multiple, IncludeExceptionDetailInFaults = true)]
     public class ApiService : IApiService
@@ -63,67 +74,7 @@ namespace SmsGateway.DistributedServices.Soap.CoreContext
             _clientesAppService = clientesAppService;
         }
         #endregion
-
-        #region IClientService Members
-
-
-        public void AtualizarContato(ContatoDTO contato)
-        {
-            _contatosAppService.Update(contato);
-        }
-
-        public void RemoverContato(Guid contatoId)
-        {
-            _contatosAppService.Remove(contatoId);
-
-        }
-
-        public MensagemDTO EnviarMensagemParaContatos(string texto, ICollection<ContatoDTO> contatos)
-        {
-            throw new NotImplementedException();
-        }
-
-
-
-        public IEnumerable<ContatoDTO> ContatosDoCliente(Guid clienteId)
-        {
-            throw new NotImplementedException();
-        }
-
-
-        #region Listas De Contato
-
-        public ListaDeContatosDTO GetListaDeContatos(string id)
-        {
-            return _listasDeContatosService.Find(new Guid(id));
-        }
-
-        public List<ListaDeContatosDTO> ListListasDeContatos()
-        {
-            return _listasDeContatosService.ListAll();
-        }
-
-        public ListaDeContatosDTO CreateListaDeContatos(ListaDeContatosDTO dtoInstance)
-        {
-            return _listasDeContatosService.Add(dtoInstance);
-        }
-
-        public void UpdateListaDeContatos(ListaDeContatosDTO dtoInstance)
-        {
-            _listasDeContatosService.Update(dtoInstance);
-        }
-
-        public void DisableListaDeContatos(ListaDeContatosDTO dtoInstance)
-        {
-            _listasDeContatosService.Remove(dtoInstance.Id);
-        }
-
-        #endregion
-        ///TODO: IMPLEMENTAR SERVIÇOS RESTANTES + LISTA DE CONTATO + CONFIDENCIALIDADE (SENHA DO CONTATO, SO EXIBE NO SITE)
-
-
-        #endregion
-
+        
         #region IApiServiceMembers
 
         public int GetSaldoDeMensagens(AutenticacaoDTO autenticacao)
@@ -256,6 +207,49 @@ namespace SmsGateway.DistributedServices.Soap.CoreContext
             return _smsAppService.EnviarMensagemParaListaDeContatos(autenticacao, texto, remetente, dtoInstance);
         }
 
+        #region Listas De Contato
+
+        public ListaDeContatosDTO GetListaDeContatos(string id)
+        {
+            return _listasDeContatosService.Find(new Guid(id));
+        }
+
+        public List<ListaDeContatosDTO> ListListasDeContatos()
+        {
+            return _listasDeContatosService.ListAll();
+        }
+
+        public ListaDeContatosDTO CreateListaDeContatos(ListaDeContatosDTO dtoInstance)
+        {
+            return _listasDeContatosService.Add(dtoInstance);
+        }
+
+        public void UpdateListaDeContatos(ListaDeContatosDTO dtoInstance)
+        {
+            _listasDeContatosService.Update(dtoInstance);
+        }
+
+        public void DisableListaDeContatos(ListaDeContatosDTO dtoInstance)
+        {
+            _listasDeContatosService.Remove(dtoInstance.Id);
+        }
+
+        #endregion
+
+        public DadosDoClienteDTO DadosDoCliente(AutenticacaoDTO autenticacao)
+        {
+            return _clientesAppService.DadosDoCliente(autenticacao);
+        }
+
+        public AutenticacaoDTO Autenticar(string email, string senha)
+        {
+            return _clientesAppService.Autenticar(email, senha);
+        }
+
+        public AutenticacaoDTO AutenticarCliente(Guid id, string senha)
+        {
+            return _clientesAppService.Autenticar(id, senha);
+        }
 
         #endregion
 

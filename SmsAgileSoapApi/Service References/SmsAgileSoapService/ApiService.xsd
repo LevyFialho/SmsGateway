@@ -8,6 +8,16 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="AutenticacaoDTO" nillable="true" type="tns:AutenticacaoDTO" />
+  <xs:complexType name="DadosDoClienteDTO">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="Nome" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SaldoRemanescente" type="xs:int" />
+      <xs:element minOccurs="0" name="Senha" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalDeMensagensEnviadas" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DadosDoClienteDTO" nillable="true" type="tns:DadosDoClienteDTO" />
   <xs:complexType name="ArrayOfMensagemDTO">
     <xs:sequence>
       <xs:element minOccurs="0" maxOccurs="unbounded" name="MensagemDTO" nillable="true" type="tns:MensagemDTO" />

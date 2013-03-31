@@ -1,0 +1,12 @@
+﻿<Window x:Class="SmsGateway.Presentation.WPFClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" 
+        xmlns:Controls="clr-namespace:SmsGateway.Presentation.WPFClient.Controls" Height="450" Width="650" FontFamily="Segoe UI Semibold" FontSize="14">
+    <Grid Background="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionBrushKey}}">
+            <Image Source="Media/Images/scroll_bulk_sms.png" Margin="0,147,416,-44"/>
+            <Label  Margin="106,370,403,0"  Content="SMSAGILE.COM" FontSize="14"/>
+        <Controls:LoginControl Margin="34,-94,-34,94" />
+       
+    </Grid>
+</Window>

@@ -2,19 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using SmsAgileSoapApi.SmsAgileSoapService;
 
 namespace SmsAgileSoapApi.Tests
 {
     [TestClass]
     public class ApiTests
     {
-
+        private AutenticacaoDTO Autenticacao()
+        {
+            return new AutenticacaoDTO()
+            {
+                Id = ClienteId,
+                Senha = Senha
+            };
+        }
         private const string ClienteId = "82d87721-2ab4-c3e9-a928-08cff0f797d7";
         private const string Senha = "@infnet";
 
         private SmsAgileSoapApi.Service Service
         {
-            get { return new Service(ClienteId, Senha); }
+            get { return new Service(Autenticacao(), Senha); }
         }
 
         #region Contatos
